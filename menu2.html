@@ -1,0 +1,1379 @@
+<!DOCTYPE html>
+<!-- Camera is a Pixedelic free jQuery slideshow | Manuel Masia (designer and developer) -->
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" >
+<title>FOODIE - Food Blog Template</title>
+<meta name="description" content="Camera a free jQuery slideshow with many effects, transitions, adaptive layout, easy to customize, using canvas and mobile ready">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.theme.min.css">
+
+<!--BOOTSTRAP CDN-->
+<script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+<!--MAIN CSS FILE-->
+ <link rel='stylesheet' id='main-css'  href='style.css?version=51' type='text/css' media='all'>
+
+<link href='http://fonts.googleapis.com/css?family=Raleway:400,800,500,600' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="css/animations.css?version=2.0" type="text/css">
+		
+<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.2.0/css/font-awesome.min.css" />
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<!--Font Avesome for social media buttons-->  
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+<link href="https://fonts.googleapis.com/css?family=Akronim|Almendra+SC|Lato|Ewert|IM+Fell+Double+Pica+SC|IM+Fell+French+Canon+SC|Merriweather|Overlock+SC|Ribeye+Marrow|Vollkorn+SC|Wendy+One" rel="stylesheet">
+
+<!--HERE-->
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+<!--ICON-->
+<link rel="icon" href="images/core-img/icon3.png">
+
+<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>-->
+
+<script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js"></script>
+
+<script type='text/javascript' src='js/jquery/jquery-2.2.4.min.js'></script>
+
+
+<script type='text/javascript' src='js/jquery.mobile.customized.min.js'></script>
+<script type='text/javascript' src='js/jquery.easing.1.3.js'></script>
+<script type='text/javascript' src='js/camera.min.js'></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js"></script>
+<script type="text/javascript" src="js/stellarnav.min.js"></script>
+ <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+
+ <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/css?family=Cinzel|Crete+Round|Merriweather|Vollkorn|Cherry+Swash" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Berkshire+Swash|Cookie|Great+Vibes&display=swap" rel="stylesheet">
+
+
+</head>
+<body>
+<!--PRELOADER-->
+<section>
+    <div id="preloader">
+      <div id="ctn-preloader" class="ctn-preloader">
+
+        <div class="animation-preloader"> <img src="images/core-img/icon3.png">
+          <div class="spinner"></div>
+          <div class="txt-loading">
+            <span data-text-preloader="F" class="letters-loading">
+              F
+            </span>
+            <span data-text-preloader="O" class="letters-loading">
+              O
+            </span>
+            <span data-text-preloader="O" class="letters-loading">
+              O
+            </span>
+            <span data-text-preloader="D" class="letters-loading">
+              D
+            </span>
+            <span data-text-preloader="I" class="letters-loading">
+              I
+            </span>
+            <span data-text-preloader="E" class="letters-loading">
+              E
+            </span>
+           
+          </div>
+        </div>  
+        <div class="loader-section section-left"></div>
+        <div class="loader-section section-right"></div>
+      </div>
+    </div>
+  </section>
+
+		<!--SOCIAL HEADER-->
+		<div class="top-social-header">
+			 <!-- Top Social Info -->
+        <div class="row h-100 align-items-center justify-content-between">
+           <div class="col-12 col-sm-4">
+              <div class="welcome-font">
+							  <a href="index.html"></a>
+			            <img src="images/core-img/logo22.png">				
+						</div> 
+            </div>
+         <div class="col-sm-6">
+						<div class="top-social-info text-right">
+							<a href="#" class="icon-radius fab fa-facebook-f" aria-hidden="true"></a>
+							<a href="#" class="icon-radius fab fa-twitter"></a>
+							<a href="#" class="icon-radius fab fa-linkedin"></a>
+							<a href="#" class="icon-radius fab fa-instagram"></a>
+						</div>
+					</div>
+                </div>
+		    </div>
+
+
+<!--NAVIGATION BAR-->
+	 <div class="stellarnav">
+      <ul>
+      <li><a href="#">Home</a>
+          <ul>
+          <li><a href="index.html">Home Slider v1</a> 
+            <li><a href="index2.html">Home Slider v2</a>
+            <li><a href="index3.html">Home Slider v3</a></li>
+          </ul>
+        </li> 
+
+        <li><a href="">Features</a>
+          <ul>
+          <li><a href="index.html">Home</a> 
+            <li><a href="menu.html">Menu&Specials</a>
+            <li><a href="">Our Gallery</a>
+              <ul>
+                    
+            <li><a href="">Restaurant Gallery</a>
+               <ul>
+              <li><a href="restaurant-gallery2column.html">2-Column Gallery</a></li>
+              <li><a href="restaurant-gallery3column.html">3-Column Gallery</a></li>
+              <li><a href="restaurant-gallery4column.html">4-Column Gallery</a></li>
+              </ul>
+            </li>
+            <li><a href="">Food Gallery</a>
+               <ul>
+              <li><a href="food-gallery2column.html">2-Column Gallery</a></li>
+              <li><a href="food-gallery3column.html">3-Column Gallery</a></li>
+              <li><a href="food-gallery4column.html">4-Column Gallery</a></li>
+              </ul>
+
+            </li>
+      
+            </ul>
+
+             <li><a href="events.html">Events</a></li>
+              <li><a href="about.html">About</a></li>
+               <li><a href="reservation.html">Reservation</a></li>
+                <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </li>
+
+       <li><a href="">Menu & Specials</a>
+          <ul>
+            <li><a href="menu.html">Menu 1</a></li>
+            <li><a href="menu2.html">Menu 2</a></li>
+          <li><a href="menu.html">Mega Menu</a>
+            <ul>
+              <li><a href="#">Main Dishes</a>
+                    </li>
+                       <li><a href="#">Salads</a></li>
+                       <li><a href="#">Desserts</a></li>
+                       <li><a href="#">Drinks</a></li>
+                       <li><a href="#">Specials</a></li>
+                      </ul>
+                        </li></ul></li>
+
+        <li><a href="">Our Gallery</a>
+                 <ul>
+            <li><a href="">Restaurant Gallery</a>
+               <ul>
+              <li><a href="restaurant-gallery2column.html">2-Column Gallery</a></li>
+              <li><a href="restaurant-gallery3column.html">3-Column Gallery</a></li>
+              <li><a href="restaurant-gallery4column.html">4-Column Gallery</a></li>
+              </ul>
+            </li>
+            <li><a href="">Food Gallery</a>
+               <ul>
+              <li><a href="food-gallery2column.html">2-Column Gallery</a></li>
+              <li><a href="food-gallery3column.html">3-Column Gallery</a></li>
+              <li><a href="food-gallery4column.html">4-Column Gallery</a></li>
+              </ul>
+
+            </li>
+          </ul>
+        </li>
+        
+        <li><a href="events.html">Events</a></li>
+        <li><a href="reservation.html">Reservation</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+    </div>
+
+<div id="menuTwoHeader">
+ <div id="text">
+          <h1>FOODIE RESTAURANT</h1>
+          <h3>OUR SPCECIAL MENU</h3>
+           <a href="#main-menu" class="btn" style="color:#000;">Explore More</a>
+        </div>
+     </div>
+
+
+<div id="main-menu" >
+  <div style="clear:both; display:block; width:auto;height:50px; "></div>
+
+  <h1>OUR MENU</h1>
+<div style="clear:both; display:block; width:auto;height:60px; "></div>
+
+<div class="container-fluid">
+    <div class="row">
+        <div class=" col-md-12">
+            <div class="tab" role="tabpanel">
+                <!-- Nav tabs -->
+                <ul class="nav nav-tabs" role="tablist">
+                    <li role="presentation" class="active"><a href="#Section1" aria-controls="home" role="tab" data-toggle="tab">Breakfast</a></li>
+                    <li role="presentation"><a href="#Section2" aria-controls="profile" role="tab" data-toggle="tab">Lunch</a></li>
+                    <li role="presentation"><a href="#Section3" aria-controls="messages" role="tab" data-toggle="tab">Main Dishes</a></li>
+                    <li role="presentation"><a href="#Section4" aria-controls="messages" role="tab" data-toggle="tab">Salads</a></li>
+                     <li role="presentation"><a href="#Section5" aria-controls="messages" role="tab" data-toggle="tab">Desserts</a></li>
+                      <li role="presentation"><a href="#Section6" aria-controls="messages" role="tab" data-toggle="tab">Beverages</a></li>
+                       <li role="presentation"><a href="#Section7" aria-controls="messages" role="tab" data-toggle="tab">Specials</a></li>
+                </ul>
+                <!-- Tab panes -->
+                <div class="tab-content tabs">
+                    <div role="tabpanel" class="tab-pane fade in active" id="Section1">
+
+
+    <div class="container-fluid" id="menu-container" data-aos="fade-up" data-aos-duration="1000">
+    <div class="row">
+    <div class="col-md-12 col-sm-12 col-xs-12">
+      <div style="clear:both; display:block; width:auto;height:50px; "></div>
+    <div class="row">
+      <div class="col-md-3  col-sm-6 col-xs-12">
+        <img src="images/large-images/egg_new.jpg"  class="img-responsive"></div>
+        <div class="col-md-3 col-sm-6 col-xs-12">
+          <h4>Boiled Egg</h4>
+       <p>Boiled Egg</p>
+       <p>Price: 5 €</p>
+     </div>
+
+<div style="clear:both; display:block; width:auto;height:50px; "></div>
+      <div class="col-md-3  col-sm-6 col-xs-12">
+        <img src="images/large-images/croissants2_new.jpg"  class="img-responsive"></div>
+        <div class="col-md-3 col-sm-6 col-xs-12">
+          <h4>Croissants</h4>
+       <p>Croissants</p>
+       <p>Price: 5 €</p>
+     </div></div>
+
+<div style="clear:both; display:block; width:auto;height:50px; "></div>
+  <div class="row">
+        <div class="col-md-3 col-sm-6 col-xs-12">  
+        <img src="images/large-images/waffle2_new.jpg"  class="img-responsive"></div>
+        <div class="col-md-3 col-sm-6 col-xs-12">
+        <h4>Waffle</h4>
+       <p>Waffle</p>
+       <p>Price: 5 €</p>
+     </div>
+
+<div style="clear:both; display:block; width:auto;height:50px; "></div>
+        <div class="col-md-3 col-sm-6 col-xs-12">  
+       <img src="images/menu-images/chicken-soup_new.jpg"  class="img-responsive"></div>
+        <div class="col-md-3 col-sm-6 col-xs-12">
+        <h4>Energy Balls</h4>
+       <p>Energy Balls</p>
+       <p>Price: 5 €</p>
+     </div></div>
+
+     <div style="clear:both; display:block; width:auto;height:50px; "></div>
+    <div class="row">
+        <div class="col-md-3 col-sm-6 col-xs-12">  
+         <img src="images/large-images/fruit-salad_new.jpg"  class="img-responsive"></div>
+        <div class="col-md-3 col-sm-6 col-xs-12">
+        <h4>Fruit Salad</h4>
+       <p>Fruit Salad</p>
+       <p>Price: 5 €</p>
+     </div>
+
+    <div style="clear:both; display:block; width:auto;height:50px; "></div>
+        <div class="col-md-3 col-sm-6 col-xs-12">  
+         <img src="images/large-images/breakfast-plate-first_new.jpg"  class="img-responsive"></div>
+        <div class="col-md-3 col-sm-6 col-xs-12">
+        <h4>Mix Breakfast Plate</h4>
+       <p>Mix Breakfast Plate</p>
+       <p>Price: 5 €</p>
+     </div></div>
+
+    <div style="clear:both; display:block; width:auto;height:50px; "></div>
+    <div class="row">
+        <div class="col-md-3 col-sm-6 col-xs-12">  
+        <img src="images/large-images/breakfast-plate_new.jpg"  class="img-responsive"></div>
+        <div class="col-md-3 col-sm-6 col-xs-12">
+        <h4>Breakfast Plate</h4>
+       <p>Breakfast Plate</p>
+       <p>Price: 5 €</p>
+     </div>
+
+    <div style="clear:both; display:block; width:auto;height:50px; "></div>
+        <div class="col-md-3 col-sm-6 col-xs-12">  
+         <img src="images/large-images/breads_new.jpg"  class="img-responsive"></div>
+        <div class="col-md-3 col-sm-6 col-xs-12">
+        <h4>Healty Breakfast</h4>
+       <p>Healty Breakfast</p>
+       <p>Price: 5 €</p>
+     </div></div>
+
+      <div style="clear:both; display:block; width:auto;height:50px; "></div>
+      <div class="row">
+        <div class="col-md-3 col-sm-6 col-xs-12">  
+           <img src="images/large-images/berries-bread_new.jpg"  class="img-responsive"></div>
+        <div class="col-md-3 col-sm-6 col-xs-12">
+        <h4>Berries Bread</h4>
+       <p>Berries Bread</p>
+       <p>Price: 5 €</p>
+     </div>
+
+
+      <div style="clear:both; display:block; width:auto;height:50px; "></div>
+        <div class="col-md-3 col-sm-6 col-xs-12">  
+          <img src="images/large-images/mini-breads_new.jpg"  class="img-responsive"></div>
+        <div class="col-md-3 col-sm-6 col-xs-12">
+        <h4>Mini Breads</h4>
+       <p>Mini Breads</p>
+       <p>Price: 5 €</p>
+     </div></div>
+ </div>
+  </div>
+ </div>
+</div>
+
+  <div role="tabpanel" class="tab-pane fade" id="Section2" >
+    <div class="container-fluid" id="menu-container">
+    <div class="row">
+    <div class="col-md-12 col-sm-12 col-xs-12">
+      <div style="clear:both; display:block; width:auto;height:50px; "></div>
+    <div class="row">
+      <div class="col-md-3  col-sm-6 col-xs-12">
+          <img src="images/large-images/hamburger-lunch_new.jpg"  class="img-responsive"></div>
+        <div class="col-md-3 col-sm-6 col-xs-12">
+          <h4>Hamburger</h4>
+       <p>Hamburger</p>
+       <p>Price: 5 €</p>
+     </div>
+
+<div style="clear:both; display:block; width:auto;height:50px; "></div>
+      <div class="col-md-3  col-sm-6 col-xs-12">
+        <img src="images/large-images/chicken-lunch_sauce_new.jpg"  class="img-responsive"></div>
+        <div class="col-md-3 col-sm-6 col-xs-12">
+          <h4>Grilled Chicken with Sauce</h4>
+       <p>Grilled Chicken with Sauce</p>
+       <p>Price: 5 €</p>
+     </div></div>
+
+<div style="clear:both; display:block; width:auto;height:50px; "></div>
+  <div class="row">
+        <div class="col-md-3 col-sm-6 col-xs-12">  
+         <img src="images/large-images/chicken-meal-lunch_new.jpg"  class="img-responsive"></div>
+        <div class="col-md-3 col-sm-6 col-xs-12">
+        <h4>Chicken Meal</h4>
+       <p>Chicken Meal</p>
+       <p>Price: 5 €</p>
+     </div>
+
+<div style="clear:both; display:block; width:auto;height:50px; "></div>
+        <div class="col-md-3 col-sm-6 col-xs-12">  
+       <img src="images/large-images/salad-lunch_new.jpg"  class="img-responsive"></div>
+        <div class="col-md-3 col-sm-6 col-xs-12">
+        <h4>Green Salad</h4>
+       <p>Green Salad</p>
+       <p>Price: 5 €</p>
+     </div></div>
+
+     <div style="clear:both; display:block; width:auto;height:50px; "></div>
+    <div class="row">
+        <div class="col-md-3 col-sm-6 col-xs-12">  
+       <img src="images/large-images/lasagna-lunch_new.jpg"  class="img-responsive"></div>
+        <div class="col-md-3 col-sm-6 col-xs-12">
+        <h4>Lasagna</h4>
+       <p>Lasagna</p>
+       <p>Price: 5 €</p>
+     </div>
+
+    <div style="clear:both; display:block; width:auto;height:50px; "></div>
+        <div class="col-md-3 col-sm-6 col-xs-12">  
+          <img src="images/large-images/spaghetti_new.jpg"  class="img-responsive"></div>
+        <div class="col-md-3 col-sm-6 col-xs-12">
+        <h4>Spaghetti</h4>
+       <p>Spaghetti</p>
+       <p>Price: 5 €</p>
+     </div></div>
+
+    <div style="clear:both; display:block; width:auto;height:50px; "></div>
+    <div class="row">
+        <div class="col-md-3 col-sm-6 col-xs-12">  
+         <img src="images/large-images/taco-lunch_new.jpg"  class="img-responsive"></div>
+        <div class="col-md-3 col-sm-6 col-xs-12">
+        <h4>Taco</h4>
+       <p>Taco</p>
+       <p>Price: 5 €</p>
+     </div>
+
+    <div style="clear:both; display:block; width:auto;height:50px; "></div>
+        <div class="col-md-3 col-sm-6 col-xs-12">  
+          <img src="images/large-images/chicken-lunch_new.jpg"  class="img-responsive"></div>
+        <div class="col-md-3 col-sm-6 col-xs-12">
+        <h4>Fried Chicken</h4>
+       <p>Fried Chicken</p>
+       <p>Price: 5 €</p>
+     </div></div>
+
+      <div style="clear:both; display:block; width:auto;height:50px; "></div>
+      <div class="row">
+        <div class="col-md-3 col-sm-6 col-xs-12">  
+          <img src="images/large-images/vegetarian-pizza_new.jpg"  class="img-responsive"></div>
+        <div class="col-md-3 col-sm-6 col-xs-12">
+        <h4>Vegetarian Pizza</h4>
+       <p>Vegetarian Pizza</p>
+       <p>Price: 5 €</p>
+     </div>
+
+
+      <div style="clear:both; display:block; width:auto;height:50px; "></div>
+        <div class="col-md-3 col-sm-6 col-xs-12">  
+         <img src="images/large-images/cheese-pasta-lunch_new.jpg"  class="img-responsive"></div>
+        <div class="col-md-3 col-sm-6 col-xs-12">
+        <h4>Cheese Pasta</h4>
+       <p>Cheese Pasta</p>
+       <p>Price: 5 €</p>
+     </div></div>
+ </div>
+  </div>
+ </div> 
+  </div>
+
+
+  <div role="tabpanel" class="tab-pane fade" id="Section3">
+  <div class="container-fluid" id="menu-container">
+    <div class="row">
+    <div class="col-md-6 col-sm-12 col-xs-12">
+      <div style="clear:both; display:block; width:auto;height:50px; "></div>
+    <h2><span>SOUPS</span></h2>
+
+<div style="clear:both; display:block; width:auto;height:50px; "></div>
+    <div class="row">
+      <div class="col-md-6  col-sm-6 col-xs-12">
+        <img src="images/menu-images/beef-soup_new.jpg" alt="Beef-Soup" class="img-responsive" style="width:100%"></div>
+        <div class="col-md-6 col-sm-6 col-xs-12">
+          <h4>Beef Soup</h4>
+       <p>Soup with Beef and Vegetables</p>
+       <p>Price: 5 €</p>
+     </div></div>
+
+<div style="clear:both; display:block; width:auto;height:50px; "></div>
+   <div class="row">
+      <div class="col-md-6  col-sm-6 col-xs-12">
+        <img src="images/menu-images/beetroot-soup_new.jpg"  class="img-responsive"></div>
+        <div class="col-md-6 col-sm-6 col-xs-12">
+          <h4>Beetroot Soup</h4>
+       <p>Soup with Betroot and Vegetables</p>
+       <p>Price: 5 €</p>
+     </div></div>
+
+<div style="clear:both; display:block; width:auto;height:50px; "></div>
+  <div class="row">
+        <div class="col-md-6 col-sm-6 col-xs-12">  
+       <img src="images/menu-images/carrot-ginger-soup_new.jpg"  class="img-responsive"></div>
+        <div class="col-md-6 col-sm-6 col-xs-12">
+        <h4>Carrot Soup</h4>
+       <p>Carrot and Ginger Soup</p>
+       <p>Price: 5 €</p>
+     </div></div>
+
+<div style="clear:both; display:block; width:auto;height:50px; "></div>
+    <div class="row">
+        <div class="col-md-6 col-sm-6 col-xs-12">  
+       <img src="images/menu-images/chicken-soup_new.jpg"  class="img-responsive"></div>
+        <div class="col-md-6 col-sm-6 col-xs-12">
+        <h4>Chicken Soup</h4>
+       <p>Chicken Soup</p>
+       <p>Price: 5 €</p>
+     </div></div>
+
+     <div style="clear:both; display:block; width:auto;height:50px; "></div>
+    <div class="row">
+        <div class="col-md-6 col-sm-6 col-xs-12">  
+       <img src="images/menu-images/coconut-pumpkin-soup_new.jpg"  class="img-responsive"></div>
+        <div class="col-md-6 col-sm-6 col-xs-12">
+        <h4>Coconut and Pumpkin Soup</h4>
+       <p>Pumpkin with Coconut Flavored Soup</p>
+       <p>Price: 5 €</p>
+     </div></div>
+
+    <div style="clear:both; display:block; width:auto;height:50px; "></div>
+    <div class="row">
+        <div class="col-md-6 col-sm-6 col-xs-12">  
+        <img src="images/menu-images/green-cream-soup_new.jpg"  class="img-responsive"></div>
+        <div class="col-md-6 col-sm-6 col-xs-12">
+        <h4>Green Soup</h4>
+       <p>Healty Green Soup</p>
+       <p>Price: 5 €</p>
+     </div></div>
+
+    <div style="clear:both; display:block; width:auto;height:50px; "></div>
+    <div class="row">
+        <div class="col-md-6 col-sm-6 col-xs-12">  
+        <img src="images/menu-images/pea-soup_new.jpg"  class="img-responsive"></div>
+        <div class="col-md-6 col-sm-6 col-xs-12">
+        <h4>Pea Soup</h4>
+       <p>Pea Soup</p>
+       <p>Price: 5 €</p>
+     </div></div>
+
+    <div style="clear:both; display:block; width:auto;height:50px; "></div>
+    <div class="row">
+        <div class="col-md-6 col-sm-6 col-xs-12">  
+         <img src="images/menu-images/potato-soup_new.jpg"  class="img-responsive"></div>
+        <div class="col-md-6 col-sm-6 col-xs-12">
+        <h4>Potato Soup</h4>
+       <p>Potato Soup</p>
+       <p>Price: 5 €</p>
+     </div></div>
+
+      <div style="clear:both; display:block; width:auto;height:50px; "></div>
+    <div class="row">
+        <div class="col-md-6 col-sm-6 col-xs-12">  
+          <img src="images/menu-images/pumpkin-soup_neww.jpg"  class="img-responsive"></div>
+        <div class="col-md-6 col-sm-6 col-xs-12">
+        <h4>Pumpkin Soup</h4>
+       <p>Pumpkin Soup</p>
+       <p>Price: 5 €</p>
+     </div></div>
+
+
+      <div style="clear:both; display:block; width:auto;height:50px; "></div>
+    <div class="row">
+        <div class="col-md-6 col-sm-6 col-xs-12">  
+         <img src="images/menu-images/tomato-soup_new.jpg"  class="img-responsive"></div>
+        <div class="col-md-6 col-sm-6 col-xs-12">
+        <h4>Tomato Soup</h4>
+       <p>Tomato Soup</p>
+       <p>Price: 5 €</p>
+     </div></div>
+</div>
+
+
+    <div class="col-md-6 col-sm-12 col-xs-12">
+      <div style="clear:both; display:block; width:auto;height:50px; "></div>
+    <h2><span>MAIN DISHES</span></h2>
+
+<div style="clear:both; display:block; width:auto;height:50px; "></div>
+    <div class="row">
+      <div class="col-md-6  col-sm-6 col-xs-12">
+         <img src="images/large-images/steak_new.jpg"  class="img-responsive"></div>
+        <div class="col-md-6 col-sm-6 col-xs-12">
+          <h4>Steak</h4>
+       <p>Steak</p>
+       <p>Price: 5 €</p>
+     </div></div>
+
+<div style="clear:both; display:block; width:auto;height:50px; "></div>
+   <div class="row">
+      <div class="col-md-6  col-sm-6 col-xs-12">
+         <img src="images/large-images/grilled-meat_new.jpg"  class="img-responsive"></div>
+        <div class="col-md-6 col-sm-6 col-xs-12">
+          <h4>Grilled Meat with Vegetables</h4>
+       <p>Grilled Meat with Vegetables</p>
+       <p>Price: 5 €</p>
+     </div></div>
+
+<div style="clear:both; display:block; width:auto;height:50px; "></div>
+  <div class="row">
+        <div class="col-md-6 col-sm-6 col-xs-12">  
+       <img src="images/large-images/grilled-chicken_new.jpg"  class="img-responsive"></div>
+        <div class="col-md-6 col-sm-6 col-xs-12">
+        <h4>Grilled Chicken</h4>
+       <p>Grilled Chicken</p>
+       <p>Price: 5 €</p>
+     </div></div>
+
+<div style="clear:both; display:block; width:auto;height:50px; "></div>
+    <div class="row">
+        <div class="col-md-6 col-sm-6 col-xs-12">  
+         <img src="images/large-images/salad-dinner_new.jpg"  class="img-responsive"></div>
+        <div class="col-md-6 col-sm-6 col-xs-12">
+        <h4>Green Salad Plate</h4>
+       <p>Green Salad Plate</p>
+       <p>Price: 5 €</p>
+     </div></div>
+
+     <div style="clear:both; display:block; width:auto;height:50px; "></div>
+    <div class="row">
+        <div class="col-md-6 col-sm-6 col-xs-12">  
+         <img src="images/large-images/tortellini_new.jpg"  class="img-responsive"></div>
+        <div class="col-md-6 col-sm-6 col-xs-12">
+        <h4>Tortellini</h4>
+       <p>Tortellini</p>
+       <p>Price: 5 €</p>
+     </div></div>
+
+    <div style="clear:both; display:block; width:auto;height:50px; "></div>
+    <div class="row">
+        <div class="col-md-6 col-sm-6 col-xs-12">  
+       <img src="images/large-images/fish-dinner_new.jpg"  class="img-responsive"></div>
+        <div class="col-md-6 col-sm-6 col-xs-12">
+        <h4>Grilled Fish</h4>
+       <p>Grilled Fish</p>
+       <p>Price: 5 €</p>
+     </div></div>
+
+    <div style="clear:both; display:block; width:auto;height:50px; "></div>
+    <div class="row">
+        <div class="col-md-6 col-sm-6 col-xs-12">  
+         <img src="images/large-images/salmon-dinner_new.jpg"  class="img-responsive"></div>
+        <div class="col-md-6 col-sm-6 col-xs-12">
+        <h4>Salmon</h4>
+       <p>Salmon</p>
+       <p>Price: 5 €</p>
+     </div></div>
+
+    <div style="clear:both; display:block; width:auto;height:50px; "></div>
+    <div class="row">
+        <div class="col-md-6 col-sm-6 col-xs-12">  
+          <img src="images/large-images/meat-main-dinner_new.jpg"  class="img-responsive"></div>
+        <div class="col-md-6 col-sm-6 col-xs-12">
+        <h4>Meat with Sauce</h4>
+       <p>Meat with Sauce</p>
+       <p>Price: 5 €</p>
+     </div></div>
+
+      <div style="clear:both; display:block; width:auto;height:50px; "></div>
+    <div class="row">
+        <div class="col-md-6 col-sm-6 col-xs-12">  
+           <img src="images/large-images/chicken-breast-fillet_new.jpg"  class="img-responsive"></div>
+        <div class="col-md-6 col-sm-6 col-xs-12">
+        <h4>Chicken Breats Fillet</h4>
+       <p>Chicken Breats Fillet</p>
+       <p>Price: 5 €</p>
+     </div></div>
+
+
+      <div style="clear:both; display:block; width:auto;height:50px; "></div>
+    <div class="row">
+        <div class="col-md-6 col-sm-6 col-xs-12">  
+          <img src="images/large-images/mushroom-meal_new.jpg"  class="img-responsive"></div>
+        <div class="col-md-6 col-sm-6 col-xs-12">
+        <h4>Mushroom Meal</h4>
+       <p>Mushroom Meal</p>
+       <p>Price: 5 €</p>
+     </div></div>
+</div>
+
+ </div>
+  </div>
+ </div>
+
+
+   <div role="tabpanel" class="tab-pane fade" id="Section4">
+    <div class="container-fluid" id="menu-container">
+    <div class="row">
+    <div class="col-md-12 col-sm-12 col-xs-12">
+      <div style="clear:both; display:block; width:auto;height:50px; "></div>
+    <div class="row">
+      <div class="col-md-3  col-sm-6 col-xs-12">
+        <img src="images/menu-images/tomates-salad-orange_new.jpg"  class="img-responsive"></div>
+        <div class="col-md-3 col-sm-6 col-xs-12">
+        <h4>Tomato Salad with Orange</h4>
+        <p>Tomato Salad with Orange</p>
+       <p>Price: 5 €</p>
+     </div>
+
+<div style="clear:both; display:block; width:auto;height:50px; "></div>
+      <div class="col-md-3  col-sm-6 col-xs-12">
+         <img src="images/menu-images/diet-salad_new.jpg"  class="img-responsive"></div>
+        <div class="col-md-3 col-sm-6 col-xs-12">
+        <h4>Diet Salad</h4>
+        <p>Diet Salad</p>
+        <p>Price: 5 €</p>
+     </div></div>
+
+<div style="clear:both; display:block; width:auto;height:50px; "></div>
+  <div class="row">
+        <div class="col-md-3 col-sm-6 col-xs-12">  
+         <img src="images/menu-images/greens-salad_new.jpg"  class="img-responsive"></div>
+        <div class="col-md-3 col-sm-6 col-xs-12">
+        <h4>Greens Salad</h4>
+        <p>Greens Salad</p>
+        <p>Price: 5 €</p>
+     </div>
+
+<div style="clear:both; display:block; width:auto;height:50px; "></div>
+      <div class="col-md-3 col-sm-6 col-xs-12">  
+       <img src="images/menu-images/lambs-lettuce-arugala_new.jpg"  class="img-responsive"></div>
+        <div class="col-md-3 col-sm-6 col-xs-12">
+        <h4>Lambs Lettuce Salad</h4>
+       <p>Lambs Lettuce Salad</p>
+       <p>Price: 5 €</p>
+     </div></div>
+
+     <div style="clear:both; display:block; width:auto;height:50px; "></div>
+    <div class="row">
+      <div class="col-md-3 col-sm-6 col-xs-12">  
+       <img src="images/menu-images/spring-radishes-salad_new.jpg"  class="img-responsive"></div>
+        <div class="col-md-3 col-sm-6 col-xs-12">
+        <h4>Spring Radishes Salad</h4>
+       <p>Spring Radishes Salad</p>
+       <p>Price: 5 €</p>
+     </div>
+
+    <div style="clear:both; display:block; width:auto;height:50px; "></div>
+        <div class="col-md-3 col-sm-6 col-xs-12">  
+          <img src="images/menu-images/lettuce-leaf-salad_new.jpg"  class="img-responsive"></div>
+        <div class="col-md-3 col-sm-6 col-xs-12">
+        <h4>Lettuce Leaf Salad</h4>
+        <p>Lettuce Leaf Salad</p>
+       <p>Price: 5 €</p>
+     </div></div>
+
+    <div style="clear:both; display:block; width:auto;height:50px; "></div>
+    <div class="row">
+        <div class="col-md-3 col-sm-6 col-xs-12">  
+         <img src="images/menu-images/mixed-salad_new.jpg"  class="img-responsive"></div>
+        <div class="col-md-3 col-sm-6 col-xs-12">
+        <h4>Mixed Salad</h4>
+       <p>Mixed Salad</p>
+       <p>Price: 5 €</p>
+     </div>
+
+    <div style="clear:both; display:block; width:auto;height:50px; "></div>
+        <div class="col-md-3 col-sm-6 col-xs-12">  
+           <img src="images/menu-images/mixed-salata-greens_new.jpg"  class="img-responsive"></div>
+        <div class="col-md-3 col-sm-6 col-xs-12">
+        <h4>Mixed Greens Salad</h4>
+        <p>Mixed Greens Salad</p>
+        <p>Price: 5 €</p>
+     </div></div>
+
+      <div style="clear:both; display:block; width:auto;height:50px; "></div>
+      <div class="row">
+        <div class="col-md-3 col-sm-6 col-xs-12">  
+         <img src="images/menu-images/mozeralla-salad_new.jpg"  class="img-responsive"></div>
+        <div class="col-md-3 col-sm-6 col-xs-12">
+        <h4>Mozerella Salad</h4>
+        <p>Mozerella Salad</p>
+        <p>Price: 5 €</p>
+     </div>
+
+
+      <div style="clear:both; display:block; width:auto;height:50px; "></div>
+        <div class="col-md-3 col-sm-6 col-xs-12">  
+          <img src="images/menu-images/salad-plate_new.jpg"  class="img-responsive"></div>
+        <div class="col-md-3 col-sm-6 col-xs-12">
+        <h4>Salad Plate</h4>
+       <p>Salad Plate</p>
+       <p>Price: 5 €</p>
+     </div></div>
+ </div>
+  </div>
+ </div> 
+  </div>
+
+   <div role="tabpanel" class="tab-pane fade" id="Section5">
+    <div class="container-fluid" id="menu-container">
+    <div class="row">
+    <div class="col-md-12 col-sm-12 col-xs-12">
+      <div style="clear:both; display:block; width:auto;height:50px; "></div>
+    <div class="row">
+      <div class="col-md-3  col-sm-6 col-xs-12">
+        <img src="images/large-images/fruit-cake_tart_new.jpg"  class="img-responsive"></div>
+        <div class="col-md-3 col-sm-6 col-xs-12">
+        <h4>Fruit Tart Cake</h4>
+        <p>Fruit Tart Cake</p>
+       <p>Price: 5 €</p>
+     </div>
+
+<div style="clear:both; display:block; width:auto;height:50px; "></div>
+      <div class="col-md-3  col-sm-6 col-xs-12">
+         <img src="images/large-images/cream-caramel_new.jpg"  class="img-responsive"></div>
+        <div class="col-md-3 col-sm-6 col-xs-12">
+        <h4>Cream Caramel</h4>
+        <p>Cream Caramel</p>
+        <p>Price: 5 €</p>
+     </div></div>
+
+<div style="clear:both; display:block; width:auto;height:50px; "></div>
+  <div class="row">
+        <div class="col-md-3 col-sm-6 col-xs-12">  
+        <img src="images/large-images/strawberry-eclair_new.jpg"  class="img-responsive"></div>
+        <div class="col-md-3 col-sm-6 col-xs-12">
+        <h4>Strawberry Eclair</h4>
+        <p>Strawberry Eclair</p>
+        <p>Price: 5 €</p>
+     </div>
+
+<div style="clear:both; display:block; width:auto;height:50px; "></div>
+      <div class="col-md-3 col-sm-6 col-xs-12">  
+       <img src="images/large-images/red-velvet-cake_new.jpg"  class="img-responsive"></div>
+        <div class="col-md-3 col-sm-6 col-xs-12">
+        <h4>Red Velvet Cake</h4>
+       <p>Red Velvet Cake</p>
+       <p>Price: 5 €</p>
+     </div></div>
+
+     <div style="clear:both; display:block; width:auto;height:50px; "></div>
+    <div class="row">
+        <div class="col-md-3 col-sm-6 col-xs-12">  
+        <img src="images/large-images/almond-pancake_new.jpg"  class="img-responsive"></div>
+        <div class="col-md-3 col-sm-6 col-xs-12">
+        <h4>Almond Pancake</h4>
+       <p>Almond Pancake</p>
+       <p>Price: 5 €</p>
+     </div>
+
+    <div style="clear:both; display:block; width:auto;height:50px; "></div>
+        <div class="col-md-3 col-sm-6 col-xs-12">  
+           <img src="images/large-images/chocolate-sauce-cake_new.jpg"  class="img-responsive"></div>
+        <div class="col-md-3 col-sm-6 col-xs-12">
+        <h4>Chocolate Sauce Cake</h4>
+        <p>Chocolate Sauce Cake</p>
+       <p>Price: 5 €</p>
+     </div></div>
+
+    <div style="clear:both; display:block; width:auto;height:50px; "></div>
+    <div class="row">
+        <div class="col-md-3 col-sm-6 col-xs-12">  
+        <img src="images/large-images/macaron_dessert_new.jpg"  class="img-responsive"></div>
+        <div class="col-md-3 col-sm-6 col-xs-12">
+        <h4>Macaron</h4>
+        <p>Macaron</p>
+        <p>Price: 5 €</p>
+     </div>
+
+    <div style="clear:both; display:block; width:auto;height:50px; "></div>
+        <div class="col-md-3 col-sm-6 col-xs-12">  
+           <img src="images/large-images/tiramisu-cake_new.jpg"  class="img-responsive"></div>
+        <div class="col-md-3 col-sm-6 col-xs-12">
+        <h4>Tiramisu Cake</h4>
+        <p>Tiramisu Cake</p>
+        <p>Price: 5 €</p>
+     </div></div>
+
+      <div style="clear:both; display:block; width:auto;height:50px; "></div>
+      <div class="row">
+        <div class="col-md-3 col-sm-6 col-xs-12">  
+          <img src="images/large-images/quark-tart_new.jpg"  class="img-responsive"></div>
+        <div class="col-md-3 col-sm-6 col-xs-12">
+        <h4>Cheesecake</h4>
+        <p>Cheesecake</p>
+        <p>Price: 5 €</p>
+     </div>
+
+
+      <div style="clear:both; display:block; width:auto;height:50px; "></div>
+        <div class="col-md-3 col-sm-6 col-xs-12">  
+          <img src="images/large-images/blueberry-sauce-cake_new.jpg"  class="img-responsive"></div>
+        <div class="col-md-3 col-sm-6 col-xs-12">
+        <h4>Blueberry Sauce Cake</h4>
+       <p>Blueberry Sauce Cake</p>
+       <p>Price: 5 €</p>
+     </div></div>
+ </div>
+  </div>
+ </div> 
+  </div>
+
+   <div role="tabpanel" class="tab-pane fade" id="Section6">
+    <div class="container-fluid" id="menu-container">
+    <div class="row">
+    <div class="col-md-12 col-sm-12 col-xs-12">
+      <div style="clear:both; display:block; width:auto;height:50px; "></div>
+    <div class="row">
+      <div class="col-md-3  col-sm-6 col-xs-12">
+         <img src="images/menu-images/coffee_new.jpg"  class="img-responsive"></div>
+        <div class="col-md-3 col-sm-6 col-xs-12">
+        <h4>Coffees</h4>
+        <p>Coffees</p>
+       <p>Price: 5 €</p>
+     </div>
+
+<div style="clear:both; display:block; width:auto;height:50px; "></div>
+      <div class="col-md-3  col-sm-6 col-xs-12">
+         <img src="images/menu-images/tea_new.jpg"  class="img-responsive"></div>
+        <div class="col-md-3 col-sm-6 col-xs-12">
+        <h4>Tea</h4>
+        <p>Tea</p>
+        <p>Price: 5 €</p>
+     </div></div>
+
+<div style="clear:both; display:block; width:auto;height:50px; "></div>
+  <div class="row">
+        <div class="col-md-3 col-sm-6 col-xs-12">  
+        <img src="images/menu-images/lemon-and-orange-juice_new.jpg"  class="img-responsive"></div>
+        <div class="col-md-3 col-sm-6 col-xs-12">
+        <h4>Lemon and Orange Juice</h4>
+        <p>Lemon and Orange Juice</p>
+        <p>Price: 5 €</p>
+     </div>
+
+<div style="clear:both; display:block; width:auto;height:50px; "></div>
+      <div class="col-md-3 col-sm-6 col-xs-12">  
+       <img src="images/menu-images/blueberry-drink_new.jpg"  class="img-responsive"></div>
+        <div class="col-md-3 col-sm-6 col-xs-12">
+        <h4>Blueberry Beverage</h4>
+        <p>Blueberry Beverage</p>
+        <p>Price: 5 €</p>
+     </div></div>
+
+     <div style="clear:both; display:block; width:auto;height:50px; "></div>
+    <div class="row">
+        <div class="col-md-3 col-sm-6 col-xs-12">  
+        <img src="images/menu-images/detox-water_new.jpg"  class="img-responsive"></div>
+        <div class="col-md-3 col-sm-6 col-xs-12">
+        <h4>Detox Water</h4>
+       <p>Detox Water</p>
+       <p>Price: 5 €</p>
+     </div>
+
+    <div style="clear:both; display:block; width:auto;height:50px; "></div>
+        <div class="col-md-3 col-sm-6 col-xs-12">  
+            <img src="images/menu-images/herbal-tea_new.jpg"  class="img-responsive"></div>
+        <div class="col-md-3 col-sm-6 col-xs-12">
+        <h4>Herbal Tea</h4>
+        <p>Herbal Tea</p>
+       <p>Price: 5 €</p>
+     </div></div>
+
+    <div style="clear:both; display:block; width:auto;height:50px; "></div>
+    <div class="row">
+        <div class="col-md-3 col-sm-6 col-xs-12">  
+        <img src="images/menu-images/hot-chocolate_new.jpg"  class="img-responsive"></div>
+        <div class="col-md-3 col-sm-6 col-xs-12">
+        <h4>Hot Chocolate</h4>
+        <p>Hot Chocolate</p>
+        <p>Price: 5 €</p>
+     </div>
+
+    <div style="clear:both; display:block; width:auto;height:50px; "></div>
+        <div class="col-md-3 col-sm-6 col-xs-12">  
+            <img src="images/menu-images/mineral-water_new.jpg"  class="img-responsive"></div>
+        <div class="col-md-3 col-sm-6 col-xs-12">
+        <h4>Mineral Water</h4>
+        <p>Mineral Water</p>
+        <p>Price: 5 €</p>
+     </div></div>
+
+      <div style="clear:both; display:block; width:auto;height:50px; "></div>
+      <div class="row">
+        <div class="col-md-3 col-sm-6 col-xs-12">  
+          <img src="images/menu-images/milkshake_new.jpg"  class="img-responsive"></div>
+        <div class="col-md-3 col-sm-6 col-xs-12">
+        <h4>Milkshakes</h4>
+        <p>Milkshakes</p>
+        <p>Price: 5 €</p>
+     </div>
+
+
+      <div style="clear:both; display:block; width:auto;height:50px; "></div>
+        <div class="col-md-3 col-sm-6 col-xs-12">  
+           <img src="images/menu-images/smoothies_new.jpg"  class="img-responsive"></div>
+        <div class="col-md-3 col-sm-6 col-xs-12">
+        <h4>Smoothies</h4>
+       <p>Smoothies</p>
+       <p>Price: 5 €</p>
+     </div></div>
+ </div>
+  </div>
+ </div> 
+  </div>
+
+
+  <div role="tabpanel" class="tab-pane fade" id="Section7">
+    <div class="container-fluid" id="menu-container">
+    <div class="row">
+    <div class="col-md-12 col-sm-12 col-xs-12">
+      <div style="clear:both; display:block; width:auto;height:50px; "></div>
+    <div class="row">
+      <div class="col-md-3  col-sm-6 col-xs-12">
+          <img src="images/large-images/mushrooms_new.jpg"  class="img-responsive"></div>
+        <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+        <h4>Mushrooms</h4>
+        <p>Mushrooms</p>
+       <p>Price: 5 €</p>
+     </div>
+
+<div style="clear:both; display:block; width:auto;height:50px; "></div>
+      <div class="col-md-3  col-sm-6 col-xs-12">
+          <img src="images/large-images/stuffed-pepper_new.jpg"  class="img-responsive"></div>
+        <div class="col-md-3 col-sm-6 col-xs-12">
+        <h4>Stuffed Pepper</h4>
+        <p>Stuffed Pepper</p>
+        <p>Price: 5 €</p>
+     </div></div>
+
+<div style="clear:both; display:block; width:auto;height:50px; "></div>
+  <div class="row">
+        <div class="col-md-3 col-sm-6 col-xs-12">  
+        <img src="images/large-images/steak-vegetables_new.jpg"  class="img-responsive"></div>
+        <div class="col-md-3 col-sm-6 col-xs-12">
+        <h4>Steak with Vegetables</h4>
+        <p>Steak with Vegetables</p>
+        <p>Price: 5 €</p>
+     </div>
+
+<div style="clear:both; display:block; width:auto;height:50px; "></div>
+      <div class="col-md-3 col-sm-6 col-xs-12">  
+        <img src="images/large-images/salad-plate-special_new.jpg"  class="img-responsive"></div>
+        <div class="col-md-3 col-sm-6 col-xs-12">
+        <h4>Salad Plate Special</h4>
+        <p>Salad Plate Special</p>
+        <p>Price: 5 €</p>
+     </div></div>
+
+     <div style="clear:both; display:block; width:auto;height:50px; "></div>
+    <div class="row">
+        <div class="col-md-3 col-sm-6 col-xs-12">  
+        <img src="images/large-images/appetizer_new.jpg"  class="img-responsive"></div>
+        <div class="col-md-3 col-sm-6 col-xs-12">
+        <h4>Appetizer</h4>
+       <p>Appetizer</p>
+       <p>Price: 5 €</p>
+     </div>
+
+    <div style="clear:both; display:block; width:auto;height:50px; "></div>
+        <div class="col-md-3 col-sm-6 col-xs-12">  
+              <img src="images/large-images/lamb-chumb_new.jpg"  class="img-responsive"></div>
+        <div class="col-md-3 col-sm-6 col-xs-12">
+        <h4>Lamb Chumbs</h4>
+        <p>Lamb Chumbs</p>
+       <p>Price: 5 €</p>
+     </div></div>
+
+    <div style="clear:both; display:block; width:auto;height:50px; "></div>
+    <div class="row">
+        <div class="col-md-3 col-sm-6 col-xs-12">  
+        <img src="images/large-images/fruit-plate-special_new.jpg"  class="img-responsive"></div>
+        <div class="col-md-3 col-sm-6 col-xs-12">
+        <h4>Fruit Plate Special</h4>
+        <p>Fruit Plate Special</p>
+        <p>Price: 5 €</p>
+     </div>
+
+    <div style="clear:both; display:block; width:auto;height:50px; "></div>
+        <div class="col-md-3 col-sm-6 col-xs-12">  
+           <img src="images/large-images/vegetable-skewer_new.jpg"  class="img-responsive"></div>
+        <div class="col-md-3 col-sm-6 col-xs-12">
+        <h4>Vegetable Skewer</h4>
+        <p>Vegetable Skewer</p>
+        <p>Price: 5 €</p>
+     </div></div>
+
+      <div style="clear:both; display:block; width:auto;height:50px; "></div>
+      <div class="row">
+        <div class="col-md-3 col-sm-6 col-xs-12">  
+          <img src="images/large-images/salmon-special_new.jpg"  class="img-responsive"></div>
+        <div class="col-md-3 col-sm-6 col-xs-12">
+        <h4>Salmon Special</h4>
+        <p>Salmon Special</p>
+        <p>Price: 5 €</p>
+     </div>
+
+
+      <div style="clear:both; display:block; width:auto;height:50px; "></div>
+        <div class="col-md-3 col-sm-6 col-xs-12">  
+           <img src="images/large-images/lasagna-special_new.jpg"  class="img-responsive"></div>
+        <div class="col-md-3 col-sm-6 col-xs-12">
+        <h4>Lasagna Special</h4>
+       <p>Lasagna Special</p>
+       <p>Price: 5 €</p>
+     </div></div>
+ </div>
+  </div>
+ </div> 
+  </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+
+<div class="container-fluid col-container" >
+  <div class="container-fluid" id="special-menu-section" style="background:#111; width: 100%;">  
+            <h4 class="head-centered">Our Special Menu</h4></div>
+  <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 " style="background:#fff; width: 100%;">
+  
+       
+
+             <div class="row submenu mt-3">
+               <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 mt-3" >              
+                 <img src="images/large-images/chicken_special.jpg" alt="Chicken" class="img-responsive center-block"></div>
+                  <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                   <h4  >Menu Name</h4>
+                    <p class="special-menu-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                    
+                  </div>
+
+        
+               <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 mt-3">             
+                 <img src="images/large-images/pasta_special.jpg" alt="Pasta" class="img-responsive center-block"></div> 
+                  <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                   <h4>Menu Name</h4><br> 
+                    <p class="special-menu-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>  
+                  </div>
+
+               <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 mt-3">
+                 <img src="images/large-images/berry-cake_special.jpg" alt="Berry-Cake" class="img-responsive center-block" ></div>
+                  <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 ">
+                   <h4>Menu Name</h4>
+                    <p class="special-menu-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    </p>
+                     
+                  </div></div></div>
+
+                  <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 " style="background:#fff;">
+
+            
+
+             <div class="row submenu mt-3">
+               <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 mt-3" >
+                 <img src="images/large-images/chicken_special.jpg" alt="Chicken" class="img-responsive center-block"></div>
+                  <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 ">
+                   <h4>Menu Name</h4>
+                    <p class="special-menu-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                     
+                  </div>
+
+        
+               <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 mt-3">
+                 <img src="images/large-images/pasta_special.jpg" alt="Pasta" class="img-responsive center-block"></div>
+                  <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 ">
+                   <h4>Menu Name</h4><br> 
+                    <p class="special-menu-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    
+                  </div>
+
+               <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 mt-3">
+                 <img src="images/large-images/berry-cake_special.jpg" alt="Berry-Cake" class="img-responsive center-block" ></div>
+                  <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 ">
+                   <h4>Menu Name</h4>
+                    <p class="special-menu-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    </p>
+                    
+                  </div></div></div>
+                  
+
+
+                </div>
+  
+    <div class="container-fluid menuTwo">
+      <div class="col-md-12 col-sm-12 col-xs-12" style="background:#fff; width: 100%;">
+       <div class="container-fluid" style="background:#111; width: 100%;" > 
+         <h4>Today's Hot</h4>
+       </div>
+      <div class="container-fluid slider">
+        <div class="slide-track">
+          <div class="slide">
+          <img src="images/large-images/chicken-lunch_sauce_hot.jpg" alt="Chicken" class="img-responsive">
+          </div>
+
+         <div class="slide">
+          <h4>Menu Name</h4> 
+           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p> 
+         </div>
+
+         <div class="slide">
+          <img src="images/large-images/tortellini_hot.jpg" alt="Tortellini" class="img-responsive">
+         </div>
+
+          <div class="slide">
+           <h4>Menu Name</h4>
+           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p> 
+          </div>
+
+        <div class="slide">
+          <img src="images/large-images/meatmain_hot.jpg" alt="Meat"  class="img-responsive">
+        </div>
+
+        <div class="slide">
+         <h4>Menu Name</h4>  
+         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>   
+        </div>
+
+        <div class="slide">
+          <img src="images/large-images/steak_hot.jpg" alt="Steak" s class="img-responsive">
+        </div>
+
+        <div class="slide">
+          <h4>Menu Name</h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p> 
+        </div>
+
+        <div class="slide">
+          <img src="images/large-images/lasagna-special_hot.jpg" alt="Lasagna"  class="img-responsive"> 
+        </div>
+
+        <div class="slide">
+          <h4>Menu Name</h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p> 
+    </div>
+
+        <div class="slide">
+          <img src="images/large-images/lamb-chumb.jpg" alt="Lamb Chumb"  class="img-responsive">
+        </div>
+
+        <div class="slide">
+          <h4>Menu Name</h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p> 
+        </div>
+
+        <div class="slide">
+          <img src="images/large-images/salmon-special.jpg" alt="Salmon Special"  class="img-responsive">
+        </div>
+
+        <div class="slide">
+          <h4>Menu Name</h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p> 
+        </div>
+
+
+</div></div></div>
+</div>
+<div style="clear:both; display:block; width:auto;height:100px; "></div>
+<div class="menu-social">
+<h2>FOLLOW US ON SOCIAL MEDIA</h2></div>
+<hr width="auto;" color="#0000F8" size="4">
+<div class="container">
+    <div class="row">
+        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+            <div class="box">
+                <img src="images/large-images/berry-brownies.jpg" class="img-responsive">
+                <div class="box-content">
+                    <span class="post">Berry Brownies</span>
+                    <ul class="social">
+                        <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                        <li><a href="#"><i class="fab fa-google-plus"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+ 
+        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+            <div class="box">
+                <img src="images/large-images/cheese-burger.jpg" class="img-responsive">
+                <div class="box-content">
+                    <span class="post">Cheese Burger</span>
+                    <ul class="social">
+                        <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                        <li><a href="#"><i class="fab fa-google-plus"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+            <div class="box">
+                <img src="images/large-images/cake-choco.jpg" class="img-responsive">
+                <div class="box-content">
+                    <span class="post">Chocolate Cake</span>
+                    <ul class="social">
+                        <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                        <li><a href="#"><i class="fab fa-google-plus"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+         <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+            <div class="box">
+                <img src="images/large-images/beef.jpg" class="img-responsive">
+                <div class="box-content">
+                    <span class="post">Lamb Chop</span>
+                    <ul class="social">
+                        <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                        <li><a href="#"><i class="fab fa-google-plus"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+
+
+<div style="clear:both; display:block; width:auto;height:100px;"></div>
+
+<hr width="auto;" color="#0000F8" size="4">
+<!-- FOOTER -->
+ <footer id="myFooter">
+        <div class="container third">
+            <div class="row">
+                <div class="col-sm-4">
+                    <h5>Home</h5>
+                    <ul class="footermenu">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact us</a></li>
+                        <li><a href="menu.html">Menu</a></li>
+                        <li><a href="reservation.html">Reservation</a></li>
+                    </ul>
+                </div>  
+
+                 <div class="col-sm-4">
+                    <h5>Adress</h5>
+                    <ul class="list-unstyled">
+                      <li><p><i class="fas fa-home mr-3"></i> New York, NY 10012, US</p></li>
+                      <li><p><i class="fas fa-envelope mr-3"></i> info@example.com</p></li>
+                      <li><p><i class="fas fa-phone mr-3"></i> + 01 234 567 88</p></li>
+                      <li><p><i class="fas fa-print mr-3"></i> + 01 234 567 89</p></li>
+                    </ul>
+                   </div>
+                <div class="col-sm-4 info">
+                    <h5>Information</h5>
+                    <p> Lorem ipsum dolor amet, consectetur adipiscing elit. Etiam consectetur aliquet aliquet. Interdum et malesuada fames ac ante ipsum primis in faucibus. </p>
+                </div>
+            </div>
+        </div>
+
+
+    
+
+<script type="text/javascript">
+$(document).ready(function() {
+  
+  setTimeout(function() {
+    $('#ctn-preloader').addClass('loaded');
+
+    $('body').removeClass('no-scroll-y');
+
+    if ($('#ctn-preloader').hasClass('loaded')) {
+
+      $('#preloader').delay(1000).queue(function() {
+        $(this).remove();
+
+      });
+    }
+  }, 3000);
+  
+});
+</script>
+
+<script type="text/javascript">
+		$(function($) {
+			$('.stellarnav').stellarNav({
+				theme: 'dark',
+				breakpoint: 960,
+				position: 'right',
+			});
+		});
+
+</script>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+
+	</body>
+
+		</html>

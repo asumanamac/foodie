@@ -1,0 +1,743 @@
+<!DOCTYPE html>
+<!-- Camera is a Pixedelic free jQuery slideshow | Manuel Masia (designer and developer) -->
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" >
+<title>FOODIE - Food Blog Template</title>
+<meta name="description" content="Camera a free jQuery slideshow with many effects, transitions, adaptive layout, easy to customize, using canvas and mobile ready">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.theme.min.css">
+
+<!--BOOTSTRAP CDN-->
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+
+
+
+ <link rel='stylesheet' id='main-css'  href='style.css' type='text/css' media='all'>
+ <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+
+<!--Font Avesome for social media buttons-->  
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css?family=Akronim|Almendra+SC|Lato|Ewert|IM+Fell+Double+Pica+SC|IM+Fell+French+Canon+SC|Merriweather|Overlock+SC|Ribeye+Marrow|Vollkorn+SC|Wendy+One" rel="stylesheet">
+<link rel="stylesheet" href="css/fontawesome.min.css" />
+
+<link href="https://fonts.googleapis.com/css?family=Berkshire+Swash|Cookie|Great+Vibes&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+<!--ICON-->
+<link rel="icon" href="images/core-img/icon3.png">
+<link href="https://fonts.googleapis.com/css?family=Akronim|Almendra+SC|Ewert|IM+Fell+Double+Pica+SC|IM+Fell+French+Canon+SC|Merriweather|Overlock+SC|Ribeye+Marrow|Vollkorn+SC|Wendy+One" rel="stylesheet">
+
+<script src="https://code.jquery.com/jquery-1.11.2.min.js" /></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js"></script>
+<script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.0/jquery.min.js'></script>
+  <script type="text/javascript" src="js/stellarnav.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js"></script>
+<script src="js/tinyslide.js" /></script>
+</head>
+<body>
+
+    <div id="preloader">
+      <div id="ctn-preloader" class="ctn-preloader">
+
+        <div class="animation-preloader"> <img src="images/core-img/icon3.png">
+          <div class="spinner"></div>
+          <div class="txt-loading">
+            <span data-text-preloader="F" class="letters-loading">
+              F
+            </span>
+            <span data-text-preloader="O" class="letters-loading">
+              O
+            </span>
+            <span data-text-preloader="O" class="letters-loading">
+              O
+            </span>
+            <span data-text-preloader="D" class="letters-loading">
+              D
+            </span>
+            <span data-text-preloader="I" class="letters-loading">
+              I
+            </span>
+            <span data-text-preloader="E" class="letters-loading">
+              E
+            </span>
+           
+          </div>
+        </div>  
+        <div class="loader-section section-left"></div>
+        <div class="loader-section section-right"></div>
+      </div>
+    </div>
+
+
+    <!--SOCIAL HEADER-->
+    <div class="top-social-header">
+           <!-- Top Social Info -->
+                    <div class="row h-100 align-items-center justify-content-center">
+
+                       <div class="col-12 col-sm-4">
+                      <div class="welcome-font">
+              <a href="index.html"></a>
+                  <img src="images/core-img/logo22.png">        
+            </div> 
+                    </div>
+                   <div class="col-12 col-sm-6">
+            <div class="top-social-info text-right">
+              <a href="#" class="icon-radius fab fa-facebook-f" aria-hidden="true"></a>
+              <a href="#" class="icon-radius fab fa-twitter"></a>
+              <a href="#" class="icon-radius fab fa-linkedin"></a>
+              <a href="#" class="icon-radius fab fa-instagram"></a>
+            </div>
+          </div>
+                </div>
+        </div>
+
+<!--NAVIGATION BAR-->
+    <div class="stellarnav">
+      <ul>
+      <li><a href="#">Home</a>
+          <ul>
+          <li><a href="index.html">Home Slider v1</a> 
+            <li><a href="index2.html">Home Slider v2</a>
+            <li><a href="index3.html">Home Slider v3</a></li>
+          </ul>
+        </li> 
+
+        <li><a href="">Features</a>
+          <ul>
+          <li><a href="index.html">Home</a> 
+            <li><a href="menu.html">Menu&Specials</a>
+            <li><a href="">Our Gallery</a>
+              <ul>
+                    
+            <li><a href="">Restaurant Gallery</a>
+               <ul>
+              <li><a href="restaurant-gallery2column.html">2-Column Gallery</a></li>
+              <li><a href="restaurant-gallery3column.html">3-Column Gallery</a></li>
+              <li><a href="restaurant-gallery4column.html">4-Column Gallery</a></li>
+              </ul>
+            </li>
+            <li><a href="">Food Gallery</a>
+               <ul>
+              <li><a href="food-gallery2column.html">2-Column Gallery</a></li>
+              <li><a href="food-gallery3column.html">3-Column Gallery</a></li>
+              <li><a href="food-gallery4column.html">4-Column Gallery</a></li>
+              </ul>
+
+            </li>
+      
+            </ul>
+
+             <li><a href="events.html">Events</a></li>
+              <li><a href="about.html">About</a></li>
+               <li><a href="reservation.html">Reservation</a></li>
+                <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </li>
+
+       <li><a href="">Menu & Specials</a>
+          <ul>
+            <li><a href="menu.html">Menu 1</a></li>
+            <li><a href="menu2.html">Menu 2</a></li>
+          <li><a href="menu.html">Mega Menu</a>
+            <ul>
+              <li><a href="#">Main Dishes</a>
+                    </li>
+                       <li><a href="#">Salads</a></li>
+                       <li><a href="#">Desserts</a></li>
+                       <li><a href="#">Drinks</a></li>
+                       <li><a href="#">Specials</a></li>
+                      </ul>
+                        </li></ul></li>
+
+        <li><a href="">Our Gallery</a>
+                 <ul>
+            <li><a href="">Restaurant Gallery</a>
+               <ul>
+              <li><a href="restaurant-gallery2column.html">2-Column Gallery</a></li>
+              <li><a href="restaurant-gallery3column.html">3-Column Gallery</a></li>
+              <li><a href="restaurant-gallery4column.html">4-Column Gallery</a></li>
+              </ul>
+            </li>
+            <li><a href="">Food Gallery</a>
+               <ul>
+              <li><a href="food-gallery2column.html">2-Column Gallery</a></li>
+              <li><a href="food-gallery3column.html">3-Column Gallery</a></li>
+              <li><a href="food-gallery4column.html">4-Column Gallery</a></li>
+              </ul>
+
+            </li>
+          </ul>
+        </li>
+
+        <li><a href="events.html">Events</a></li>
+        <li><a href="reservation.html">Reservation</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+    </div>
+<!--NAVIGATION BAR-END-->
+
+
+<!--SLIDER SCREEN-->
+
+      <section id="tiny" class="tinyslide">
+      <aside class="slides">
+        <figure>
+          <img src="images/large-images/chicken2_new.jpg" alt="" />
+          <figcaption>
+            <h2>Roasted Chicken</h2>
+          </figcaption>
+        </figure>
+        <figure>
+          <img src="images/large-images/choco-cake.jpg" alt="" />
+          <figcaption>
+            <h2>Chocolate Cake</h2>
+          </figcaption>
+        </figure>
+        <figure>
+          <img src="images/large-images/hamburger.jpg" alt="" />
+          <figcaption>
+            <h2>Hamburger</h2>
+          </figcaption>
+        </figure>
+        <figure>
+          <img src="images/large-images/pancake.jpg" alt="" />
+          <figcaption>
+            <h2>Rasperry Pancake</h2>
+          </figcaption>
+        </figure>
+        <figure>
+          <img src="images/large-images/pizza.jpg" alt="" />
+          <figcaption>
+            <h2>Fresh Pizza</h2>
+          </figcaption>
+        </figure>
+        <figure>
+          <img src="images/large-images/berry-cheesecake.jpg" alt="" />
+          <figcaption>
+            <h2>Blueberry Chessecake</h2>
+          </figcaption>
+        </figure>
+        <figure>
+          <img src="images/large-images/pasta-salty.jpg" alt="" />
+          <figcaption>
+            <h2>Pasta</h2>
+          </figcaption>
+        </figure>
+          <figure>
+          <img src="images/large-images/pasta.jpg" alt="" />
+          <figcaption>
+            <h2>Browni</h2>
+          </figcaption>
+        </figure>
+
+      </aside>
+    </section>
+
+<div style="clear:both; display:block; width:auto; height:150px;" ></div>
+<!--SLIDER SCREEN END-->
+
+
+<!--FEATURES SECTION-->
+<div class="container first" id="zigzag">
+  <h1>SERVICES</h1>
+  <h3>What we offer</h3><br><br>
+  <div class="row">
+    <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12" data-aos="fade-up-right">
+      <img src="images/core-img/dish70.png">
+       <p >High Quality Dishes</p>
+             <p >Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+    </div>
+
+    <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12" data-aos="fade-up-right">
+      <img  src="images/core-img/fresh70.png">
+       <p>Fresh Foods</p>
+             <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+    </div>
+
+    <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12" data-aos="fade-up-right">
+      <img src="images/core-img/reserv70.png">
+       <p>Easy reservation</p>
+             <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+    </div>
+
+    <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12" data-aos="fade-up-right">
+      <img  src="images/core-img/staff70.png">
+       <p>Friendly Stuff</p>
+             <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+    </div>
+
+      <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12" data-aos="fade-up-right">
+      <img src="images/core-img/clean.png">
+       <p>Restaurant Cleanliness</p>
+             <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+    </div>
+
+      <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12" data-aos="fade-up-right">
+      <img  src="images/core-img/price.png">
+       <p>Price Factor</p>
+             <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+    </div>
+
+      <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12" data-aos="fade-up-right">
+      <img  src="images/core-img/ambiance2.png">
+       <p>Restaurant Ambiance</p>
+             <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+    </div>
+
+      <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12" data-aos="fade-up-right">
+      <img  src="images/core-img/special.png">
+       <p>Special Foods</p>
+             <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+    </div>
+  </div></div></div>
+
+<!--FEATURES SECTION END-->
+
+<div class="container second">
+  <h1>Featured Food Items</h1>
+  <div class="row mt-5">
+    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 " data-aos="fade-up-right">
+     <ul class="caption-style-1 mt-5">
+      <li>
+        <img src="images/small-images/salmon300_new.jpg" alt="">
+        <div class="caption">
+          <div class="blur"></div>
+          <div class="caption-text">
+            <h2>SALMON</h2>
+          </div>
+        </div>
+      </li>
+    </ul>
+
+    <div class="rate">
+    <input type="radio" id="star5" name="rate" value="5" />
+    <label for="star5" title="text">5 stars</label>
+    <input type="radio" id="star4" name="rate" value="4" />
+    <label for="star4" title="text">4 stars</label>
+    <input type="radio" id="star3" name="rate" value="3" />
+    <label for="star3" title="text">3 stars</label>
+    <input type="radio" id="star2" name="rate" value="2" />
+    <label for="star2" title="text">2 stars</label>
+    <input type="radio" id="star1" name="rate" value="1" />
+    <label for="star1" title="text">1 star</label>
+  </div>
+    </div>
+
+     <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 " data-aos="fade-up-right">
+     <ul class="caption-style-1 mt-5">
+      <li>
+        <img src="images/small-images/macarons4_new.jpg" alt="">
+        <div class="caption">
+          <div class="blur"></div>
+          <div class="caption-text">
+            <h2>Rasperry Macaron</h2>
+          </div>
+        </div>
+      </li>
+    </ul>
+     <div class="rate">
+    <input type="radio" id="star5" name="rate" value="5" />
+    <label for="star5" title="text">5 stars</label>
+    <input type="radio" id="star4" name="rate" value="4" />
+    <label for="star4" title="text">4 stars</label>
+    <input type="radio" id="star3" name="rate" value="3" />
+    <label for="star3" title="text">3 stars</label>
+    <input type="radio" id="star2" name="rate" value="2" />
+    <label for="star2" title="text">2 stars</label>
+    <input type="radio" id="star1" name="rate" value="1" />
+    <label for="star1" title="text">1 star</label>
+  </div>
+    </div>
+
+    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 " data-aos="fade-up-right">
+     <ul class="caption-style-1 mt-5">
+      <li>
+        <img src="images/small-images/meat_new.jpg" alt="">
+        <div class="caption">
+          <div class="blur"></div>
+          <div class="caption-text">
+            <h2>Meat</h2>
+          </div>
+        </div>
+      </li>
+    </ul>
+
+     <div class="rate">
+    <input type="radio" id="star5" name="rate" value="5" />
+    <label for="star5" title="text">5 stars</label>
+    <input type="radio" id="star4" name="rate" value="4" />
+    <label for="star4" title="text">4 stars</label>
+    <input type="radio" id="star3" name="rate" value="3" />
+    <label for="star3" title="text">3 stars</label>
+    <input type="radio" id="star2" name="rate" value="2" />
+    <label for="star2" title="text">2 stars</label>
+    <input type="radio" id="star1" name="rate" value="1" />
+    <label for="star1" title="text">1 star</label>
+  </div>
+    </div>
+
+     <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 " data-aos="fade-up-right">
+     <ul class="caption-style-1 mt-5">
+      <li>
+        <img src="images/small-images/cake.jpg" alt="">
+        <div class="caption">
+          <div class="blur"></div>
+          <div class="caption-text">
+            <h2>Cake</h2>
+          </div>
+        </div>
+      </li>
+    </ul>
+
+     <div class="rate">
+    <input type="radio" id="star5" name="rate" value="5" />
+    <label for="star5" title="text">5 stars</label>
+    <input type="radio" id="star4" name="rate" value="4" />
+    <label for="star4" title="text">4 stars</label>
+    <input type="radio" id="star3" name="rate" value="3" />
+    <label for="star3" title="text">3 stars</label>
+    <input type="radio" id="star2" name="rate" value="2" />
+    <label for="star2" title="text">2 stars</label>
+    <input type="radio" id="star1" name="rate" value="1" />
+    <label for="star1" title="text">1 star</label>
+  </div>
+    </div></div>
+
+<div class="row mt-2">
+    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 " data-aos="fade-up-right">
+     <ul class="caption-style-1 mt-5">
+      <li>
+        <img src="images/small-images/lasagna.jpg" alt="">
+        <div class="caption">
+          <div class="blur"></div>
+          <div class="caption-text">
+            <h2>Lasagna</h2>
+          </div>
+        </div>
+      </li>
+    </ul>
+
+    <div class="rate">
+    <input type="radio" id="star5" name="rate" value="5" />
+    <label for="star5" title="text">5 stars</label>
+    <input type="radio" id="star4" name="rate" value="4" />
+    <label for="star4" title="text">4 stars</label>
+    <input type="radio" id="star3" name="rate" value="3" />
+    <label for="star3" title="text">3 stars</label>
+    <input type="radio" id="star2" name="rate" value="2" />
+    <label for="star2" title="text">2 stars</label>
+    <input type="radio" id="star1" name="rate" value="1" />
+    <label for="star1" title="text">1 star</label>
+  </div>
+    </div>
+
+    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 " data-aos="fade-up-right">
+     <ul class="caption-style-1 mt-5">
+      <li>
+        <img src="images/small-images/berries.jpg" alt="">
+        <div class="caption">
+          <div class="blur"></div>
+          <div class="caption-text">
+            <h2>Berries</h2>
+          </div>
+        </div>
+      </li>
+    </ul>
+
+    <div class="rate">
+    <input type="radio" id="star5" name="rate" value="5" />
+    <label for="star5" title="text">5 stars</label>
+    <input type="radio" id="star4" name="rate" value="4" />
+    <label for="star4" title="text">4 stars</label>
+    <input type="radio" id="star3" name="rate" value="3" />
+    <label for="star3" title="text">3 stars</label>
+    <input type="radio" id="star2" name="rate" value="2" />
+    <label for="star2" title="text">2 stars</label>
+    <input type="radio" id="star1" name="rate" value="1" />
+    <label for="star1" title="text">1 star</label>
+  </div>
+    </div>
+
+
+    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 " data-aos="fade-up-right">
+     <ul class="caption-style-1 mt-5">
+      <li>
+        <img src="images/small-images/pizza300_new.jpg" alt="">
+        <div class="caption">
+          <div class="blur"></div>
+          <div class="caption-text">
+            <h2>Pizza</h2>
+          </div>
+        </div>
+      </li>
+    </ul>
+
+    <div class="rate">
+    <input type="radio" id="star5" name="rate" value="5" />
+    <label for="star5" title="text">5 stars</label>
+    <input type="radio" id="star4" name="rate" value="4" />
+    <label for="star4" title="text">4 stars</label>
+    <input type="radio" id="star3" name="rate" value="3" />
+    <label for="star3" title="text">3 stars</label>
+    <input type="radio" id="star2" name="rate" value="2" />
+    <label for="star2" title="text">2 stars</label>
+    <input type="radio" id="star1" name="rate" value="1" />
+    <label for="star1" title="text">1 star</label>
+  </div>
+    </div>
+
+    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 " data-aos="fade-up-right">
+     <ul class="caption-style-1 mt-5">
+      <li>
+        <img src="images/small-images/waffles.jpg" alt="">
+        <div class="caption">
+          <div class="blur"></div>
+          <div class="caption-text">
+            <h2>Waffles</h2>
+          </div>
+        </div>
+      </li>
+
+    <div class="rate">
+    <input type="radio" id="star5" name="rate" value="5" />
+    <label for="star5" title="text">5 stars</label>
+    <input type="radio" id="star4" name="rate" value="4" />
+    <label for="star4" title="text">4 stars</label>
+    <input type="radio" id="star3" name="rate" value="3" />
+    <label for="star3" title="text">3 stars</label>
+    <input type="radio" id="star2" name="rate" value="2" />
+    <label for="star2" title="text">2 stars</label>
+    <input type="radio" id="star1" name="rate" value="1" />
+    <label for="star1" title="text">1 star</label>
+  </div>
+    </ul>
+    </div>
+  </div>
+  </div>
+
+  <div class="parallax" id="parallax-2" data-image-src="images/large-images/back9.jpg" data-height="600px">
+    <div class="caption-text">
+      <span class="border">SPECIAL DELICATES</span>
+      
+         <div class="button" id="button-3">
+    <div id="circle"></div>
+    <a href="menu.html">View Menu</a>
+  </div>
+  </div>
+  </div> 
+
+<div style="clear:both; display:block; width:auto;height:50px;"></div>
+
+<!--FEATURED FOOD ITEMS SECTION END-->
+
+<div class="parallax container third">
+  <h1>What Our Customers Say</h1>
+    <div class="row">
+        <div class="col-md-12">
+            <div id="testimonial-slider" class="owl-carousel">
+            <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+            </ol>
+                <div class="testimonial">
+                    <div class="pic">
+                        <img src="images/core-img/user3.png">
+                    </div>
+                    <p class="description">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. A accusantium ad asperiores at atque culpa dolores eaque fugiat hic illo ipsam ipsum minima modi necessitatibus nemo officia, omnis perferendis placeat quaerat quas quis ratione rerum sint sit vitae. Animi architecto consequatur delectus eos id.
+                    </p>
+                    <h3 class="title">KRISTIN</h3>
+                    <span class="post">Customer</span>
+                </div>
+ 
+                <div class="testimonial">
+                    <div class="pic">
+                        <img src="images/core-img/user4.png">
+                    </div>
+                    <p class="description">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. A accusantium ad asperiores at atque culpa dolores eaque fugiat hic illo ipsam ipsum minima modi necessitatibus nemo officia, omnis perferendis placeat quaerat quas quis ratione rerum sint sit vitae. Animi architecto consequatur delectus eos id.
+                    </p>
+                    <h3 class="title">DAVID</h3>
+                    <span class="post">Customer</span>
+                </div>
+
+                <div class="testimonial">
+                    <div class="pic">
+                        <img src="images/core-img/user3.png">
+                    </div>
+                    <p class="description">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. A accusantium ad asperiores at atque culpa dolores eaque fugiat hic illo ipsam ipsum minima modi necessitatibus nemo officia, omnis perferendis placeat quaerat quas quis ratione rerum sint sit vitae. Animi architecto consequatur delectus eos id.
+                    </p>
+                    <h3 class="title">MARIA</h3>
+                    <span class="post">Customer</span>
+                </div>
+
+                <div class="testimonial">
+                    <div class="pic">
+                        <img src="images/core-img/user4.png">
+                    </div>
+                    <p class="description">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. A accusantium ad asperiores at atque culpa dolores eaque fugiat hic illo ipsam ipsum minima modi necessitatibus nemo officia, omnis perferendis placeat quaerat quas quis ratione rerum sint sit vitae. Animi architecto consequatur delectus eos id.
+                    </p>
+                    <h3 class="title">WILLIAM</h3>
+                    <span class="post">Customer</span>
+                </div>
+
+                 <div class="testimonial">
+                    <div class="pic">
+                        <img src="images/core-img/user3.png">
+                    </div>
+                    <p class="description">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. A accusantium ad asperiores at atque culpa dolores eaque fugiat hic illo ipsam ipsum minima modi necessitatibus nemo officia, omnis perferendis placeat quaerat quas quis ratione rerum sint sit vitae. Animi architecto consequatur delectus eos id.
+                    </p>
+                    <h3 class="title">SOPHIE</h3>
+                    <span class="post">Customer</span>
+                </div>
+
+                 <div class="testimonial">
+                    <div class="pic">
+                        <img src="images/core-img/user4.png">
+                    </div>
+                    <p class="description">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. A accusantium ad asperiores at atque culpa dolores eaque fugiat hic illo ipsam ipsum minima modi necessitatibus nemo officia, omnis perferendis placeat quaerat quas quis ratione rerum sint sit vitae. Animi architecto consequatur delectus eos id.
+                    </p>
+                    <h3 class="title">JACK</h3>
+                    <span class="post">Customer</span>
+                </div>
+ 
+ 
+            </div>
+        </div>
+    </div>
+</div>
+<!--TESTIMONIAL END-->
+
+<div style="clear:both; display:block; width:auto;height:100px;"></div>
+
+<hr width="auto;" color="#fff" size="4">
+
+<!-- FOOTER -->
+ <footer id="myFooter">
+        <div class="container-fluid third ">
+            <div class="row justify-content-center">
+                <div class="col-lg-3 col-md-12 col-sm-12 col-xs-12 ">
+                    <h5>Home</h5>
+                    <ul class="footermenu">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact us</a></li>
+                        <li><a href="menu.html">Menu</a></li>
+                        <li><a href="reservation.html">Reservation</a></li>
+                    </ul>
+                </div>  
+
+                 <div class="col-lg-3 col-md-12 col-sm-12 col-xs-12 ">
+                    <h5>Adress</h5>
+                    <ul class="list-unstyled">
+                      <li><p><i class="fas fa-home mr-3"></i> New York, NY 10012, US</p></li>
+                      <li><p><i class="fas fa-envelope mr-3"></i> info@example.com</p></li>
+                      <li><p><i class="fas fa-phone mr-3"></i> + 01 234 567 88</p></li>
+                      <li><p><i class="fas fa-print mr-3"></i> + 01 234 567 89</p></li>
+                    </ul>
+                   </div>
+                <div class="col-lg-3 col-md-12 col-sm-12 col-xs-12  info">
+                    <h5>Information</h5>
+                    <p> Lorem ipsum dolor amet, consectetur adipiscing elit. Etiam consectetur aliquet aliquet. Interdum et malesuada fames ac ante ipsum primis in faucibus. </p>
+                </div>
+            </div>
+        </div>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<hr width="auto;" color="#fff" size="4">
+
+<div class="center">
+<div id="social-test">
+  <h3 class="social-header">Follow Us on Social Media</h3>
+<ul class="social">
+  <li><i class="fa fa-facebook" aria-hidden="true"></i></li>
+  <li><i class="fa fa-twitter" aria-hidden="true"></i>
+</li>
+  <li><i class="fa fa-instagram" aria-hidden="true"></i></li>
+  <li><i class="fa fa-vimeo" aria-hidden="true"></i>
+</li>
+  <li><i class="fa fa-behance" aria-hidden="true"></i></li>
+
+</li>
+  <li><i class="fa fa-pied-piper" aria-hidden="true"></i>
+</li>
+</ul>
+</div>
+  </div>
+
+      </div>
+</footer>
+
+ <!-- SCRIPTS -->
+
+<script>
+ var tiny = $('#tiny').tiny().data('api_tiny');
+</script>
+
+<script type="text/javascript">
+$(document).ready(function(){
+    $("#testimonial-slider").owlCarousel({
+        items:2,
+        itemsDesktop:[1000,2],
+        itemsDesktopSmall:[979,2],
+        itemsTablet:[768,1],
+        pagination:true,
+        navigation:false,
+        autoplay:true
+    });
+});
+</script> 
+
+<script type="text/javascript">
+    $(function($) {
+      $('.stellarnav').stellarNav({
+        theme: 'dark',
+        breakpoint: 960,
+        position: 'right',
+      });
+    });
+
+</script>
+<script type="text/javascript">
+  
+    $(".stellarNav li").each(function(i) {
+    $(this).delay(100 * i).fadeIn(500);
+});
+
+  
+</script>
+<script type="text/javascript">
+var browserWindow = $(window);
+
+    // :: 1.0 Preloader Active Code
+    browserWindow.on('load', function () {
+       setTimeout(function(){
+    $('#preloader').fadeOut('slow', function() {
+      $(this).remove();
+    });
+   }, 500);
+});
+</script>
+
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+
+</body>
+</html> 

@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<!-- Camera is a Pixedelic free jQuery slideshow | Manuel Masia (designer and developer) -->
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" >
+<title>FOODIE - Food Blog Template</title>
+<meta name="description" content="Camera a free jQuery slideshow with many effects, transitions, adaptive layout, easy to customize, using canvas and mobile ready">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+
+<!--BOOTSTRAP CDN-->
+<script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+ 
+<!--MAIN CSS FILE-->
+ <link rel='stylesheet' id='main-css'  href='style.css?version=51' type='text/css' media='all'>
+
+<!--Font Avesome for social media buttons-->  
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+
+<link href="https://fonts.googleapis.com/css?family=Akronim|Almendra+SC|Lato|Ewert|IM+Fell+Double+Pica+SC|IM+Fell+French+Canon+SC|Merriweather|Overlock+SC|Ribeye+Marrow|Vollkorn+SC|Wendy+One" rel="stylesheet">
+
+
+<!--ICON-->
+<link rel="icon" href="images/core-img/icon3.png">
+<script type="text/javascript" src="js/stellarnav.min.js"></script>
+
+<link href="https://fonts.googleapis.com/css?family=Cinzel|Crete+Round|Merriweather|Vollkorn|Cherry+Swash" rel="stylesheet">
+ 
+
+<link href="https://fonts.googleapis.com/css?family=Berkshire+Swash|Cookie|Great+Vibes&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+ 
+ <link rel="stylesheet" href="css/venobox.css" type="text/css" media="screen" />
+<link href="https://fonts.googleapis.com/css?family=Merriweather&display=swap" rel="stylesheet">
+
+
+
+</head>
+<body>
+
+<!--PRELOADER-->
+<section>
+    <div id="preloader">
+      <div id="ctn-preloader" class="ctn-preloader">
+
+        <div class="animation-preloader"> <img src="images/core-img/icon3.png">
+          <div class="spinner"></div>
+          <div class="txt-loading">
+            <span data-text-preloader="F" class="letters-loading">
+              F
+            </span>
+            <span data-text-preloader="O" class="letters-loading">
+              O
+            </span>
+            <span data-text-preloader="O" class="letters-loading">
+              O
+            </span>
+            <span data-text-preloader="D" class="letters-loading">
+              D
+            </span>
+            <span data-text-preloader="I" class="letters-loading">
+              I
+            </span>
+            <span data-text-preloader="E" class="letters-loading">
+              E
+            </span>
+           
+          </div>
+        </div>  
+        <div class="loader-section section-left"></div>
+        <div class="loader-section section-right"></div>
+      </div>
+    </div>
+  </section>
+
+		<!--SOCIAL HEADER-->
+		<div class="top-social-header">
+			 <!-- Top Social Info -->
+        <div class="row h-100 align-items-center justify-content-between">
+           <div class="col-12 col-sm-4">
+              <div class="welcome-font">
+							  <a href="index.html"></a>
+			            <img src="images/core-img/logo22.png">				
+						</div> 
+            </div>
+         <div class="col-sm-6">
+						<div class="top-social-info text-right">
+							<a href="#" class="icon-radius fab fa-facebook-f" aria-hidden="true"></a>
+							<a href="#" class="icon-radius fab fa-twitter"></a>
+							<a href="#" class="icon-radius fab fa-linkedin"></a>
+							<a href="#" class="icon-radius fab fa-instagram"></a>
+						</div>
+					</div>
+                </div>
+		    </div>
+
+
+<!--NAVIGATION BAR-->
+	<div class="stellarnav">
+			<ul>
+			<li><a href="#">Home</a>
+		    	<ul>
+					<li><a href="index.html">Home Slider v1</a>	
+		    		<li><a href="#">Home Slider v2</a>
+		    		<li><a href="#">Home Slider v3</a></li>
+		    	</ul>
+		    </li> 
+
+		    <li><a href="">Features</a>
+          <ul>
+          <li><a href="index.html">Home</a> 
+            <li><a href="menu.html">Menu&Specials</a>
+            <li><a href="">Our Gallery</a>
+              <ul>
+              <li><a href="gallery.html">Restaurant Gallery</a></li>
+              <li><a href="foodgallery.html">Food Gallery</a></li>
+            </ul>
+
+             <li><a href="events.html">Events</a></li>
+              <li><a href="about.html">About</a></li>
+               <li><a href="reservation.html">Reservation</a></li>
+                <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </li>
+
+		   <li><a href="">Menu & Specials</a>
+		    	<ul>
+		    		<li><a href="menu.html">Menu 1</a></li>
+		    		<li><a href="#">Menu 2</a></li>
+					<li><a href="#">Mega Menu</a>
+		    		<ul>
+				    	<li><a href="#">Main Dishes</a>
+				    		<ul>
+				    			<li><a href="#">Chicken</a>
+				    				<ul>
+				    					<li><a href="#">Item 1</a></li>
+				    					<li><a href="#">Item 2</a></li>
+				    					<li><a href="#">Item 3</a></li>
+				    				</ul>
+				    				</li>
+				    				<li><a href="#">Item 1</a></li>
+				    				<li><a href="#">Item 2</a></li>
+				    				<li><a href="#">Item 3</a></li>
+				    			</ul>
+				    		    </li>
+				    		       <li><a href="#">Salads</a></li>
+				    		       <li><a href="#">Desserts</a></li>
+				    		       <li><a href="#">Drinks</a></li>
+				    		       <li><a href="#">Specials</a></li>
+		    			        </ul>
+		    		            </li></ul></li>
+
+		    <li><a href="">Our Gallery</a>
+                 <ul>
+		    		<li><a href="gallery.html">Restaurant Gallery</a>
+		    		<li><a href="foodgallery.html">Food Gallery</a></li>
+		    	</ul>
+		    </li>
+            <li><a href="events.html">Events</a></li>
+		    <li><a href="">About</a></li>
+		    <li><a href="">Contact</a></li>
+		</ul>
+		</div>
+<div id="wrapperHeader">
+	 <div id="text">
+            <h1 >FOODIE RESTAURANT</h1>
+            <h3>OUR RESTAURANT GALLERY</h3>
+            <a href="#slider-main" class="btn">Explore More</a>
+        </div></div>
+
+
+  <div style="clear:both; display:block; width:auto;height:100px; "></div>
+
+
+
+
+
+<div class="title" id="slider-main">
+<h2>RESTAURANT GALLERY</h2>
+</div>
+<div class="container">
+  <div class="row justify-content-center">
+ <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 " >
+<a class="venobox" data-gall="gallery01"  href="images/gallery-images/restaurant5.jpg"><img class="img-responsive" src="images/gallery-images/thumbs/restaurant1-small.jpg"></a></div>
+
+ <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 ">
+<a class="venobox" data-gall="gallery01" href="images/gallery-images/restaurant8.jpg"><img class="img-responsive" src="images/gallery-images/thumbs/restaurant2-small.jpg"></a></div>
+
+ <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 ">
+<a class="venobox" data-gall="gallery01" href="images/gallery-images/restaurant3.jpg"><img class="img-responsive" src="images/gallery-images/thumbs/restaurant3-small.jpg"></a></div>
+
+ <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+<a class="venobox" data-gall="gallery01" href="images/gallery-images/restaurant2.jpg"><img class="img-responsive" src="images/gallery-images/thumbs/restaurant4-small.jpg"></a></div>
+
+ <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 ">
+<a class="venobox" data-gall="gallery01" href="images/gallery-images/restaurant6.jpg"><img class="img-responsive" src="images/gallery-images/thumbs/restaurant5-small.jpg"></a></div>
+
+ <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 ">
+<a class="venobox" data-gall="gallery01" href="images/gallery-images/restaurant4.jpg"><img class="img-responsive" src="images/gallery-images/thumbs/restaurant6-small.jpg"></a></div>
+
+ <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+<a class="venobox" data-gall="gallery01" href="images/gallery-images/restaurant1.jpg"><img class="img-responsive" src="images/gallery-images/thumbs/restaurant7-small.jpg"></a></div>
+
+ <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 ">
+<a class="venobox" data-gall="gallery01" href="images/gallery-images/restaurant10.jpg"><img class="img-responsive" src="images/gallery-images/thumbs/restaurant8-small.jpg"></a></div>
+
+ <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 ">
+<a class="venobox" data-gall="gallery01" href="images/gallery-images/restaurant9.jpg"><img class="img-responsive" src="images/gallery-images/thumbs/restaurant9-small.jpg"></a></div>
+
+ <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+<a class="venobox" data-gall="gallery01" href="images/gallery-images/restaurant7.jpg"><img class="img-responsive" src="images/gallery-images/thumbs/restaurant10-small.jpg"></a></div>
+
+ <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 ">
+<a class="venobox" data-gall="gallery01" href="images/gallery-images/restaurant12.jpg"><img class="img-responsive" src="images/gallery-images/thumbs/restaurant12-small.jpg"></a></div>
+
+ <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+<a class="venobox" data-gall="gallery01" href="images/gallery-images/restaurant13.jpg"><img class="img-responsive" src="images/gallery-images/thumbs/restaurant13-small.jpg"></a></div>
+</div>
+
+</div></div>
+
+
+<div style="clear:both; display:block; width:auto;height:100px;"></div>
+<hr width="auto;" color="#0000F8" size="4">
+
+<!-- FOOTER -->
+ <footer id="myFooter">
+        <div class="container third">
+            <div class="row">
+                <div class="col-sm-4">
+                    <h5>Home</h5>
+                    <ul class="footermenu">
+                       <li><a href="index.html">Home</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Contact us</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Awards</a></li>
+                    </ul>
+                </div>  
+
+                 <div class="col-sm-4">
+                    <h5>Adress</h5>
+                    <ul class="list-unstyled">
+                      <li><p><i class="fas fa-home mr-3"></i> New York, NY 10012, US</p></li>
+                      <li><p><i class="fas fa-envelope mr-3"></i> info@example.com</p></li>
+                      <li><p><i class="fas fa-phone mr-3"></i> + 01 234 567 88</p></li>
+                      <li><p><i class="fas fa-print mr-3"></i> + 01 234 567 89</p></li>
+                    </ul>
+                   </div>
+                <div class="col-sm-4 info">
+                    <h5>Information</h5>
+                    <p> Lorem ipsum dolor amet, consectetur adipiscing elit. Etiam consectetur aliquet aliquet. Interdum et malesuada fames ac ante ipsum primis in faucibus. </p>
+                </div>
+            </div>
+        </div>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<hr width="auto;" color="#0000F8" size="4">
+<div style="clear:both; display:block; width:auto;height:50px;"></div>
+
+
+  <div class="center">
+<div id="social-test">
+  <h3 class="social-header">Follow Us on Social Media</h3>
+<ul class="social">
+  <li><i class="fa fa-facebook" aria-hidden="true"></i></li>
+  <li><i class="fa fa-twitter" aria-hidden="true"></i>
+</li>
+  <li><i class="fa fa-instagram" aria-hidden="true"></i></li>
+  <li><i class="fa fa-vimeo" aria-hidden="true"></i>
+</li>
+  <li><i class="fa fa-behance" aria-hidden="true"></i></li>
+
+</li>
+  <li><i class="fa fa-pied-piper" aria-hidden="true"></i>
+</li>
+</ul>
+</div>
+  </div>
+
+      </div>
+</footer>
+
+
+
+
+  <script src="js/venobox.js"></script>
+<script>
+$(document).ready(function(){
+    $('.venobox').venobox({
+
+        framewidth: '750px',        // default: ''
+        frameheight: '500px',       // default: ''
+        border: '5px',             // default: '0'
+        bgcolor: '#fff',         // default: '#fff'
+        titleattr: 'data-title',    // default: 'title'
+        numeratio: true,            // default: false
+        infinigall: true            // default: false
+    });
+});
+</script>
+
+
+<script>
+$(document).ready(function(){
+  $('.venobox').venobox(); 
+});
+</script>
+
+
+
+
+<script type="text/javascript">
+$(document).ready(function() {
+  
+  setTimeout(function() {
+    $('#ctn-preloader').addClass('loaded');
+    // Una vez haya terminado el preloader aparezca el scroll
+    $('body').removeClass('no-scroll-y');
+
+    if ($('#ctn-preloader').hasClass('loaded')) {
+      // Es para que una vez que se haya ido el preloader se elimine toda la seccion preloader
+      $('#preloader').delay(1000).queue(function() {
+        $(this).remove();
+
+      });
+    }
+  }, 3000);
+    
+});
+</script>
+
+
+
+<script type="text/javascript">
+		$(function($) {
+			$('.stellarnav').stellarNav({
+				theme: 'dark',
+				breakpoint: 960,
+				position: 'right',
+			});
+		});
+
+</script>
+
+
+
+
+<script type="text/javascript">
+var interval = null;
+$(function () {
+interval = setInterval(callFunc, 4000);
+});
+
+function callFunc() {
+$('.next').trigger('click');
+}
+
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<!-- Camera is a Pixedelic free jQuery slideshow | Manuel Masia (designer and developer) -->
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" >
+<title>FOODIE - Food Blog Template</title>
+<meta name="description" content="Camera a free jQuery slideshow with many effects, transitions, adaptive layout, easy to customize, using canvas and mobile ready">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+
+<!--BOOTSTRAP CDN-->
+<script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+ 
+<!--MAIN CSS FILE-->
+ <link rel='stylesheet' id='main-css'  href='style.css?version=2.0' type='text/css' media='all'>
+ <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+<!--Font Avesome for social media buttons-->  
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+
+<link href="https://fonts.googleapis.com/css?family=Akronim|Almendra+SC|Lato|Ewert|IM+Fell+Double+Pica+SC|IM+Fell+French+Canon+SC|Merriweather|Overlock+SC|Ribeye+Marrow|Vollkorn+SC|Wendy+One" rel="stylesheet">
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
+
+<!--ICON-->
+<link rel="icon" href="images/core-img/icon3.png">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script type="text/javascript" src="js/stellarnav.min.js"></script>
+
+<link href="https://fonts.googleapis.com/css?family=Cinzel|Crete+Round|Merriweather|Vollkorn|Cherry+Swash" rel="stylesheet">
+ 
+
+<link href="https://fonts.googleapis.com/css?family=Berkshire+Swash|Cookie|Great+Vibes&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+ 
+ <link rel="stylesheet" href="css/venobox.css" type="text/css" media="screen" />
+<link href="https://fonts.googleapis.com/css?family=Merriweather&display=swap" rel="stylesheet">
+
+<script src="js/multislider.min.js"></script> 
+
+
+<link href="https://fonts.googleapis.com/css?family=Archivo+Black&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+
+<link href="https://fonts.googleapis.com/css?family=Amaranth|Kreon&display=swap" rel="stylesheet">
+<link href='http://fonts.googleapis.com/css?family=Berkshire+Swash' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Arizonia' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Great+Vibes' rel='stylesheet' type='text/css'>
+<link href="https://fonts.googleapis.com/css?family=Heebo&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+
+
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+</head>
+<body>
+
+<!--PRELOADER-->
+<section>
+    <div id="preloader">
+      <div id="ctn-preloader" class="ctn-preloader">
+
+        <div class="animation-preloader"> <img src="images/core-img/icon3.png">
+          <div class="spinner"></div>
+          <div class="txt-loading">
+            <span data-text-preloader="F" class="letters-loading">
+              F
+            </span>
+            <span data-text-preloader="O" class="letters-loading">
+              O
+            </span>
+            <span data-text-preloader="O" class="letters-loading">
+              O
+            </span>
+            <span data-text-preloader="D" class="letters-loading">
+              D
+            </span>
+            <span data-text-preloader="I" class="letters-loading">
+              I
+            </span>
+            <span data-text-preloader="E" class="letters-loading">
+              E
+            </span>
+           
+          </div>
+        </div>  
+        <div class="loader-section section-left"></div>
+        <div class="loader-section section-right"></div>
+      </div>
+    </div>
+  </section>
+
+		<!--SOCIAL HEADER-->
+		<div class="top-social-header">
+			 <!-- Top Social Info -->
+        <div class="row h-100 align-items-center justify-content-between">
+           <div class="col-12 col-sm-4">
+              <div class="welcome-font">
+							  <a href="index.html"></a>
+			            <img src="images/core-img/logo22.png">				
+						</div> 
+            </div>
+         <div class="col-sm-6">
+						<div class="top-social-info text-right">
+							<a href="#" class="icon-radius fab fa-facebook-f" aria-hidden="true"></a>
+							<a href="#" class="icon-radius fab fa-twitter"></a>
+							<a href="#" class="icon-radius fab fa-linkedin"></a>
+							<a href="#" class="icon-radius fab fa-instagram"></a>
+						</div>
+					</div>
+                </div>
+		    </div>
+
+
+<!--NAVIGATION BAR-->
+	  <div class="stellarnav">
+      <ul>
+      <li><a href="#">Home</a>
+          <ul>
+          <li><a href="index.html">Home Slider v1</a> 
+            <li><a href="index2.html">Home Slider v2</a>
+            <li><a href="index3.html">Home Slider v3</a></li>
+          </ul>
+        </li> 
+
+        <li><a href="">Features</a>
+          <ul>
+          <li><a href="index.html">Home</a> 
+            <li><a href="menu.html">Menu&Specials</a>
+            <li><a href="">Our Gallery</a>
+              <ul>
+                    
+            <li><a href="">Restaurant Gallery</a>
+               <ul>
+              <li><a href="restaurant-gallery2column.html">2-Column Gallery</a></li>
+              <li><a href="restaurant-gallery3column.html">3-Column Gallery</a></li>
+              <li><a href="restaurant-gallery4column.html">4-Column Gallery</a></li>
+              </ul>
+            </li>
+            <li><a href="">Food Gallery</a>
+               <ul>
+              <li><a href="food-gallery2column.html">2-Column Gallery</a></li>
+              <li><a href="food-gallery3column.html">3-Column Gallery</a></li>
+              <li><a href="food-gallery4column.html">4-Column Gallery</a></li>
+              </ul>
+
+            </li>
+      
+            </ul>
+
+             <li><a href="events.html">Events</a></li>
+              <li><a href="about.html">About</a></li>
+               <li><a href="reservation.html">Reservation</a></li>
+                <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </li>
+
+       <li><a href="">Menu & Specials</a>
+          <ul>
+            <li><a href="menu.html">Menu 1</a></li>
+            <li><a href="menu2.html">Menu 2</a></li>
+          <li><a href="menu.html">Mega Menu</a>
+            <ul>
+              <li><a href="#">Main Dishes</a>
+                    </li>
+                       <li><a href="#">Salads</a></li>
+                       <li><a href="#">Desserts</a></li>
+                       <li><a href="#">Drinks</a></li>
+                       <li><a href="#">Specials</a></li>
+                      </ul>
+                        </li></ul></li>
+
+        <li><a href="">Our Gallery</a>
+                 <ul>
+            <li><a href="">Restaurant Gallery</a>
+               <ul>
+              <li><a href="restaurant-gallery2column.html">2-Column Gallery</a></li>
+              <li><a href="restaurant-gallery3column.html">3-Column Gallery</a></li>
+              <li><a href="restaurant-gallery4column.html">4-Column Gallery</a></li>
+              </ul>
+            </li>
+            <li><a href="">Food Gallery</a>
+               <ul>
+              <li><a href="food-gallery2column.html">2-Column Gallery</a></li>
+              <li><a href="food-gallery3column.html">3-Column Gallery</a></li>
+              <li><a href="food-gallery4column.html">4-Column Gallery</a></li>
+              </ul>
+
+            </li>
+          </ul>
+        </li>
+
+        <li><a href="events.html">Events</a></li>
+        <li><a href="reservation.html">Reservation</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+    </div>
+
+    <div id="cover">
+    	<div id="text">
+          <h1>FOODIE RESTAURANT</h1>
+          <h3>ABOUT US</h3>
+           <a href="#about" class="btn" style="color:#F1E5C3;">Explore More</a>
+        </div>
+      </div>
+
+<div id="about" class="about-section">
+<article>
+  <h1>OUR STORY</h1>
+  <p class="subtitle fancy"><span>Foodie Restaurant</span></p>
+  <div class="copy">
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A accusantium ad asperiores at atque culpa dolores eaque fugiat hic illo ipsam ipsum minima modi necessitatibus nemo officia, omnis perferendis placeat quaerat quas quis ratione rerum sint sit vitae. Animi architecto consequatur delectus eos id.</p>
+
+    <p>A accusantium ad asperiores at atque culpa dolores eaque fugiat hic illo ipsam ipsum minima modi necessitatibus nemo officia.</p>
+
+    <p> A accusantium ad asperiores at atque culpa dolores eaque fugiat hic illo ipsam ipsum minima modi necessitatibus nemo officia, omnis perferendis placeat quaerat quas quis ratione rerum sint sit vitae. Animi architecto consequatur delectus eos id. Lorem ipsum dolor sit amet, consectetur adipisicing elit. A accusantium ad asperiores at atque culpa dolores eaque fugiat hic illo ipsam ipsum minima modi necessitatibus nemo officia.</p>
+  </div>
+</article>
+
+
+
+ <div style="clear:both; display:block; width:auto;height:50px;"></div>
+<div class="container second">
+   <div class="row">
+        <div class="col-md-3 col-sm-6 col-xs-12" data-aos="fade-up-right">
+            <div class="box">
+                <img src="images/about-image/muffin.jpg">
+                <div class="box-content">
+                    <ul class="icon">
+                        <li><a href="#"><span><i class="fa fa-search"></i></span></a></li>  
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3 col-sm-6 col-xs-12" data-aos="fade-up-right">
+            <div class="box">
+                <img src="images/about-image/chicken.jpg">
+                <div class="box-content">
+                    <ul class="icon">
+                        <li><a href="#"><span><i class="fa fa-search"></i></span></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3 col-sm-6 col-xs-12" data-aos="fade-up-right">
+            <div class="box">
+                <img src="images/about-image/cake-sauce.jpg">
+                <div class="box-content">
+                    <ul class="icon">
+                        <li><a href="#"><span><i class="fa fa-search"></i></span></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+         <div class="col-md-3 col-sm-6 col-xs-12" data-aos="fade-up-right">
+            <div class="box">
+                <img src="images/about-image/meat.jpg">
+                <div class="box-content">
+                    <ul class="icon">
+                        <li><a href="#"><span><i class="fa fa-search"></i></span></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    <div style="clear:both; display:block; width:auto;height:50px;"></div>
+</div>
+
+  
+ <div class="about-sectionTwo">  
+      <h1>Delicious Recipes</h1>
+      <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A accusantium ad asperiores at atque culpa dolores eaque fugiat hic illo ipsam ipsum minima modi necessitatibus nemo officia.</h3>
+       <a href="menu.html" class="btn" style="color:#F1E5C3;">View Menu</a>
+ </div>
+ 
+ <div class="about-sectionThree">
+  <div class="container" id="zigzaglayout">
+  <div class="row">
+    <div class="col-md-6 col-sm-12 col-xs-12 float-left" data-aos="fade-up-right">
+      <h1 class="large-font"><b>Fresh</b></h1>
+      <h1 class="xlarge-font" style="color:#FA9448;"><b>Foods</b></h1>
+      <p>You should buy this app because lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.</p>
+      <div class="menubutton" id="button-3">
+    <div id="circle"></div>
+    <a href="#slider-main">Explore More</a>
+  </div>
+    </div>
+      
+    <div class="col-md-6 col-sm-12 col-xs-12 float-right" data-aos="fade-up-right">
+        <img src="images/large-images/backg6.jpg" class="img-responsive" style="border-radius: 25px;">
+    </div>
+  </div>
+</div>
+ </div>
+
+  <div class="about-sectionThree">
+  <div class="container" id="zigzaglayout">
+  <div class="row">
+    <div class="col-md-6 col-sm-12 col-xs-12 float-left" data-aos="fade-up-right">
+        <img src="images/about-image/staff.jpg" class="img-responsive" style="border-radius: 25px;">
+    </div>
+    <div class="col-md-6 col-sm-12 col-xs-12 float-right" data-aos="fade-up-right">
+      <h1 class="large-font"><b>Friendly</b></h1>
+      <h1 class="xlarge-font" style="color:#FA9448;"><b>Stuff</b></h1>
+      <p>You should buy this app because lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.</p>
+      <div class="menubutton" id="button-3">
+    <div id="circle"></div>
+    <a href="#slider-main">Explore More</a>
+  </div>
+    </div>
+  </div>
+</div>
+ </div>
+
+
+<div class="about-sectionThree">
+  <div class="container" id="zigzaglayout">
+  <div class="row">
+    <div class="col-md-6 col-sm-12 col-xs-12 float-right" data-aos="fade-up-right">
+      <h1 class="large-font"><b>Restaurant</b></h1>
+      <h1 class="xlarge-font" style="color:#FA9448;"><b>Ambiance</b></h1>
+      <p>You should buy this app because lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.</p>
+      <div class="menubutton" id="button-3">
+    <div id="circle"></div>
+    <a href="#slider-main">Explore More</a>
+  </div>
+    </div>
+
+     <div class="col-md-6 col-sm-12 col-xs-12 float-left" data-aos="fade-up-right">
+        <img src="images/gallery-images/restaurant8.jpg" class="img-responsive" style="border-radius: 25px;">
+    </div>
+  </div>
+</div>
+ </div>
+
+
+   <div class="about-sectionThree">
+  <div class="container" id="zigzaglayout">
+  <div class="row">
+     <div class="col-md-6 col-sm-12 col-xs-12 float-left" data-aos="fade-up-right">
+        <img src="images/large-images/almond-pancake_new.jpg" class="img-responsive" style="border-radius: 25px;">
+    </div>
+    <div class="col-md-6 col-sm-12 col-xs-12 float-right" data-aos="fade-up-right">
+      <h1 class="large-font"><b>Special</b></h1>
+      <h1 class="xlarge-font" style="color:#FA9448;"><b>Delicates</b></h1>
+      <p>You should buy this app because lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.</p>
+      <div class="menubutton" id="button-3">
+    <div id="circle"></div>
+    <a href="#slider-main">Explore More</a>
+  </div>
+    </div>
+  </div>
+</div>
+ </div>
+
+  <div class="about-sectionFour">
+    <div style="clear:both; display:block; width:auto;height:160px;"></div>
+    <div class="grey-bg c-no container-fluid">
+  <div class="container">
+      <div class="row" id="counter">
+          <div class="col-lg-4 col-md-4 col-sm-12 counter-Txt" data-aos="fade-up-right"> Customers <span class="counter-value" data-count="5">0</span> Million
+            <br>
+            <i class="material-icons">person_outline</i></div>
+            <div class="col-lg-4 col-md-4 col-sm-12 counter-Txt" data-aos="fade-up-right"> Food <span class="counter-value" data-count="5">0</span> Thousand
+            <br>
+           <i class='food-icon fas fa-concierge-bell'></i></div>
+            <div class="col-lg-4 col-md-4 col-sm-12 counter-Txt margin-bot-35" data-aos="fade-up-right"> Team <span class="counter-value" data-count="50">0</span> Peoples
+             <br>
+              <i class='user-icon fas fa-users'></i>
+               </div>
+        </div>
+    </div>
+  </div>
+  </div>
+    <div class="about-sectionFive">
+      <div id="text">
+    <div style="clear:both; display:block; width:auto;height:80px;"></div>
+    <h1>OUR TEAM</h1><br>
+    <div id="paragraph">
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A accusantium ad asperiores at atque culpa dolores eaque fugiat hic illo ipsam ipsum minima modi necessitatibus nemo officia, omnis perferendis placeat quaerat quas quis ratione rerum sint sit vitae. Animi architecto consequatur delectus eos id. Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
+  </div></div>
+
+    <div class="container ">
+        <div class="row">
+            <div class="col-md-4 col-sm-6" data-aos="fade-up-right">
+                <div class="our-team">
+                    <div class="pic">
+                        <img src="images/about-image/chef3.jpg" alt="">
+                    </div>
+                   
+                    <div class="team-content">
+                        <h3 class="title">Williamson</h3>
+                        <span class="post">Chef</span>
+                    </div>
+                    <p class="description">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ac eros lacus. Sed commodo fringilla pharetra. Proin sodales risus et nunc volutpat.
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6" data-aos="fade-up-right">
+                <div class="our-team">
+                    <div class="pic">
+                        <img src="images/about-image/chef4.jpg" alt="">
+                    </div>
+                   
+                    <div class="team-content">
+                        <h3 class="title">Kristiana</h3>
+                        <span class="post">Chef</span>
+                    </div>
+                    <p class="description">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ac eros lacus. Sed commodo fringilla pharetra. Proin sodales risus et nunc volutpat.
+                    </p>
+                </div>
+            </div>
+
+                <div class="col-md-4 col-sm-6" data-aos="fade-up-right">
+                <div class="our-team">
+                    <div class="pic">
+                        <img src="images/about-image/chef2.jpg" alt="">
+                    </div>
+                   
+                    <div class="team-content">
+                        <h3 class="title">David</h3>
+                        <span class="post">Chef</span>
+                    </div>
+                    <p class="description">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ac eros lacus. Sed commodo fringilla pharetra. Proin sodales risus et nunc volutpat.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<footer class="page-footer font-small blue pt-4">
+<div class="container-fluid text-center text-md-left">
+
+    <!-- Grid row -->
+    <div class="row">
+
+      <!-- Grid column -->
+      <div class="col-md-6 mt-md-0 mt-3">
+
+        <!-- Content -->
+        <h5 class="text-uppercase">Information</h5>
+           <p> Lorem ipsum dolor amet, consectetur adipiscing elit.<br>Etiam consectetur aliquet aliquet. Interdum et malesuada
+            <br>fames ac ante ipsum primis in faucibus. </p>
+
+      </div>
+      <!-- Grid column -->
+
+      <hr class="clearfix w-100 d-md-none pb-3">
+
+      <!-- Grid column -->
+      <div class="col-md-3 mb-md-0 mb-3">
+
+        <!-- Links -->
+        <h5 class="text-uppercase">Home</h5>
+
+        <ul class="list-unstyled">
+         <li>
+          <li><a href="index.html">Home</a></li>
+           <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact us</a></li>
+             <li><a href="#">Blog</a></li>
+              <li><a href="#">Awards</a></li>
+        </ul>
+
+      </div>
+      <!-- Grid column -->
+
+      <!-- Grid column -->
+      <div class="col-md-3 mb-md-0 mb-3">
+
+        <!-- Links -->
+        <h5 class="text-uppercase">Adress</h5>
+
+        <ul class="list-unstyled">
+          <li><p><i class="fas fa-home mr-3"></i> New York, NY 10012, US</p></li>
+           <li><p><i class="fas fa-envelope mr-3"></i> info@example.com</p></li>
+            <li><p><i class="fas fa-phone mr-3"></i> + 01 234 567 88</p></li>
+            <li><p><i class="fas fa-print mr-3"></i> + 01 234 567 89</p></li>
+        </ul>
+
+      </div>
+      <!-- Grid column -->
+
+    </div>
+    <!-- Grid row -->
+
+  </div>
+  <!-- Footer Links -->
+<hr width="auto;" color="#0000F8" size="4">
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-3">© 2019 Copyright:
+    <a href="https://mdbootstrap.com/education/bootstrap/"> foodie.com</a>
+  </div>
+  <!-- Copyright -->
+
+</footer>
+
+<script type="text/javascript">
+var a = 0;
+$(window).scroll(function() {
+
+  var oTop = $('#counter').offset().top - window.innerHeight;
+  if (a == 0 && $(window).scrollTop() > oTop) {
+    $('.counter-value').each(function() {
+      var $this = $(this),
+        countTo = $this.attr('data-count');
+      $({
+        countNum: $this.text()
+      }).animate({
+          countNum: countTo
+        },
+
+        {
+
+          duration: 7000,
+          easing: 'swing',
+          step: function() {
+            $this.text(Math.floor(this.countNum));
+          },
+          complete: function() {
+            $this.text(this.countNum);
+            //alert('finished');
+          }
+
+        });
+    });
+    a = 1;
+  }
+
+});
+
+</script>
+<script type="text/javascript">
+$(document).ready(function() {
+  
+  setTimeout(function() {
+    $('#ctn-preloader').addClass('loaded');
+    $('body').removeClass('no-scroll-y');
+
+    if ($('#ctn-preloader').hasClass('loaded')) {
+      $('#preloader').delay(1000).queue(function() {
+        $(this).remove();
+      });
+    }
+  }, 3000);
+  
+});
+</script>
+
+<script type="text/javascript">
+		$(function($) {
+			$('.stellarnav').stellarNav({
+				theme: 'dark',
+				breakpoint: 960,
+				position: 'right',
+			});
+		});
+
+</script>
+
+
+
+<script type="text/javascript">
+var interval = null;
+$(function () {
+interval = setInterval(callFunc, 4000);
+});
+
+function callFunc() {
+$('.next').trigger('click');
+}
+
+</script>
+
+<script>
+jQuery("h1").fitText(1.2);
+
+</script>
+
+<script type="text/javascript">
+
+$(function() {
+  $('a[href*=#]').on('click', function(e) {
+    e.preventDefault();
+    $('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top}, 500, 'linear');
+  });
+});
+
+</script>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+
+	</body>
+	</html>

@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<!-- Camera is a Pixedelic free jQuery slideshow | Manuel Masia (designer and developer) -->
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" >
+<title>FOODIE - Food Blog Template</title>
+<meta name="description" content="Camera a free jQuery slideshow with many effects, transitions, adaptive layout, easy to customize, using canvas and mobile ready">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!--BOOTSTRAP CDN-->
+<script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+<!--MAIN CSS FILE-->
+ <link rel='stylesheet' id='main-css'  href='style.css?version=2.0' type='text/css' media='all'>
+		
+<!--Font Avesome for social media buttons-->  
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+<link href="https://fonts.googleapis.com/css?family=Akronim|Almendra+SC|Lato|Ewert|IM+Fell+Double+Pica+SC|IM+Fell+French+Canon+SC|Merriweather|Overlock+SC|Ribeye+Marrow|Vollkorn+SC|Wendy+One" rel="stylesheet">
+
+<!--ICON-->
+<link rel="icon" href="images/core-img/icon3.png">
+<script type="text/javascript" src="js/stellarnav.min.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Cinzel|Crete+Round|Merriweather|Vollkorn|Cherry+Swash" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Berkshire+Swash|Cookie|Great+Vibes&display=swap" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="css/image-slider.css?version=2.0">
+
+</head>
+<body>
+
+<!--PRELOADER-->
+<section>
+    <div id="preloader">
+      <div id="ctn-preloader" class="ctn-preloader">
+
+        <div class="animation-preloader"> <img src="images/core-img/icon3.png">
+          <div class="spinner"></div>
+          <div class="txt-loading">
+            <span data-text-preloader="F" class="letters-loading">
+              F
+            </span>
+            <span data-text-preloader="O" class="letters-loading">
+              O
+            </span>
+            <span data-text-preloader="O" class="letters-loading">
+              O
+            </span>
+            <span data-text-preloader="D" class="letters-loading">
+              D
+            </span>
+            <span data-text-preloader="I" class="letters-loading">
+              I
+            </span>
+            <span data-text-preloader="E" class="letters-loading">
+              E
+            </span>
+           
+          </div>
+        </div>  
+        <div class="loader-section section-left"></div>
+        <div class="loader-section section-right"></div>
+      </div>
+    </div>
+  </section>
+
+		<!--SOCIAL HEADER-->
+		<div class="top-social-header">
+			 <!-- Top Social Info -->
+        <div class="row h-100 align-items-center justify-content-between">
+           <div class="col-12 col-sm-4">
+              <div class="welcome-font">
+							  <a href="index.html"></a>
+			            <img src="images/core-img/logo22.png">				
+						</div> 
+            </div>
+         <div class="col-sm-6">
+						<div class="top-social-info text-right">
+							<a href="#" class="icon-radius fab fa-facebook-f" aria-hidden="true"></a>
+							<a href="#" class="icon-radius fab fa-twitter"></a>
+							<a href="#" class="icon-radius fab fa-linkedin"></a>
+							<a href="#" class="icon-radius fab fa-instagram"></a>
+						</div>
+					</div>
+                </div>
+		    </div>
+
+
+<!--NAVIGATION BAR-->
+	<div class="stellarnav">
+			<ul>
+			<li><a href="#">Home</a>
+		    	<ul>
+					<li><a href="index.html">Home Slider v1</a>	
+		    		<li><a href="#">Home Slider v2</a>
+		    		<li><a href="#">Home Slider v3</a></li>
+		    	</ul>
+		    </li> 
+
+		    <li><a href="#zigzag">Features</a></li>
+
+		   <li><a href="">Menu & Specials</a>
+		    	<ul>
+		    		<li><a href="menu.html">Menu 1</a></li>
+		    		<li><a href="#">Menu 2</a></li>
+					<li><a href="#">Mega Menu</a>
+		    		<ul>
+				    	<li><a href="#">Main Dishes</a>
+				    		<ul>
+				    			<li><a href="#">Chicken</a>
+				    				<ul>
+				    					<li><a href="#">Item 1</a></li>
+				    					<li><a href="#">Item 2</a></li>
+				    					<li><a href="#">Item 3</a></li>
+				    				</ul>
+				    				</li>
+				    				<li><a href="#">Item 1</a></li>
+				    				<li><a href="#">Item 2</a></li>
+				    				<li><a href="#">Item 3</a></li>
+				    			</ul>
+				    		    </li>
+				    		       <li><a href="#">Salads</a></li>
+				    		       <li><a href="#">Desserts</a></li>
+				    		       <li><a href="#">Drinks</a></li>
+				    		       <li><a href="#">Specials</a></li>
+		    			        </ul>
+		    		            </li></ul></li>
+
+		    <li><a href="">Our Gallery</a>
+                 <ul>
+		    		<li><a href="gallery.html">Restaurant Gallery</a>
+		    		<li><a href="foodgallery.html">Food Gallery</a></li>
+		    	</ul>
+		    </li>
+            <li><a href="">Events</a></li>
+		    <li><a href="">About</a></li>
+		    <li><a href="">Contact</a></li>
+		</ul>
+		</div>
+
+<div id="slider-main">
+
+    <!-- previous button -->
+<button id="prev"><i class="fa fa-angle-double-left"></i></button>
+
+    <!-- image container -->
+<div id="slider"></div>
+
+    <!-- next button -->
+    <button id="next"><i class="fa fa-angle-double-right"></i></button>
+
+    <!-- small circles container -->
+    <div id="circles"></div>
+
+</div>
+<!-- end of main image slider container -->
+
+<!--jquery javascript library -->
+<script src="https://code.jquery.com/jquery-3.3.0.min.js" integrity="sha384-tsQFqpEReu7ZLhBV2VZlAu7zcOV+rXbYlF2cqB8txI/8aZajjp4Bqd+V6D5IgvKT" crossorigin="anonymous"></script>
+<!-- image slider script -->
+<script src="js/image-slider.js"></script>
+
+
+
+
+
+
+		<script type="text/javascript">
+$(document).ready(function() {
+  
+  setTimeout(function() {
+    $('#ctn-preloader').addClass('loaded');
+    // Una vez haya terminado el preloader aparezca el scroll
+    $('body').removeClass('no-scroll-y');
+
+    if ($('#ctn-preloader').hasClass('loaded')) {
+      // Es para que una vez que se haya ido el preloader se elimine toda la seccion preloader
+      $('#preloader').delay(1000).queue(function() {
+        $(this).remove();
+      });
+    }
+  }, 3000);
+  
+});
+</script>
+
+<script type="text/javascript">
+		$(function($) {
+			$('.stellarnav').stellarNav({
+				theme: 'dark',
+				breakpoint: 960,
+				position: 'right',
+			});
+		});
+
+</script>
+
+
+
+<script type="text/javascript">
+var interval = null;
+$(function () {
+interval = setInterval(callFunc, 4000);
+});
+
+function callFunc() {
+$('.next').trigger('click');
+}
+
+</script>
+
+
+
+</body>
+</html>

@@ -1,0 +1,2026 @@
+<!DOCTYPE html>
+<!-- Camera is a Pixedelic free jQuery slideshow | Manuel Masia (designer and developer) -->
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" >
+<title>FOODIE - Food Blog Template</title>
+<meta name="description" content="Camera a free jQuery slideshow with many effects, transitions, adaptive layout, easy to customize, using canvas and mobile ready">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.theme.min.css">
+
+<!--BOOTSTRAP CDN-->
+<script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+<!--MAIN CSS FILE-->
+ <link rel='stylesheet' id='main-css'  href='style.css' type='text/css' media='all'>
+<link href='http://fonts.googleapis.com/css?family=Raleway:400,800,500,600' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="css/animations.css?version=2.0" type="text/css">
+		
+<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.2.0/css/font-awesome.min.css" />
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<!--Font Avesome for social media buttons-->  
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+<link href="https://fonts.googleapis.com/css?family=Akronim|Almendra+SC|Lato|Ewert|IM+Fell+Double+Pica+SC|IM+Fell+French+Canon+SC|Merriweather|Overlock+SC|Ribeye+Marrow|Vollkorn+SC|Wendy+One" rel="stylesheet">
+
+<!--ICON-->
+<link rel="icon" href="images/core-img/icon3.png">
+
+<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>-->
+
+<script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js"></script>
+
+<script type='text/javascript' src='js/jquery/jquery-2.2.4.min.js'></script>
+
+
+<script type='text/javascript' src='js/jquery.mobile.customized.min.js'></script>
+<script type='text/javascript' src='js/jquery.easing.1.3.js'></script>
+<script type='text/javascript' src='js/camera.min.js'></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js"></script>
+<script type="text/javascript" src="js/stellarnav.min.js"></script>
+ <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+
+ <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/css?family=Cinzel|Crete+Round|Merriweather|Vollkorn|Cherry+Swash" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Berkshire+Swash|Cookie|Great+Vibes&display=swap" rel="stylesheet">
+
+
+
+ <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css" rel="stylesheet" />
+
+ <style>
+        .animatedParent {
+            display: inline-block;
+            
+        }
+        .box {
+            width: auto;
+            height: auto;
+            background-color: #7b00ff;
+            margin: 12px;
+            display: flex;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+
+<!--PRELOADER-->
+<section>
+    <div id="preloader">
+      <div id="ctn-preloader" class="ctn-preloader">
+
+        <div class="animation-preloader"> <img src="images/core-img/icon3.png">
+          <div class="spinner"></div>
+          <div class="txt-loading">
+            <span data-text-preloader="F" class="letters-loading">
+              F
+            </span>
+            <span data-text-preloader="O" class="letters-loading">
+              O
+            </span>
+            <span data-text-preloader="O" class="letters-loading">
+              O
+            </span>
+            <span data-text-preloader="D" class="letters-loading">
+              D
+            </span>
+            <span data-text-preloader="I" class="letters-loading">
+              I
+            </span>
+            <span data-text-preloader="E" class="letters-loading">
+              E
+            </span>
+           
+          </div>
+        </div>  
+        <div class="loader-section section-left"></div>
+        <div class="loader-section section-right"></div>
+      </div>
+    </div>
+  </section>
+
+		<!--SOCIAL HEADER-->
+		<div class="top-social-header">
+			 <!-- Top Social Info -->
+        <div class="row h-100 align-items-center justify-content-between">
+           <div class="col-12 col-sm-4">
+              <div class="welcome-font">
+							  <a href="index.html"></a>
+			            <img src="images/core-img/logo22.png">				
+						</div> 
+            </div>
+         <div class="col-sm-6">
+						<div class="top-social-info text-right">
+							<a href="#" class="icon-radius fab fa-facebook-f" aria-hidden="true"></a>
+							<a href="#" class="icon-radius fab fa-twitter"></a>
+							<a href="#" class="icon-radius fab fa-linkedin"></a>
+							<a href="#" class="icon-radius fab fa-instagram"></a>
+						</div>
+					</div>
+                </div>
+		    </div>
+
+
+<!--NAVIGATION BAR-->
+	 <div class="stellarnav">
+      <ul>
+      <li><a href="#">Home</a>
+          <ul>
+          <li><a href="index.html">Home Slider v1</a> 
+            <li><a href="index2.html">Home Slider v2</a>
+            <li><a href="index3.html">Home Slider v3</a></li>
+          </ul>
+        </li> 
+
+        <li><a href="">Features</a>
+          <ul>
+          <li><a href="index.html">Home</a> 
+            <li><a href="menu.html">Menu&Specials</a>
+            <li><a href="">Our Gallery</a>
+              <ul>
+                    
+            <li><a href="">Restaurant Gallery</a>
+               <ul>
+              <li><a href="restaurant-gallery2column.html">2-Column Gallery</a></li>
+              <li><a href="restaurant-gallery3column.html">3-Column Gallery</a></li>
+              <li><a href="restaurant-gallery4column.html">4-Column Gallery</a></li>
+              </ul>
+            </li>
+            <li><a href="">Food Gallery</a>
+               <ul>
+              <li><a href="food-gallery2column.html">2-Column Gallery</a></li>
+              <li><a href="food-gallery3column.html">3-Column Gallery</a></li>
+              <li><a href="food-gallery4column.html">4-Column Gallery</a></li>
+              </ul>
+
+            </li>
+      
+            </ul>
+
+             <li><a href="events.html">Events</a></li>
+              <li><a href="about.html">About</a></li>
+               <li><a href="reservation.html">Reservation</a></li>
+                <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </li>
+
+       <li><a href="">Menu & Specials</a>
+          <ul>
+            <li><a href="menu.html">Menu 1</a></li>
+            <li><a href="menu2.html">Menu 2</a></li>
+          <li><a href="menu.html">Mega Menu</a>
+            <ul>
+              <li><a href="#">Main Dishes</a>
+                    </li>
+                       <li><a href="#">Salads</a></li>
+                       <li><a href="#">Desserts</a></li>
+                       <li><a href="#">Drinks</a></li>
+                       <li><a href="#">Specials</a></li>
+                      </ul>
+                        </li></ul></li>
+
+        <li><a href="">Our Gallery</a>
+                 <ul>
+            <li><a href="">Restaurant Gallery</a>
+               <ul>
+              <li><a href="restaurant-gallery2column.html">2-Column Gallery</a></li>
+              <li><a href="restaurant-gallery3column.html">3-Column Gallery</a></li>
+              <li><a href="restaurant-gallery4column.html">4-Column Gallery</a></li>
+              </ul>
+            </li>
+            <li><a href="">Food Gallery</a>
+               <ul>
+              <li><a href="food-gallery2column.html">2-Column Gallery</a></li>
+              <li><a href="food-gallery3column.html">3-Column Gallery</a></li>
+              <li><a href="food-gallery4column.html">4-Column Gallery</a></li>
+              </ul>
+
+            </li>
+          </ul>
+        </li>
+
+        <li><a href="events.html">Events</a></li>
+        <li><a href="reservation.html">Reservation</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+    </div>
+    
+  <div style="clear:both; display:block; width:auto;height:30px; "></div>
+
+<div class="container hero-section">
+
+  <div class="row">
+     <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12" id="img-section">
+       <img src="images/menu-images/blur-menu.jpg"  class="img-responsive">
+   </div>
+
+     <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 mt-3">
+   <div class="content">
+    <h2>Menu</h2>
+    <p class="p1"> Lorem ipsum dolor sit amet, consectetur adipisicing elit.A accusantium ad asperiores at atque culpa dolores eaque fugiat hic illo ipsam ipsum minima modi necessitatibus nemo officia, omnis perferendis placeat quaerat quas quis ratione rerum sint sit vitae.Animi architecto consequatur delectus eos id. Lorem ipsum dolor sit amet, consectetur adipisicing elit. A accusantium ad asperiores at atque culpa dolores eaque fugiat hic illo ipsam ipsum minima modi necessitatibus nemo officia.</p>
+    <div class="menubutton" id="button-3">
+    <div id="circle"></div>
+   
+
+    <a href="#menudiv" class="anchor-scroll"
+   data-class-to="body" 
+   data-on-scroll="blur-effect"
+>View Menu</a>
+
+<a href="#menudiv" class="anchor-scroll" data-class-to="#menudiv" data-scroll-end="bounce"></a>
+  </div></div></div>
+ </div></div>
+
+
+<div style="clear:both; display:block; width:auto;height:150px;"></div>
+
+
+
+<div class="container-fluid" id="menudiv"  style="clear:both;min-height:100vh; width:auto;">
+  <div class="row">
+        <div class="col-md-12">
+            <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                <div class="panel panel-default"> 
+                   <figure class="effect-ming">
+                      <div class="panel-headingOne" role="tab" id="headingOne">
+						             <figcaption>
+                            <h4 class="panel-title ">
+                            <a role="button" class="accordion-button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne"  >
+                              <p id="headOne"> MAIN COURSE </p>
+                              <p>Ming sits in the corner the whole day. She's into crochet.</p>
+                            </a>	
+                            </h4>
+                         </figcaption>
+                    </figure>  
+                    </div>
+                  <div style="clear:both; display:block; width:auto;height:300px;" >
+                      <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                        <div class="panel-body" >
+                          <div class="container-fluid" id="collapse-body" style="clear:both; width:auto;height:100%; background:#fff; ">
+
+                          <div class="row">
+                  <div class="col-md-12 ">
+                    <div class="tab" role="tabpanel">
+                     <!-- Nav tabs -->
+                    <ul class="nav nav-tabs" role="tablist">
+                    <li role="presentation" class="active"><a href="#Section1" aria-controls="home" role="tab" data-toggle="tab">BREAKFAST</a></li>
+                    <li role="presentation"><a href="#Section2" aria-controls="profile" role="tab" data-toggle="tab">LUNCH</a></li>
+                    <li role="presentation"><a href="#Section3" aria-controls="messages" role="tab" data-toggle="tab">DINNER</a></li>
+
+                    <li role="presentation"><a href="#Section4" aria-controls="messages" role="tab" data-toggle="tab">SPECIALS</a></li>
+                </ul>
+                            <!-- Tab panes -->
+                           <div class="tab-content tabs" >
+                           <div role="tabpanel" class="tab-pane active" id="Section1" data-aos="fade-up"
+                           data-aos-duration="1000">
+
+                    <div class="container" >
+                    <div class="row">
+                    <div class="col-md-6 col-sm-12 float-left">
+                    <div class='animatedParent'>
+                    <div class="imagebox">
+                    <a href="">
+                    <img src="images/large-images/egg_new.jpg"  class="img-responsive">
+                    <span class="imagebox-desc">Boiled Egg</span></a>
+                   </div></div></div> 
+
+                   <div class="col-md-6 col-sm-12 float-right" >
+                     <div class='animatedParent'>
+                      <h3>Boiled  Egg</h3>  
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam a congue sem. Nulla eros nisl, commodo vel diam id, mollis sollicitudin ipsum. Donec non pellentesque justo. Suspendisse quis vestibulum magna, eu condimentum metus. Quisque molestie lobortis dictum. Maecenas et leo. <br>   
+                        </p>
+                        <p class="price"> Price : 5€</p>
+                      </div></div></div>
+
+
+                    <div class="col-md-6 col-sm-12 float-right">
+                    <div class='animatedParent'>
+                    <div class="imagebox">
+                    <a href="">
+                    <img src="images/large-images/croissants2_new.jpg"  class="img-responsive">
+                    <span class="imagebox-desc">Croissants</span></a>
+                    </div></div></div>
+
+                    <div class="col-md-6 col-sm-12 float-left">
+                       <div class='animatedParent'>
+                        <h3>Croissants</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam a congue sem. Nulla eros nisl, commodo vel diam id, mollis sollicitudin ipsum. Donec non pellentesque justo. Suspendisse quis vestibulum magna, eu condimentum metus. Quisque molestie lobortis dictum. Maecenas et leo. </p>
+                        <p class="price"> Price : 5€</p>
+                      </div></div></div>
+
+
+
+                    <div class="container">
+                    <div class="row">
+                    <div class="col-md-6 col-sm-12 float-left" >
+                    <div class='animatedParent'>
+                    <div class="imagebox">
+                    <a href="">
+                    <img src="images/large-images/waffle2_new.jpg"  class="img-responsive">
+                    <span class="imagebox-desc">Waffle</span></a>
+                   </div></div></div>
+
+                   <div class="col-md-6 col-sm-12 float-right">
+                    <div class='animatedParent'>
+                      <h3>Waffle</h3>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam a congue sem. Nulla eros nisl, commodo vel diam id, mollis sollicitudin ipsum. Donec non pellentesque justo. Suspendisse quis vestibulum magna, eu condimentum metus. Quisque molestie lobortis dictum. Maecenas et leo. </p>
+                      <p class="price"> Price : 5€</p>
+                      </div></div></div>
+
+
+                    <div class="col-md-6 col-sm-12 float-right">
+                    <div class='animatedParent'>
+                    <div class="imagebox">
+                    <a href="">
+                    <img src="images/large-images/energy-balls_new.jpg"  class="img-responsive">
+                    <span class="imagebox-desc">Energy Balls</span></a>
+                   </div></div></div>
+
+                   <div class="col-md-6 col-sm-12 float-left">
+                    <div class='animatedParent'>
+                     <h3>Enery Balls</h3>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam a congue sem. Nulla eros nisl, commodo vel diam id, mollis sollicitudin ipsum. Donec non pellentesque justo. Suspendisse quis vestibulum magna, eu condimentum metus. Quisque molestie lobortis dictum. Maecenas et leo. </p>
+                      <p class="price"> Price : 5€</p>
+                      </div></div></div>
+
+
+                    <div class="container">
+                    <div class="row">
+                    <div class="col-md-6 col-sm-12 float-left">
+                    <div class='animatedParent'>
+                    <div class="imagebox">
+                    <a href="">
+                    <img src="images/large-images/breakfast-plate-first_new.jpg"  class="img-responsive">
+                    <span class="imagebox-desc">Mix Breakfast Plate</span></a>
+                   </div></div></div>
+
+                   <div class="col-md-6 col-sm-12 float-right">
+                    <div class='animatedParent'>
+                      <h3">Mix Breakfast Plate</h3>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam a congue sem. Nulla eros nisl, commodo vel diam id, mollis sollicitudin ipsum. Donec non pellentesque justo. Suspendisse quis vestibulum magna, eu condimentum metus. Quisque molestie lobortis dictum. Maecenas et leo. </p>
+                      <p class="price"> Price : 5€</p>
+                      </div></div></div>
+
+                    <div class="col-md-6 col-sm-12 float-right">
+                    <div class='animatedParent'>
+                    <div class="imagebox">
+                    <a href="">
+                    <img src="images/large-images/breakfast-plate_new.jpg"  class="img-responsive">
+                    <span class="imagebox-desc">Breakfast Plate</span></a>
+                   </div></div></div>
+
+                   <div class="col-md-6 col-sm-12 float-left">
+                    <div class='animatedParent'>
+                      <h3>Breakfast Plate</h3>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam a congue sem. Nulla eros nisl, commodo vel diam id, mollis sollicitudin ipsum. Donec non pellentesque justo. Suspendisse quis vestibulum magna, eu condimentum metus. Quisque molestie lobortis dictum. Maecenas et leo. </p>
+                       <p class="price"> Price : 5€</p>
+                      </div></div></div>
+
+
+                    <div class="container">
+                    <div class="row">
+                    <div class="col-md-6 col-sm-12 float-left">
+                    <div class='animatedParent'>
+                    <div class="imagebox">
+                    <a href="">
+                    <img src="images/large-images/breads_new.jpg"  class="img-responsive">
+                    <span class="imagebox-desc">Healty Breakfast</span></a>
+                   </div></div></div>
+
+                   <div class="col-md-6 col-sm-12 float-right">
+                    <div class='animatedParent'> 
+                      <h3>Healty Breakfast</h3>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam a congue sem. Nulla eros nisl, commodo vel diam id, mollis sollicitudin ipsum. Donec non pellentesque justo. Suspendisse quis vestibulum magna, eu condimentum metus. Quisque molestie lobortis dictum. Maecenas et leo. </p>
+                        <p class="price"> Price : 5€</p>
+                      </div></div></div>
+
+                    <div class="col-md-6 col-sm-12 float-right">
+                    <div class='animatedParent'>
+                    <div class="imagebox">
+                    <a href="">
+                    <img src="images/large-images/berries-bread_new.jpg"  class="img-responsive">
+                    <span class="imagebox-desc">Berries Bread</span></a>
+                   </div></div></div>
+
+                   <div class="col-md-6 col-sm-12 float-left">
+                    <div class='animatedParent'>
+                     <h3>Berries Bread</h3>
+                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam a congue sem. Nulla eros nisl, commodo vel diam id, mollis sollicitudin ipsum. Donec non pellentesque justo. Suspendisse quis vestibulum magna, eu condimentum metus. Quisque molestie lobortis dictum. Maecenas et leo. </p>
+                      <p class="price"> Price : 5€</p>
+                      </div></div></div>
+
+                   <div class="container">
+                    <div class="row">
+                    <div class="col-md-6 col-sm-12 float-left">
+                    <div class='animatedParent'>
+                    <div class="imagebox">
+                    <a href="">
+                    <img src="images/large-images/mini-breads_new.jpg"  class="img-responsive">
+                    <span class="imagebox-desc">Mini Breads</span></a>
+                   </div></div></div>
+
+                   <div class="col-md-6 col-sm-12 float-right">
+                     <div class='animatedParent'>
+                     <h3>Mini Breads</h3>
+                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam a congue sem. Nulla eros nisl, commodo vel diam id, mollis sollicitudin ipsum. Donec non pellentesque justo. Suspendisse quis vestibulum magna, eu condimentum metus. Quisque molestie lobortis dictum. Maecenas et leo. </p>
+                      <p class="price"> Price : 5€</p>
+                      </div></div></div>
+
+                    <div class="col-md-6 col-sm-12 float-right">
+                    <div class='animatedParent'>
+                    <div class="imagebox">
+                    <a href="">
+                    <img src="images/large-images/fruit-salad_new.jpg"  class="img-responsive">
+                    <span class="imagebox-desc">Fruit Salad</span></a>
+                   </div></div></div>
+
+                   <div class="col-md-6 col-sm-12 float-left">
+                     <div class='animatedParent'>
+                      <h3>Fruit Salad</h3>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam a congue sem. Nulla eros nisl, commodo vel diam id, mollis sollicitudin ipsum. Donec non pellentesque justo. Suspendisse quis vestibulum magna, eu condimentum metus. Quisque molestie lobortis dictum. Maecenas et leo. </p>
+                      <p class="price"> Price : 5€</p>
+                      </div></div>
+                     </div> </div>
+
+              <div role="tabpanel" class="tab-pane active" id="Section2">
+
+                <div class="container">
+                    <div class="row">
+                    <div class="col-md-6 col-sm-12 float-left">
+                    <div class="animatedParent">
+                    <div class="imagebox">
+                    <a href="">
+                    <img src="images/large-images/hamburger-lunch_new.jpg"  class="img-responsive">
+                    <span class="imagebox-desc">Hamburger</span></a>
+                   </div></div></div>
+
+                   <div class="col-md-6 col-sm-12 float-right">
+                     <div class="animatedParent">
+                      <h3>Hamburger</h3>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam a congue sem. Nulla eros nisl, commodo vel diam id, mollis sollicitudin ipsum. Donec non pellentesque justo. Suspendisse quis vestibulum magna, eu condimentum metus. Quisque molestie lobortis dictum. Maecenas et leo. </p>
+                      <p class="price"> Price : 5€</p>
+                      </div></div></div>
+                   
+                    <div class="col-md-6 col-sm-12 float-right">
+                    <div class="animatedParent">
+                    <div class="imagebox">
+                    <a href="">
+                    <img src="images/large-images/chicken-lunch_sauce_new.jpg"  class="img-responsive">
+                    <span class="imagebox-desc">Grilled Chicken with Sauce</span></a>
+                   </div></div></div>
+
+               
+                   <div class="col-md-6 col-sm-12 float-left">
+                    <div class="animatedParent">  
+                      <h3>Grilled Chicken with Sauce</h3>
+                      <p >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam a congue sem. Nulla eros nisl, commodo vel diam id, mollis sollicitudin ipsum. Donec non pellentesque justo. Suspendisse quis vestibulum magna, eu condimentum metus. Quisque molestie lobortis dictum. Maecenas et leo. </p>
+                      <p class="price"> Price : 5€</p>
+                      </div></div></div>
+
+                    <div class="container">
+                    <div class="row">
+                    <div class="col-md-6 col-sm-12 float-left">
+                    <div class="animatedParent">  
+                    <div class="imagebox">
+                    <a href="">
+                    <img src="images/large-images/chicken-meal-lunch_new.jpg"  class="img-responsive">
+                    <span class="imagebox-desc">Chicken Meal</span></a>
+                   </div></div></div>
+
+                   <div class="col-md-6 col-sm-12 float-right">
+                     <div class="animatedParent">  
+                      <h3>Chicken Meal</h3>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam a congue sem. Nulla eros nisl, commodo vel diam id, mollis sollicitudin ipsum. Donec non pellentesque justo. Suspendisse quis vestibulum magna, eu condimentum metus. Quisque molestie lobortis dictum. Maecenas et leo. </p>
+                      <p class="price"> Price : 5€</p>
+                      </div></div></div>
+
+                    <div class="col-md-6 col-sm-12 float-right">
+                    <div class="animatedParent">  
+                    <div class="imagebox">
+                    <a href="">
+                    <img src="images/large-images/salad-lunch_new.jpg"  class="img-responsive">
+                    <span class="imagebox-desc">Green Salad</span></a>
+                   </div></div></div>
+
+                   <div class="col-md-6 col-sm-12 float-left">
+                     <div class="animatedParent">  
+                       <h3>Green Salad</h3>
+                       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam a congue sem. Nulla eros nisl, commodo vel diam id, mollis sollicitudin ipsum. Donec non pellentesque justo. Suspendisse quis vestibulum magna, eu condimentum metus. Quisque molestie lobortis dictum. Maecenas et leo. </p>
+                        <p class="price"> Price : 5€</p>
+                      </div></div></div>
+
+
+                    <div class="container">
+                    <div class="row">
+                    <div class="col-md-6 col-sm-12 float-left">
+                    <div class="animatedParent"> 
+                    <div class="imagebox">
+                    <a href="">
+                    <img src="images/large-images/lasagna-lunch_new.jpg"  class="img-responsive">
+                    <span class="imagebox-desc">Lasagna</span></a>
+                   </div></div></div>
+
+                    <div class="col-md-6 col-sm-12 float-right">
+                      <div class="animatedParent"> 
+                        <h3>Lasagna</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam a congue sem. Nulla eros nisl, commodo vel diam id, mollis sollicitudin ipsum. Donec non pellentesque justo. Suspendisse quis vestibulum magna, eu condimentum metus. Quisque molestie lobortis dictum. Maecenas et leo. </p>
+                        <p class="price"> Price : 5€</p>
+                      </div></div></div>
+
+                    <div class="col-md-6 col-sm-12 float-right">
+                    <div class="animatedParent">
+                    <div class="imagebox">
+                    <a href="">
+                    <img src="images/large-images/spaghetti_new.jpg"  class="img-responsive">
+                    <span class="imagebox-desc">Spaghetti</span></a>
+                   </div></div></div>
+
+                   <div class="col-md-6 col-sm-12 float-left">
+                    <div class="animatedParent"> 
+                      <h3>Spaghetti</h3>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam a congue sem. Nulla eros nisl, commodo vel diam id, mollis sollicitudin ipsum. Donec non pellentesque justo. Suspendisse quis vestibulum magna, eu condimentum metus. Quisque molestie lobortis dictum. Maecenas et leo. </p>
+                         <p class="price"> Price : 5€</p>
+                      </div></div></div>
+
+                    <div class="container">
+                    <div class="row">
+                    <div class="col-md-6 col-sm-12 float-left">
+                    <div class="animatedParent">
+                    <div class="imagebox">
+                    <a href="">
+                    <img src="images/large-images/taco-lunch_new.jpg"  class="img-responsive">
+                    <span class="imagebox-desc">Taco</span></a>
+                   </div></div></div>
+
+                   <div class="col-md-6 col-sm-12 float-right">
+                     <div class="animatedParent">
+                      <h3>Taco</h3>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam a congue sem. Nulla eros nisl, commodo vel diam id, mollis sollicitudin ipsum. Donec non pellentesque justo. Suspendisse quis vestibulum magna, eu condimentum metus. Quisque molestie lobortis dictum. Maecenas et leo. </p>
+                      <p class="price"> Price : 5€</p>
+                      </div></div></div>
+
+                    <div class="col-md-6 col-sm-12 float-right">
+                    <div class="animatedParent">
+                    <div class="imagebox">
+                    <a href="">
+                    <img src="images/large-images/chicken-lunch_new.jpg"  class="img-responsive">
+                    <span class="imagebox-desc">Fried Chicken</span></a>
+                   </div></div></div>
+
+                   <div class="col-md-6 col-sm-12 float-left">
+                     <div class="animatedParent">
+                      <h3>Fried Chicken</h3>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam a congue sem. Nulla eros nisl, commodo vel diam id, mollis sollicitudin ipsum. Donec non pellentesque justo. Suspendisse quis vestibulum magna, eu condimentum metus. Quisque molestie lobortis dictum. Maecenas et leo. </p>
+                      <p class="price"> Price : 5€</p>
+                      </div></div></div>
+
+
+                    <div class="container">
+                    <div class="row">
+                    <div class="col-md-6 col-sm-12 float-left">
+                    <div class="animatedParent">
+                    <div class="imagebox">
+                    <a href="">
+                    <img src="images/large-images/vegetarian-pizza_new.jpg"  class="img-responsive">
+                    <span class="imagebox-desc">Vegetarian Pizza</span></a>
+                   </div></div></div>
+
+                   <div class="col-md-6 col-sm-12 float-right">
+                     <div class="animatedParent">
+                      <h3>Vegetarian Pizza</h3>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam a congue sem. Nulla eros nisl, commodo vel diam id, mollis sollicitudin ipsum. Donec non pellentesque justo. Suspendisse quis vestibulum magna, eu condimentum metus. Quisque molestie lobortis dictum. Maecenas et leo. </p>
+                      <p class="price"> Price : 5€</p>
+                      </div></div></div>
+
+                    <div class="col-md-6 col-sm-12 float-right">
+                    <div class="animatedParent">
+                    <div class="imagebox">
+                    <a href="">
+                    <img src="images/large-images/cheese-pasta-lunch_new.jpg"  class="img-responsive">
+                    <span class="imagebox-desc">Cheese Pasta</span></a>
+                   </div></div></div>
+
+                   <div class="col-md-6 col-sm-12 float-left">
+                     <div class="animatedParent">
+                      <h3>Cheese Pasta</h3>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam a congue sem. Nulla eros nisl, commodo vel diam id, mollis sollicitudin ipsum. Donec non pellentesque justo. Suspendisse quis vestibulum magna, eu condimentum metus. Quisque molestie lobortis dictum. Maecenas et leo. </p>
+                      <p class="price"> Price : 5€</p>
+                      </div></div></div></div>
+
+            <div role="tabpanel" class="tab-pane active" id="Section3">
+                <div class="container">
+                    <div class="row">
+                    <div class="col-md-6 col-sm-12 float-left">
+                    <div class="animatedParent">
+                    <div class="imagebox">
+                    <a href="">
+                    <img src="images/large-images/steak_new.jpg"  class="img-responsive">
+                    <span class="imagebox-desc">Steak</span></a>
+                   </div></div></div>
+
+                   <div class="col-md-6 col-sm-12 float-right">
+                    <div class="animatedParent">
+                      <h3>Steak</h3>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam a congue sem. Nulla eros nisl, commodo vel diam id, mollis sollicitudin ipsum. Donec non pellentesque justo. Suspendisse quis vestibulum magna, eu condimentum metus. Quisque molestie lobortis dictum. Maecenas et leo. </p>
+                      <p class="price"> Price : 5€</p>
+                      </div></div></div>
+
+                    <div class="col-md-6 col-sm-12 float-right">
+                    <div class="animatedParent">
+                    <div class="imagebox">
+                    <a href="">
+                    <img src="images/large-images/grilled-meat_new.jpg"  class="img-responsive">
+                    <span class="imagebox-desc">Grilled Meat with Vegetables</span></a>
+                   </div></div></div>
+
+                   <div class="col-md-6 col-sm-12 float-left">
+                    <div class="animatedParent">
+                      <h3>Grilled Meat with Vegetables</h3>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam a congue sem. Nulla eros nisl, commodo vel diam id, mollis sollicitudin ipsum. Donec non pellentesque justo. Suspendisse quis vestibulum magna, eu condimentum metus. Quisque molestie lobortis dictum. Maecenas et leo. </p>
+                      <p class="price"> Price : 5€</p>
+                      </div></div></div>
+
+                    <div class="container">
+                    <div class="row">
+                    <div class="col-md-6 col-sm-12 float-left">
+                    <div class="animatedParent">
+                    <div class="imagebox">
+                    <a href="">
+                    <img src="images/large-images/grilled-chicken_new.jpg"  class="img-responsive">
+                    <span class="imagebox-desc">Grilled Chicken</span></a>
+                   </div></div></div>
+
+
+                   <div class="col-md-6 col-sm-12 float-right">
+                    <div class="animatedParent">
+                      <h3>Grilled Chicken</h3>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam a congue sem. Nulla eros nisl, commodo vel diam id, mollis sollicitudin ipsum. Donec non pellentesque justo. Suspendisse quis vestibulum magna, eu condimentum metus. Quisque molestie lobortis dictum. Maecenas et leo. </p>
+                      <p class="price"> Price : 5€</p>
+                      </div></div></div>
+
+
+                    <div class="col-md-6 col-sm-12 float-right"> 
+                    <div class="animatedParent">
+                    <div class="imagebox">
+                    <a href="">
+                    <img src="images/large-images/salad-dinner_new.jpg"  class="img-responsive">
+                    <span class="imagebox-desc">Green Salad Plate</span></a>
+                   </div></div></div>
+
+                   <div class="col-md-6 col-sm-12 float-left">
+                    <div class="animatedParent">
+                      <h3>Green Salad Plate</h3>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam a congue sem. Nulla eros nisl, commodo vel diam id, mollis sollicitudin ipsum. Donec non pellentesque justo. Suspendisse quis vestibulum magna, eu condimentum metus. Quisque molestie lobortis dictum. Maecenas et leo. </p>
+                      <p class="price"> Price : 5€</p>
+                      </div></div></div>
+
+
+                    <div class="container">
+                    <div class="row">
+                    <div class="col-md-6 col-sm-12 float-left">
+                    <div class="animatedParent">
+                    <div class="imagebox">
+                    <a href="">
+                    <img src="images/large-images/tortellini_new.jpg"  class="img-responsive">
+                    <span class="imagebox-desc">Tortellini</span></a>
+                   </div></div></div>
+
+                   <div class="col-md-6 col-sm-12 float-right">
+                     <div class="animatedParent">
+                      <h3>Tortellini</h3>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam a congue sem. Nulla eros nisl, commodo vel diam id, mollis sollicitudin ipsum. Donec non pellentesque justo. Suspendisse quis vestibulum magna, eu condimentum metus. Quisque molestie lobortis dictum. Maecenas et leo. </p>
+                      <p class="price"> Price : 5€</p>
+                      </div></div></div>
+
+                    <div class="col-md-6 col-sm-12 float-right">
+                    <div class="animatedParent">
+                    <div class="imagebox">
+                    <a href="">
+                    <img src="images/large-images/fish-dinner_new.jpg"  class="img-responsive">
+                    <span class="imagebox-desc">Grilled Fish</span></a>
+                   </div></div></div>
+
+                   <div class="col-md-6 col-sm-12 float-left">
+                     <div class="animatedParent">
+                      <h3>Grilled Chicken</h3>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam a congue sem. Nulla eros nisl, commodo vel diam id, mollis sollicitudin ipsum. Donec non pellentesque justo. Suspendisse quis vestibulum magna, eu condimentum metus. Quisque molestie lobortis dictum. Maecenas et leo. </p>
+                      <p class="price"> Price : 5€</p>
+                      </div></div></div>
+
+                    <div class="container">
+                    <div class="row">
+                    <div class="col-md-6 col-sm-12 float-left">
+                    <div class="animatedParent">
+                    <div class="imagebox">
+                    <a href="">
+                    <img src="images/large-images/meat-main-dinner_new.jpg"  class="img-responsive">
+                    <span class="imagebox-desc">Meat with Sauce</span></a>
+                   </div></div></div>
+
+                   <div class="col-md-6 col-sm-12 float-right">
+                     <div class="animatedParent">
+                      <h3>Meat</h3>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam a congue sem. Nulla eros nisl, commodo vel diam id, mollis sollicitudin ipsum. Donec non pellentesque justo. Suspendisse quis vestibulum magna, eu condimentum metus. Quisque molestie lobortis dictum. Maecenas et leo. </p>
+                      <p class="price"> Price : 5€</p>
+                      </div></div></div>
+
+                    <div class="col-md-6 col-sm-12 float-right">
+                    <div class="animatedParent">
+                    <div class="imagebox">
+                    <a href="">
+                    <img src="images/large-images/chicken-breast-fillet_new.jpg"  class="img-responsive">
+                    <span class="imagebox-desc">Chicken Breats Fillet</span></a>
+                   </div></div></div>
+
+                   <div class="col-md-6 col-sm-12 float-left">
+                     <div class="animatedParent">
+                      <h3>Chicken Breats Fillet</h3>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam a congue sem. Nulla eros nisl, commodo vel diam id, mollis sollicitudin ipsum. Donec non pellentesque justo. Suspendisse quis vestibulum magna, eu condimentum metus. Quisque molestie lobortis dictum. Maecenas et leo. </p>
+                      <p class="price"> Price : 5€</p>
+                      </div></div></div>
+
+
+                    <div class="container">
+                    <div class="row">
+                    <div class="col-md-6 col-sm-12 float-left">
+                    <div class="animatedParent">
+                    <div class="imagebox">
+                    <a href="">
+                    <img src="images/large-images/mushroom-meal_new.jpg"  class="img-responsive">
+                    <span class="imagebox-desc">Mushroom Meal</span></a>
+                   </div></div></div>
+
+                   <div class="col-md-6 col-sm-12 float-right">
+                     <div class="animatedParent">
+                      <h3>Mushroom Meal</h3>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam a congue sem. Nulla eros nisl, commodo vel diam id, mollis sollicitudin ipsum. Donec non pellentesque justo. Suspendisse quis vestibulum magna, eu condimentum metus. Quisque molestie lobortis dictum. Maecenas et leo. </p>
+                      <p class="price"> Price : 5€</p>
+                      </div></div></div>
+ 
+                    <div class="col-md-6 col-sm-12 float-right">
+                    <div class="animatedParent">
+                    <div class="imagebox ">
+                    <a href="">
+                    <img src="images/large-images/salmon-dinner_new.jpg"  class="img-responsive">
+                    <span class="imagebox-desc">Salmon</span></a>
+                   </div></div></div>
+
+                   <div class="col-md-6 col-sm-12 float-left">
+                     <div class="animatedParent">
+                      <h3>Salmon</h3>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam a congue sem. Nulla eros nisl, commodo vel diam id, mollis sollicitudin ipsum. Donec non pellentesque justo. Suspendisse quis vestibulum magna, eu condimentum metus. Quisque molestie lobortis dictum. Maecenas et leo. </p>
+                      <p class="price"> Price : 5€</p>
+                      </div></div></div></div>
+
+
+              <div role="tabpanel" class="tab-pane active" id="Section4">
+                <div class="container">
+                    <div class="row">
+                    <div class="col-md-6 col-sm-12 float-left">
+                    <div class="animatedParent">
+                    <div class="imagebox">
+                    <a href="">
+                    <img src="images/large-images/mushrooms_new.jpg"  class="img-responsive">
+                    <span class="imagebox-desc">Mushrooms</span></a>
+                   </div></div></div>
+
+                   <div class="col-md-6 col-sm-12 float-right">
+                     <div class="animatedParent">
+                      <h3>Mushrooms</h3>
+                      <p >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam a congue sem. Nulla eros nisl, commodo vel diam id, mollis sollicitudin ipsum. Donec non pellentesque justo. Suspendisse quis vestibulum magna, eu condimentum metus. Quisque molestie lobortis dictum. Maecenas et leo. </p>
+                      <p class="price"> Price : 5€</p>
+                      </div></div></div>
+
+                    <div class="col-md-6 col-sm-12 float-right">
+                    <div class="animatedParent">
+                    <div class="imagebox">
+                    <a href="">
+                    <img src="images/large-images/stuffed-pepper_new.jpg"  class="img-responsive">
+                    <span class="imagebox-desc">Stuffed Pepper</span></a>
+                   </div></div></div>
+
+                   <div class="col-md-6 col-sm-12 float-left">
+                    <div class="animatedParent">
+                      <h3>Stuffed Pepper</h3>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam a congue sem. Nulla eros nisl, commodo vel diam id, mollis sollicitudin ipsum. Donec non pellentesque justo. Suspendisse quis vestibulum magna, eu condimentum metus. Quisque molestie lobortis dictum. Maecenas et leo. </p>
+                      <p class="price"> Price : 5€</p>
+                      </div></div></div>
+
+                    <div class="container">
+                    <div class="row">
+                    <div class="col-md-6 col-sm-12 float-left">
+                    <div class="animatedParent">
+                    <div class="imagebox">
+                    <a href="">
+                    <img src="images/large-images/steak-vegetables_new.jpg"  class="img-responsive">
+                    <span class="imagebox-desc">Steak with Vegetables</span></a>
+                   </div></div></div>
+
+                   <div class="col-md-6 col-sm-12 float-right">
+                    <div class="animatedParent">
+                      <h3>Steak with Vegetables</h3>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam a congue sem. Nulla eros nisl, commodo vel diam id, mollis sollicitudin ipsum. Donec non pellentesque justo. Suspendisse quis vestibulum magna, eu condimentum metus. Quisque molestie lobortis dictum. Maecenas et leo. </p>
+                      <p class="price"> Price : 5€</p>
+                      </div></div></div>
+
+                    <div class="col-md-6 col-sm-12 float-right">
+                    <div class="animatedParent">
+                    <div class="imagebox">
+                    <a href="">
+                    <img src="images/large-images/salad-plate-special_new.jpg"  class="img-responsive">
+                    <span class="imagebox-desc">Salad Plate Special</span></a>
+                   </div></div></div>
+
+                   <div class="col-md-6 col-sm-12 float-left">
+                     <div class="animatedParent">
+                      <h3>Salad Plate Special</h3>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam a congue sem. Nulla eros nisl, commodo vel diam id, mollis sollicitudin ipsum. Donec non pellentesque justo. Suspendisse quis vestibulum magna, eu condimentum metus. Quisque molestie lobortis dictum. Maecenas et leo. </p>
+                      <p class="price"> Price : 5€</p>
+                      </div></div></div>
+
+
+                    <div class="container">
+                    <div class="row">
+                    <div class="col-md-6 col-sm-12 float-left">
+                    <div class="animatedParent">
+                    <div class="imagebox">
+                    <a href="">
+                    <img src="images/large-images/appetizer_new.jpg"  class="img-responsive">
+                    <span class="imagebox-desc">Appetizer</span></a>
+                   </div></div></div>
+
+                   <div class="col-md-6 col-sm-12 float-right">
+                    <div class="animatedParent">
+                      <h3>Appetizer</h3>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam a congue sem. Nulla eros nisl, commodo vel diam id, mollis sollicitudin ipsum. Donec non pellentesque justo. Suspendisse quis vestibulum magna, eu condimentum metus. Quisque molestie lobortis dictum. Maecenas et leo. </p>
+                      <p class="price"> Price : 5€</p>
+                      </div></div></div>
+
+                    <div class="col-md-6 col-sm-12 float-right">
+                    <div class="animatedParent">
+                    <div class="imagebox">
+                    <a href="">
+                    <img src="images/large-images/fruit-plate-special_new.jpg"  class="img-responsive">
+                    <span class="imagebox-desc">Fruit Plate Special</span></a>
+                   </div></div></div>
+
+                   <div class="col-md-6 col-sm-12 float-left">
+                     <div class="animatedParent">
+                      <h3>Fruit Plate Special</h3>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam a congue sem. Nulla eros nisl, commodo vel diam id, mollis sollicitudin ipsum. Donec non pellentesque justo. Suspendisse quis vestibulum magna, eu condimentum metus. Quisque molestie lobortis dictum. Macenas et leo. </p>
+                         <p class="price"> Price : 5€</p>
+                      </div></div></div>
+
+                    <div class="container">
+                    <div class="row">
+                    <div class="col-md-6 col-sm-12 float-left">
+                    <div class="animatedParent">
+                    <div class="imagebox">
+                    <a href="">
+                    <img src="images/large-images/vegetable-skewer_new.jpg"  class="img-responsive">
+                    <span class="imagebox-desc">Vegetable Skewer</span></a>
+                   </div></div></div>
+
+                   <div class="col-md-6 col-sm-12 float-right">
+                     <div class="animatedParent">
+                      <h3>Vegetable Skewer</h3>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam a congue sem. Nulla eros nisl, commodo vel diam id, mollis sollicitudin ipsum. Donec non pellentesque justo. Suspendisse quis vestibulum magna, eu condimentum metus. Quisque molestie lobortis dictum. Maecenas et leo. </p>
+                      <p class="price"> Price : 5€</p>
+                      </div></div></div>
+
+                    <div class="col-md-6 col-sm-12 float-right">
+                    <div class="animatedParent">
+                    <div class="imagebox">
+                    <a href="">
+                    <img src="images/large-images/salmon-special_new.jpg"  class="img-responsive">
+                    <span class="imagebox-desc">Salmon Special</span></a>
+                   </div></div></div>
+
+                   <div class="col-md-6 col-sm-12 float-left">
+                     <div class="animatedParent">
+                      <h3>Salmon Special</h3>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam a congue sem. Nulla eros nisl, commodo vel diam id, mollis sollicitudin ipsum. Donec non pellentesque justo. Suspendisse quis vestibulum magna, eu condimentum metus. Quisque molestie lobortis dictum. Maecenas et leo. </p>
+                      <p class="price"> Price : 5€</p>
+                      </div></div></div>
+
+
+                    <div class="container">
+                    <div class="row">
+                    <div class="col-md-6 col-sm-12 float-left">
+                    <div class="animatedParent">
+                    <div class="imagebox">
+                    <a href="">
+                    <img src="images/large-images/lasagna-special_new.jpg"  class="img-responsive">
+                    <span class="imagebox-desc">Lasagna Special</span></a>
+                   </div></div></div>
+
+                   <div class="col-md-6 col-sm-12 float-right">
+                     <div class="animatedParent">
+                      <h3>Lasagna Special</h3>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam a congue sem. Nulla eros nisl, commodo vel diam id, mollis sollicitudin ipsum. Donec non pellentesque justo. Suspendisse quis vestibulum magna, eu condimentum metus. Quisque molestie lobortis dictum. Maecenas et leo. </p>
+                      <p class="price"> Price : 5€</p>
+                      </div></div></div>
+
+                    <div class="col-md-6 col-sm-12 float-right">
+                    <div class="animatedParent">
+                    <div class="imagebox">
+                    <a href="">
+                    <img src="images/large-images/lamb-chumb_new.jpg"  class="img-responsive">
+                    <span class="imagebox-desc">Lamb Chumbs</span></a>
+                   </div></div></div>
+
+                   <div class="col-md-6 col-sm-12 float-left">
+                     <div class="animatedParent">
+                      <h3>Lamb Chumbs</h3>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam a congue sem. Nulla eros nisl, commodo vel diam id, mollis sollicitudin ipsum. Donec non pellentesque justo. Suspendisse quis vestibulum magna, eu condimentum metus. Quisque molestie lobortis dictum. Maecenas et leo. </p>
+                      <p class="price"> Price : 5€</p>
+                      </div></div></div></div>
+                   </div> 
+                   </div> 
+                  </div>
+                  </div>     
+                </div>
+            </div></div>
+
+                <div class="panel panel-default" >
+                  <figure class="effect-ming">
+                   <div class="panel-headingTwo" role="tab" id="headingTwo">
+                       <figcaption>
+                        <h4 class="panel-title">
+                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                               <p id="headOne">SOUPS </p>
+                              <p>Ming sits in the corner the whole day. She's into crochet.</p>
+                            </a>  
+                            </h4>
+                         </figcaption>
+                    </figure>  
+                    </div>
+                    <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+
+                        <div class="panel-body">
+                          <div class="container-fluid" id="collapse-body" style="clear:both; display:block; width:100%;height:100%; background:#fff;">
+                  
+                    <div class="container" id="container-imagebox" style="margin-top:4%;">
+                    <div class="row">
+
+                    <div class="col-sm-6 float-left">
+                    <div class="animatedParent">
+                    <div class="imagebox">
+                    <a href="">
+                    <img src="images/menu-images/beef-soup_new.jpg"  class="img-responsive">
+                    <span class="imagebox-desc">Beef Soup</span></a>
+                   </div></div></div>
+
+                   <div class="col-sm-6 float-right">
+                     <div class="animatedParent">
+                      <h3>Beef Soup</h3>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam a congue sem. Nulla eros nisl, commodo vel diam id, mollis sollicitudin ipsum. Donec non pellentesque justo. Suspendisse quis vestibulum magna, eu condimentum metus. Quisque molestie lobortis dictum. Maecenas et leo. <br>   
+                      </p>
+                      <p class="price"> Price : 5€</p>
+                      </div></div></div>
+
+
+                    <div class="col-sm-6 float-right">
+                    <div class="animatedParent">
+                    <div class="imagebox">
+                    <a href="">
+                    <img src="images/menu-images/beetroot-soup_new.jpg"  class="img-responsive">
+                    <span class="imagebox-desc">Beetroot Soup</span></a>
+                    </div></div></div>
+
+                    <div class="col-sm-6 float-left">
+                     <div class="animatedParent">
+                      <h3>Beetroot Soup</h3>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam a congue sem. Nulla eros nisl, commodo vel diam id, mollis sollicitudin ipsum. Donec non pellentesque justo. Suspendisse quis vestibulum magna, eu condimentum metus. Quisque molestie lobortis dictum. Maecenas et leo. </p>
+                      <p class="price"> Price : 5€</p>
+                      </div></div></div>
+
+
+                    <div class="container" id="container-imagebox" style="margin-top:4%;">
+                    <div class="row">
+                    <div class="col-sm-6 float-left">
+                    <div class="animatedParent">
+                    <div class="imagebox">
+                    <a href="">
+                    <img src="images/menu-images/carrot-ginger-soup_new.jpg"  class="img-responsive">
+                    <span class="imagebox-desc">Carrot Soup</span></a>
+                   </div></div></div>
+
+                   <div class="col-sm-6 float-right">
+                    <div class="animatedParent">
+                      <h3>Carrot Soup</h3>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam a congue sem. Nulla eros nisl, commodo vel diam id, mollis sollicitudin ipsum. Donec non pellentesque justo. Suspendisse quis vestibulum magna, eu condimentum metus. Quisque molestie lobortis dictum. Maecenas et leo. <br>   
+                      </p>
+                      <p class="price"> Price : 5€</p>
+                      </div></div></div>
+
+
+                    <div class="col-sm-6 float-right">
+                    <div class="animatedParent">
+                    <div class="imagebox">
+                    <a href="">
+                    <img src="images/menu-images/chicken-soup_new.jpg"  class="img-responsive">
+                    <span class="imagebox-desc">Chicken Soup</span></a>
+                    </div></div></div>
+
+                    <div class="col-sm-6 float-left">
+                      <div class="animatedParent">
+                       <h3>Chicken Soup</h3>
+                       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam a congue sem. Nulla eros nisl, commodo vel diam id, mollis sollicitudin ipsum. Donec non pellentesque justo. Suspendisse quis vestibulum magna, eu condimentum metus. Quisque molestie lobortis dictum. Maecenas et leo. </p>
+                        <p class="pricet"> Price : 5€</p>
+                      </div></div></div>
+
+                    <div class="container" id="container-imagebox" style="margin-top:4%;">
+                    <div class="row">
+                    <div class="col-sm-6 float-left">
+                    <div class="animatedParent">
+                    <div class="imagebox">
+                    <a href="">
+                    <img src="images/menu-images/coconut-pumpkin-soup_new.jpg"  class="img-responsive">
+                    <span class="imagebox-desc">Coconut and Pumpkin Soup</span></a>
+                   </div></div></div>
+
+                   <div class="col-sm-6 float-right">
+                    <div class="animatedParent">
+                      <h3>Coconut and Pumpkin Soup</h3>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam a congue sem. Nulla eros nisl, commodo vel diam id, mollis sollicitudin ipsum. Donec non pellentesque justo. Suspendisse quis vestibulum magna, eu condimentum metus. Quisque molestie lobortis dictum. Maecenas et leo. <br>   
+                      </p>
+                      <p class="price"> Price : 5€</p>
+                      </div></div></div>
+
+
+                    <div class="col-sm-6 float-right">
+                    <div class="animatedParent">
+                    <div class="imagebox">
+                    <a href="">
+                    <img src="images/menu-images/green-cream-soup_new.jpg"  class="img-responsive">
+                    <span class="imagebox-desc">Green Soup</span></a>
+                    </div></div></div>
+
+                    <div class="col-sm-6 float-left">
+                      <div class="animatedParent">
+                       <h3>Green Soup</h3>
+                       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam a congue sem. Nulla eros nisl, commodo vel diam id, mollis sollicitudin ipsum. Donec non pellentesque justo. Suspendisse quis vestibulum magna, eu condimentum metus. Quisque molestie lobortis dictum. Maecenas et leo. </p>
+                       <p class="price"> Price : 5€</p>
+                      </div></div></div>
+
+
+                    <div class="container" id="container-imagebox" style="margin-top:4%;">
+                    <div class="row">
+                    <div class="col-sm-6 float-left">
+                    <div class="animatedParent">
+                    <div class="imagebox">
+                    <a href="">
+                    <img src="images/menu-images/pea-soup_new.jpg"  class="img-responsive">
+                    <span class="imagebox-desc">Pea Soup</span></a>
+                   </div></div></div>
+
+                   <div class="col-sm-6 float-right">
+                    <div class="animatedParent">
+                      <h3>Pea Soup</h3>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam a congue sem. Nulla eros nisl, commodo vel diam id, mollis sollicitudin ipsum. Donec non pellentesque justo. Suspendisse quis vestibulum magna, eu condimentum metus. Quisque molestie lobortis dictum. Maecenas et leo. <br>   
+                      </p>
+                      <p class="price"> Price : 5€</p>
+                      </div></div></div>
+
+
+                    <div class="col-sm-6 float-right">
+                    <div class="animatedParent">
+                    <div class="imagebox">
+                    <a href="">
+                    <img src="images/menu-images/potato-soup_new.jpg"  class="img-responsive">
+                    <span class="imagebox-desc">Potato Soup</span></a>
+                    </div></div></div>
+
+                    <div class="col-sm-6 float-left">
+                      <div class="animatedParent">
+                        <h3>Potato Soup</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam a congue sem. Nulla eros nisl, commodo vel diam id, mollis sollicitudin ipsum. Donec non pellentesque justo. Suspendisse quis vestibulum magna, eu condimentum metus. Quisque molestie lobortis dictum. Maecenas et leo. </p>
+                        <p class="price"> Price : 5€</p>
+                      </div></div></div>
+
+
+                    <div class="container" id="container-imagebox" style="margin-top:4%;">
+                    <div class="row"> 
+                    <div class="col-sm-6 float-left">
+                    <div class="animatedParent">
+                    <div class="imagebox">
+                    <a href="">
+                    <img src="images/menu-images/pumpkin-soup_neww.jpg"  class="img-responsive">
+                    <span class="imagebox-desc">Pumpkin Soup</span></a>
+                   </div></div></div>
+
+                   <div class="col-sm-6 float-right">
+                     <div class="animatedParent">
+                       <h3>Pumpkin Soup</h3>
+                       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam a congue sem. Nulla eros nisl, commodo vel diam id, mollis sollicitudin ipsum. Donec non pellentesque justo. Suspendisse quis vestibulum magna, eu condimentum metus. Quisque molestie lobortis dictum. Maecenas et leo. <br>   
+                      </p>
+                      <p class="price"> Price : 5€</p>
+                      </div></div></div>
+
+
+                    <div class="col-sm-6 float-right">
+                    <div class="animatedParent">
+                    <div class="imagebox">
+                    <a href="">
+                    <img src="images/menu-images/tomato-soup_new.jpg"  class="img-responsive">
+                    <span class="imagebox-desc">Tomato Soup</span></a>
+                    </div></div></div>
+
+                    <div class="col-sm-6 float-left">
+                      <div class="animatedParent">
+                        <h3>Tomato Soup</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam a congue sem. Nulla eros nisl, commodo vel diam id, mollis sollicitudin ipsum. Donec non pellentesque justo. Suspendisse quis vestibulum magna, eu condimentum metus. Quisque molestie lobortis dictum. Maecenas et leo. </p>
+                         <p class="price"> Price : 5€</p>
+                      </div></div></div>
+                    </div></div></div>
+
+            <div style="clear:both; display:block; margin-top:2%;"></div>  
+            <div class="panel panel-default">
+                  <figure class="effect-ming">
+                   <div class="panel-headingThree" role="tab" id="headingThree">
+                       <figcaption>
+                        <h4 class="panel-title">
+                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+                               <p id="headOne">SALADS </p>
+                              <p>Ming sits in the corner the whole day. She's into crochet.</p>
+                            </a>  
+                            </h4>
+                         </figcaption>
+                    </figure>  
+                    </div>
+                    <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                        <div class="panel-body">
+                            <div class="container-fluid" id="collapse-body" style="clear:both; display:block; width:100%;height:100%; background:#fff;">
+                  
+                    <div class="container" id="container-imagebox" style="margin-top:4%;">
+                    <div class="row">
+                    <div class="col-sm-6 float-left">
+                    <div class="animatedParent">
+                    <div class="imagebox">
+                    <a href="">
+                    <img src="images/menu-images/tomates-salad-orange_new.jpg"  class="img-responsive">
+                    <span class="imagebox-desc">Tomato Salad with Orange</span></a>
+                   </div></div></div>
+
+                   <div class="col-sm-6 float-right">
+                      <div class="animatedParent">
+                        <h3>Tomato Salad with Orange</h3>
+                        <p >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam a congue sem. Nulla eros nisl, commodo vel diam id, mollis sollicitudin ipsum. Donec non pellentesque justo. Suspendisse quis vestibulum magna, eu condimentum metus. Quisque molestie lobortis dictum. Maecenas et leo. <br>   
+                        </p>
+                        <p class="price"> Price : 5€</p>
+                      </div></div></div>
+
+
+                    <div class="col-sm-6 float-right">
+                    <div class="animatedParent">
+                    <div class="imagebox">
+                    <a href="">
+                    <img src="images/menu-images/diet-salad_new.jpg"  class="img-responsive">
+                    <span class="imagebox-desc">Diet Salad</span></a>
+                    </div></div></div>
+
+                    <div class="col-sm-6 float-left">
+                      <div class="animatedParent">
+                        <h3>Diet Salad</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam a congue sem. Nulla eros nisl, commodo vel diam id, mollis sollicitudin ipsum. Donec non pellentesque justo. Suspendisse quis vestibulum magna, eu condimentum metus. Quisque molestie lobortis dictum. Maecenas et leo. </p>
+                          <p class="price"> Price : 5€</p>
+                      </div></div></div>
+
+
+                    <div class="container" id="container-imagebox" style="margin-top:4%;">
+                    <div class="row">
+                    <div class="col-sm-6 float-left">
+                    <div class="animatedParent">
+                    <div class="imagebox">          
+                    <a href="">
+                    <img src="images/menu-images/greens-salad_new.jpg"  class="img-responsive">
+                    <span class="imagebox-desc">Greens Salad</span></a>
+                   </div></div></div>
+
+                   <div class="col-sm-6 float-right">
+                     <div class="animatedParent">
+                        <h3>Greens Salad</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam a congue sem. Nulla eros nisl, commodo vel diam id, mollis sollicitudin ipsum. Donec non pellentesque justo. Suspendisse quis vestibulum magna, eu condimentum metus. Quisque molestie lobortis dictum. Maecenas et leo. <br>   
+                        </p>
+                        <p class="price"> Price : 5€</p>
+                      </div></div></div>
+
+
+                    <div class="col-sm-6 float-right">
+                    <div class="animatedParent">
+                    <div class="imagebox">
+                    <a href="">
+                    <img src="images/menu-images/lambs-lettuce-arugala_new.jpg"  class="img-responsive">
+                    <span class="imagebox-desc">Lambs Lettuce Salad</span></a>
+                    </div></div></div>
+
+                    <div class="col-sm-6 float-left">
+                      <div class="animatedParent">
+                        <h3>Lambs Lettuce Salad</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam a congue sem. Nulla eros nisl, commodo vel diam id, mollis sollicitudin ipsum. Donec non pellentesque justo. Suspendisse quis vestibulum magna, eu condimentum metus. Quisque molestie lobortis dictum. Maecenas et leo. </p>
+                          <p class="price"> Price : 5€</p>
+                      </div></div></div>
+
+                    <div class="container" id="container-imagebox" style="margin-top:4%;">
+                    <div class="row">
+                    <div class="col-sm-6 float-left">
+                    <div class="animatedParent">
+                    <div class="imagebox">
+                    <a href="">
+                    <img src="images/menu-images/lettuce-leaf-salad_new.jpg"  class="img-responsive">
+                    <span class="imagebox-desc">Lettuce Leaf Salad</span></a>
+                   </div></div></div>
+
+                   <div class="col-sm-6 float-right">
+                     <div class="animatedParent">
+                        <h3>Lettuce Leaf Salad</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam a congue sem. Nulla eros nisl, commodo vel diam id, mollis sollicitudin ipsum. Donec non pellentesque justo. Suspendisse quis vestibulum magna, eu condimentum metus. Quisque molestie lobortis dictum. Maecenas et leo. <br>   
+                        </p>
+                        <p class="price"> Price : 5€</p>
+                      </div></div></div>
+
+
+                    <div class="col-sm-6 float-right">
+                    <div class="animatedParent">
+                    <div class="imagebox">
+                    <a href="">
+                    <img src="images/menu-images/mixed-salad_new.jpg"  class="img-responsive">
+                    <span class="imagebox-desc">Mixed Salad</span></a>
+                    </div></div></div>
+
+                    <div class="col-sm-6 float-left">
+                       <div class="animatedParent">
+                        <h3>Mixed Salad</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam a congue sem. Nulla eros nisl, commodo vel diam id, mollis sollicitudin ipsum. Donec non pellentesque justo. Suspendisse quis vestibulum magna, eu condimentum metus. Quisque molestie lobortis dictum. Maecenas et leo. </p>
+                          <p class="price"> Price : 5€</p>
+                      </div></div></div>
+
+
+                    <div class="container" id="container-imagebox" style="margin-top:4%;">
+                    <div class="row">
+                    <div class="col-sm-6 float-left">
+                    <div class="animatedParent">
+                    <div class="imagebox">
+                    <a href="">
+                    <img src="images/menu-images/mixed-salata-greens_new.jpg"  class="img-responsive">
+                    <span class="imagebox-desc">Mixed Greens Salad</span></a>
+                   </div></div></div>
+
+                   <div class="col-sm-6 float-right">
+                     <div class="animatedParent">
+                       <h3>Mixed Greens Salad</h3>
+                       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam a congue sem. Nulla eros nisl, commodo vel diam id, mollis sollicitudin ipsum. Donec non pellentesque justo. Suspendisse quis vestibulum magna, eu condimentum metus. Quisque molestie lobortis dictum. Maecenas et leo. <br>   
+                       </p>
+                      <p class="price"> Price : 5€</p>
+                      </div></div></div>
+
+
+                    <div class="col-sm-6 float-right">
+                    <div class="animatedParent">
+                    <div class="imagebox">
+                    <a href="">
+                    <img src="images/menu-images/mozeralla-salad_new.jpg"  class="img-responsive">
+                    <span class="imagebox-desc">Mozerella Salad</span></a>
+                    </div></div></div>
+
+                    <div class="col-sm-6 float-left">
+                      <div class="animatedParent">
+                        <h3>Mozerella Salad</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam a congue sem. Nulla eros nisl, commodo vel diam id, mollis sollicitudin ipsum. Donec non pellentesque justo. Suspendisse quis vestibulum magna, eu condimentum metus. Quisque molestie lobortis dictum. Maecenas et leo. </p>
+                          <p class="price"> Price : 5€</p>
+                      </div></div></div>
+
+
+                    <div class="container" id="container-imagebox" style="margin-top:4%;">
+                    <div class="row">
+                    <div class="col-sm-6 float-left">
+                    <div class="animatedParent">
+                    <div class="imagebox">
+                    <a href="">
+                    <img src="images/menu-images/salad-plate_new.jpg"  class="img-responsive">
+                    <span class="imagebox-desc">Salad Plate</span></a>
+                   </div></div></div>
+
+                   <div class="col-sm-6 float-right">
+                    <div class="animatedParent">
+                      <h3>Salad Plate</h3>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam a congue sem. Nulla eros nisl, commodo vel diam id, mollis sollicitudin ipsum. Donec non pellentesque justo. Suspendisse quis vestibulum magna, eu condimentum metus. Quisque molestie lobortis dictum. Maecenas et leo. <br>   
+                      </p>
+                      <p class="price"> Price : 5€</p>
+                      </div></div></div>
+
+
+                    <div class="col-sm-6 float-right">
+                    <div class="animatedParent">
+                    <div class="imagebox">
+                    <a href="">
+                    <img src="images/menu-images/spring-radishes-salad_new.jpg"  class="img-responsive">
+                    <span class="imagebox-desc">Spring Radishes Salad</span></a>
+                    </div></div></div>
+
+                    <div class="col-sm-6 float-left">
+                      <div class="animatedParent">
+                        <h3>Spring Radishes Salad</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam a congue sem. Nulla eros nisl, commodo vel diam id, mollis sollicitudin ipsum. Donec non pellentesque justo. Suspendisse quis vestibulum magna, eu condimentum metus. Quisque molestie lobortis dictum. Maecenas et leo. </p>
+                        <p class="price"> Price : 5€</p>
+                      </div></div></div>
+                    </div></div></div>
+
+
+         <div style="clear:both; display:block; margin-top:2%;"></div>
+            <div class="panel panel-default">
+                  <figure class="effect-ming">
+                   <div class="panel-headingFour" role="tab" id="headingFour">
+                       <figcaption>
+                        <h4 class="panel-title">
+                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+                               <p id="headOne">DESSERTS </p>
+                              <p>Ming sits in the corner the whole day. She's into crochet.</p>
+                            </a>  
+                            </h4>
+                         </figcaption>
+                    </figure>  
+                    </div>
+                    <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
+                        <div class="panel-body">
+                          <div class="container-fluid" id="collapse-body" style="clear:both; display:block; width:100%;height:100%; background:#fff;">
+                  
+                     <div class="container" id="container-imagebox" style="margin-top:4%;">
+                    <div class="row">
+
+                    <div class="col-sm-6 float-left">
+                    <div class="animatedParent">
+                    <div class="imagebox">
+                    <a href="">
+                    <img src="images/large-images/fruit-cake_tart_new.jpg"  class="img-responsive">
+                    <span class="imagebox-desc">Fruit Tart Cake</span></a>
+                   </div></div></div>
+
+                   <div class="col-sm-6 float-right">
+                     <div class="animatedParent">
+                        <h3>Fruit Tart Cake</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam a congue sem. Nulla eros nisl, commodo vel diam id, mollis sollicitudin ipsum. Donec non pellentesque justo. Suspendisse quis vestibulum magna, eu condimentum metus. Quisque molestie lobortis dictum. Maecenas et leo. <br>   
+                        </p>
+                        <p class="price"> Price : 5€</p>
+                      </div></div></div>
+
+
+                    <div class="col-sm-6 float-right">
+                    <div class="animatedParent">
+                    <div class="imagebox">
+                    <a href="">
+                    <img src="images/large-images/cream-caramel_new.jpg"  class="img-responsive">
+                    <span class="imagebox-desc">Cream Caramel</span></a>
+                    </div></div></div>
+
+                    <div class="col-sm-6 float-left">
+                      <div class="animatedParent">
+                        <h3>Cream Caramel</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam a congue sem. Nulla eros nisl, commodo vel diam id, mollis sollicitudin ipsum. Donec non pellentesque justo. Suspendisse quis vestibulum magna, eu condimentum metus. Quisque molestie lobortis dictum. Maecenas et leo. </p>
+                          <p class="price"> Price : 5€</p>
+                      </div></div></div>
+
+
+                    <div class="container" id="container-imagebox" style="margin-top:4%;">
+                    <div class="row">
+                    <div class="col-sm-6 float-left">
+                    <div class="animatedParent">
+                    <div class="imagebox">
+                    <a href="">
+                    <img src="images/large-images/strawberry-eclair_new.jpg"  class="img-responsive">
+                    <span class="imagebox-desc">Strawberry Eclair</span></a>
+                   </div></div></div>
+
+                   <div class="col-sm-6 float-right">
+                      <div class="animatedParent">
+                        <h3>Strawberry Eclair</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam a congue sem. Nulla eros nisl, commodo vel diam id, mollis sollicitudin ipsum. Donec non pellentesque justo. Suspendisse quis vestibulum magna, eu condimentum metus. Quisque molestie lobortis dictum. Maecenas et leo. <br>   
+                        </p>
+                        <p class="price"> Price : 5€</p>
+                      </div></div></div>
+
+
+                    <div class="col-sm-6 float-right">
+                    <div class="animatedParent">
+                    <div class="imagebox animated">
+                    <a href="">
+                    <img src="images/large-images/red-velvet-cake_new.jpg"  class="img-responsive">
+                    <span class="imagebox-desc">Red Velvet Cake</span></a>
+                    </div></div></div>
+
+                    <div class="col-sm-6 float-left">
+                      <div class="animatedParent">
+                        <h3>Red Velvet Cake</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam a congue sem. Nulla eros nisl, commodo vel diam id, mollis sollicitudin ipsum. Donec non pellentesque justo. Suspendisse quis vestibulum magna, eu condimentum metus. Quisque molestie lobortis dictum. Maecenas et leo. </p>
+                        <p class="price"> Price : 5€</p>
+                      </div></div></div>
+
+                    <div class="container" id="container-imagebox" style="margin-top:4%;">
+                    <div class="row">
+                    <div class="col-sm-6 float-left">
+                    <div class="animatedParent">
+                    <div class="imagebox">
+                    <a href="">
+                    <img src="images/large-images/almond-pancake_new.jpg"  class="img-responsive">
+                    <span class="imagebox-desc">Almond Pancake</span></a>
+                   </div></div></div>
+
+                   <div class="col-sm-6 float-right">
+                      <div class="animatedParent">
+                        <h3>Almond Pancake</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam a congue sem. Nulla eros nisl, commodo vel diam id, mollis sollicitudin ipsum. Donec non pellentesque justo. Suspendisse quis vestibulum magna, eu condimentum metus. Quisque molestie lobortis dictum. Maecenas et leo. <br>   
+                        </p>
+                        <p class="price"> Price : 5€</p>
+                      </div></div></div>
+
+
+                    <div class="col-sm-6 float-right">
+                    <div class="animatedParent">
+                    <div class="imagebox">
+                    <a href="">
+                    <img src="images/large-images/chocolate-sauce-cake_new.jpg"  class="img-responsive">
+                    <span class="imagebox-desc">Chocolate Sauce Cake</span></a>
+                    </div></div></div>
+
+                    <div class="col-sm-6 float-left">
+                       <div class="animatedParent">
+                        <h3>Chocolate Sauce Cake</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam a congue sem. Nulla eros nisl, commodo vel diam id, mollis sollicitudin ipsum. Donec non pellentesque justo. Suspendisse quis vestibulum magna, eu condimentum metus. Quisque molestie lobortis dictum. Maecenas et leo. </p>
+                          <p class="price"> Price : 5€</p>
+                      </div></div></div>
+
+
+                    <div class="container" id="container-imagebox" style="margin-top:4%;">
+                    <div class="row">
+                    <div class="col-sm-6 float-left">
+                    <div class="animatedParent">
+                    <div class="imagebox">
+                    <a href="">
+                    <img src="images/large-images/macaron_dessert_new.jpg"  class="img-responsive">
+                    <span class="imagebox-desc">Macaron</span></a>
+                   </div></div></div>
+
+                   <div class="col-sm-6 float-right">
+                     <div class="animatedParent">
+                        <h3>Macaron</h3>
+                        <p >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam a congue sem. Nulla eros nisl, commodo vel diam id, mollis sollicitudin ipsum. Donec non pellentesque justo. Suspendisse quis vestibulum magna, eu condimentum metus. Quisque molestie lobortis dictum. Maecenas et leo. <br>   
+                        </p>
+                        <p class="price"> Price : 5€</p>
+                      </div></div></div>
+
+
+                    <div class="col-sm-6 float-right">
+                    <div class="animatedParent">
+                    <div class="imagebox">
+                    <a href="">
+                    <img src="images/large-images/tiramisu-cake_new.jpg"  class="img-responsive">
+                    <span class="imagebox-desc">Tiramisu Cake</span></a>
+                    </div></div></div>
+
+                    <div class="col-sm-6 float-left">
+                      <div class="animatedParent">
+                        <h3 >Tiramisu Cake</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam a congue sem. Nulla eros nisl, commodo vel diam id, mollis sollicitudin ipsum. Donec non pellentesque justo. Suspendisse quis vestibulum magna, eu condimentum metus. Quisque molestie lobortis dictum. Maecenas et leo. </p>
+                          <p class="price"> Price : 5€</p>
+                      </div></div></div>
+
+
+                    <div class="container" id="container-imagebox" style="margin-top:4%;">
+                    <div class="row">
+                    <div class="col-sm-6 float-left">
+                    <div class="animatedParent">
+                    <div class="imagebox">
+                    <a href="">
+                    <img src="images/large-images/quark-tart_new.jpg"  class="img-responsive">
+                    <span class="imagebox-desc">Cheesecake</span></a>
+                   </div></div></div>
+
+                   <div class="col-sm-6 float-right">
+                     <div class="animatedParent">
+                        <h3>Cheesecake</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam a congue sem. Nulla eros nisl, commodo vel diam id, mollis sollicitudin ipsum. Donec non pellentesque justo. Suspendisse quis vestibulum magna, eu condimentum metus. Quisque molestie lobortis dictum. Maecenas et leo. <br>   
+                        </p>
+                        <p class="price"> Price : 5€</p>
+                      </div></div></div>
+
+
+                    <div class="col-sm-6 float-right">
+                    <div class="animatedParent">
+                    <div class="imagebox">
+                    <a href="">
+                    <img src="images/large-images/blueberry-sauce-cake_new.jpg"  class="img-responsive">
+                    <span class="imagebox-desc">Blueberry Sauce Cake</span></a>
+                    </div></div></div>
+
+                    <div class="col-sm-6 float-left">
+                      <div class="animatedParent">
+                        <h3 >Blueberry Sauce Cake</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam a congue sem. Nulla eros nisl, commodo vel diam id, mollis sollicitudin ipsum. Donec non pellentesque justo. Suspendisse quis vestibulum magna, eu condimentum metus. Quisque molestie lobortis dictum. Maecenas et leo. </p>
+                          <p class="price"> Price : 5€</p>
+                      </div></div></div>
+                    </div></div></div>
+
+
+
+
+        <div style="clear:both; display:block; margin-top:2%;"></div>
+        <div class="panel panel-default">
+          <figure class="effect-ming">
+          <div class="panel-headingFive" role="tab" id="headingFive">
+          <figcaption>
+          <h4 class="panel-title">
+          <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+           <p id="headOne">BEVERAGES</p>
+           <p>Ming sits in the corner the whole day. She's into crochet.</p></a> </h4>
+          </figcaption></figure>  
+          </div>
+
+
+        <div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive">
+          <div class="panel-body">
+           <div class="container-fluid" id="collapse-body" style="clear:both; display:block; width:auto;height:auto; background:#fff;">
+
+           <div class="container" id="container-imagebox" style="margin-top:4%;">
+                <div class="row">
+                <div class="col-sm-6 float-left">
+                <div class="animatedParent">
+                <div class="imagebox">
+                <a href="">
+                <img src="images/menu-images/coffee_new.jpg"  class="img-responsive">
+                <span class="imagebox-desc"></span></a>
+                </div></div></div>
+
+                <div class="col-sm-6 float-right">
+                  <div class="animatedParent">
+                    <h3>Coffees</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam a congue sem. Nulla eros nisl, commodo vel diam id, mollis sollicitudin ipsum. Donec non pellentesque justo. Suspendisse quis vestibulum magna, eu condimentum metus. Quisque molestie lobortis dictum. Maecenas et leo. <br> 
+                    </p>
+                    <p class="price"> Price : 5€</p>
+                    </div></div></div>
+
+
+                    <div class="col-sm-6 float-right">
+                    <div class="animatedParent">
+                    <div class="imagebox">
+                    <a href="">
+                    <img src="images/menu-images/tea_new.jpg"  class="img-responsive">
+                    <span class="imagebox-desc">Tea</span></a>
+                    </div></div></div>
+
+                    <div class="col-sm-6 float-left">
+                       <div class="animatedParent">
+                        <h3 >Tea</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam a congue sem. Nulla eros nisl, commodo vel diam id, mollis sollicitudin ipsum. Donec non pellentesque justo. Suspendisse quis vestibulum magna, eu condimentum metus. Quisque molestie lobortis dictum. Maecenas et leo. </p>
+                          <p class="price"> Price : 5€</p>
+                      </div></div></div>
+
+
+                    <div class="container" id="container-imagebox" style="margin-top:4%;">
+                    <div class="row">
+                    <div class="col-sm-6 float-left">
+                    <div class="animatedParent">
+                    <div class="imagebox">
+                    <a href="">
+                    <img src="images/menu-images/lemon-and-orange-juice_new.jpg"  class="img-responsive">
+                    <span class="imagebox-desc">Lemon and Orange Juice</span></a>
+                   </div></div></div>
+
+                   <div class="col-sm-6 float-right">
+                      <div class="animatedParent">
+                        <h3>Lemon and Orange Juice</h3>
+                        <p >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam a congue sem. Nulla eros nisl, commodo vel diam id, mollis sollicitudin ipsum. Donec non pellentesque justo. Suspendisse quis vestibulum magna, eu condimentum metus. Quisque molestie lobortis dictum. Maecenas et leo. <br>   
+                        </p>
+                        <p class="price"> Price : 5€</p>
+                      </div></div></div>
+
+
+                    <div class="col-sm-6 float-right">
+                    <div class="animatedParent">
+                    <div class="imagebox">
+                    <a href="">
+                    <img src="images/menu-images/blueberry-drink_new.jpg"  class="img-responsive">
+                    <span class="imagebox-desc">Blueberry Beverage</span></a>
+                    </div></div></div>
+
+                    <div class="col-sm-6 float-left">
+                       <div class="animatedParent">
+                        <h3>Blueberry Beverage</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam a congue sem. Nulla eros nisl, commodo vel diam id, mollis sollicitudin ipsum. Donec non pellentesque justo. Suspendisse quis vestibulum magna, eu condimentum metus. Quisque molestie lobortis dictum. Maecenas et leo. </p>
+                          <p class="price"> Price : 5€</p>
+                      </div></div></div>
+
+                    <div class="container" id="container-imagebox" style="margin-top:4%;">
+                    <div class="row">
+                    <div class="col-sm-6 float-left">
+                    <div class="animatedParent">
+                    <div class="imagebox">
+                    <a href="">
+                    <img src="images/menu-images/detox-water_new.jpg"  class="img-responsive">
+                    <span class="imagebox-desc">Detox Water</span></a>
+                   </div></div></div>
+
+                   <div class="col-sm-6 float-right">
+                     <div class="animatedParent">
+                        <h3>Detox Water</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam a congue sem. Nulla eros nisl, commodo vel diam id, mollis sollicitudin ipsum. Donec non pellentesque justo. Suspendisse quis vestibulum magna, eu condimentum metus. Quisque molestie lobortis dictum. Maecenas et leo. <br>   
+                        </p>
+                        <p class="price"> Price : 5€</p>
+                      </div></div></div>
+
+
+                    <div class="col-sm-6 float-right">
+                    <div class="animatedParent">
+                    <div class="imagebox">
+                    <a href="">
+                    <img src="images/menu-images/herbal-tea_new.jpg"  class="img-responsive">
+                    <span class="imagebox-desc">Herbal Tea</span></a>
+                    </div></div></div>
+
+                    <div class="col-sm-6 float-left">
+                       <div class="animatedParent">
+                        <h3>Herbal Tea</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam a congue sem. Nulla eros nisl, commodo vel diam id, mollis sollicitudin ipsum. Donec non pellentesque justo. Suspendisse quis vestibulum magna, eu condimentum metus. Quisque molestie lobortis dictum. Maecenas et leo. </p>
+                          <p class="price"> Price : 5€</p>
+                      </div></div></div>
+
+
+                    <div class="container" id="container-imagebox" style="margin-top:4%;">
+                    <div class="row">
+                    <div class="col-sm-6 float-left">
+                    <div class="animatedParent">
+                    <div class="imagebox">
+                    <a href="">
+                    <img src="images/menu-images/hot-chocolate_new.jpg"  class="img-responsive">
+                    <span class="imagebox-desc">Hot Chocolate</span></a>
+                   </div></div></div>
+
+                   <div class="col-sm-6 float-right">
+                     <div class="animatedParent">
+                        <h3>Hot Chocolate</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam a congue sem. Nulla eros nisl, commodo vel diam id, mollis sollicitudin ipsum. Donec non pellentesque justo. Suspendisse quis vestibulum magna, eu condimentum metus. Quisque molestie lobortis dictum. Maecenas et leo. <br>   
+                        </p>
+                        <p class="price"> Price : 5€</p>
+                      </div></div></div>
+
+
+                    <div class="col-sm-6 float-right">
+                    <div class="animatedParent">
+                    <div class="imagebox"> 
+                    <a href="">
+                    <img src="images/menu-images/mineral-water_new.jpg"  class="img-responsive">
+                    <span class="imagebox-desc">Mineral Water</span></a>
+                    </div></div></div>
+
+                    <div class="col-sm-6 float-left">
+                       <div class="animatedParent">
+                        <h3>Mineral Water</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam a congue sem. Nulla eros nisl, commodo vel diam id, mollis sollicitudin ipsum. Donec non pellentesque justo. Suspendisse quis vestibulum magna, eu condimentum metus. Quisque molestie lobortis dictum. Maecenas et leo. </p>
+                          <p class="price"> Price : 5€</p>
+                      </div></div></div>
+
+
+                    <div class="container" id="container-imagebox" style="margin-top:4%;">
+                    <div class="row">
+                    <div class="col-sm-6 float-left">
+                    <div class="animatedParent">
+                    <div class="imagebox">
+                    <a href="">
+                    <img src="images/menu-images/milkshake_new.jpg"  class="img-responsive">
+                    <span class="imagebox-desc">Milkshakes</span></a>
+                   </div></div></div>
+
+                   <div class="col-sm-6 float-right">
+                      <div class="animatedParent">
+                        <h3>Milkshakes</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam a congue sem. Nulla eros nisl, commodo vel diam id, mollis sollicitudin ipsum. Donec non pellentesque justo. Suspendisse quis vestibulum magna, eu condimentum metus. Quisque molestie lobortis dictum. Maecenas et leo. <br>   
+                        </p>
+                        <p class="price"> Price : 5€</p>
+                      </div></div></div>
+
+
+                    <div class="col-sm-6 float-right">
+                    <div class="animatedParent">
+                    <div class="imagebox">
+                    <a href="">
+                    <img src="images/menu-images/smoothies_new.jpg"  class="img-responsive">
+                    <span class="imagebox-desc">Smoothies</span></a>
+                    </div></div></div>
+
+                    <div class="col-sm-6 float-left">
+                      <div class="animatedParent">
+                        <h3>Smoothies</h3>
+                        <p >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam a congue sem. Nulla eros nisl, commodo vel diam id, mollis sollicitudin ipsum. Donec non pellentesque justo. Suspendisse quis vestibulum magna, eu condimentum metus. Quisque molestie lobortis dictum. Maecenas et leo. </p>
+                          <p class="price"> Price : 5€</p>
+                      </div></div></div>
+                    </div></div></div><!--MENU SECTION END-->
+
+ <div style="clear:both; display:block; height:100px"></div>
+ 
+
+<div class="container-fluid col-container" >
+  <div class="container-fluid" id="special-menu-section" style="background:#111; width: 100%;">  
+            <h4 class="head-centered">Our Special Menu</h4></div>
+  <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 " style="background:#fff; width: 100%;">
+  
+       
+
+             <div class="row submenu mt-3">
+               <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 mt-3" >              
+                 <img src="images/large-images/chicken_special.jpg" alt="Chicken" class="img-responsive center-block"></div>
+                  <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                   <h4  >Menu Name</h4>
+                    <p class="special-menu-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                    
+                  </div>
+
+        
+               <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 mt-3">             
+                 <img src="images/large-images/pasta_special.jpg" alt="Pasta" class="img-responsive center-block"></div> 
+                  <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                   <h4>Menu Name</h4><br> 
+                    <p class="special-menu-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>  
+                  </div>
+
+               <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 mt-3">
+                 <img src="images/large-images/berry-cake_special.jpg" alt="Berry-Cake" class="img-responsive center-block" ></div>
+                  <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 ">
+                   <h4>Menu Name</h4>
+                    <p class="special-menu-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    </p>
+                     
+                  </div></div></div>
+
+                  <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 " style="background:#fff;">
+
+            
+
+             <div class="row submenu mt-3">
+               <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 mt-3" >
+                 <img src="images/large-images/chicken_special.jpg" alt="Chicken" class="img-responsive center-block"></div>
+                  <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 ">
+                   <h4>Menu Name</h4>
+                    <p class="special-menu-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                     
+                  </div>
+
+        
+               <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 mt-3">
+                 <img src="images/large-images/pasta_special.jpg" alt="Pasta" class="img-responsive center-block"></div>
+                  <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 ">
+                   <h4>Menu Name</h4><br> 
+                    <p class="special-menu-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    
+                  </div>
+
+               <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 mt-3">
+                 <img src="images/large-images/berry-cake_special.jpg" alt="Berry-Cake" class="img-responsive center-block" ></div>
+                  <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 ">
+                   <h4>Menu Name</h4>
+                    <p class="special-menu-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    </p>
+                    
+                  </div></div></div>
+                  
+
+
+                </div>
+  
+    <div class="container-fluid menuTwo">
+      <div class="col-md-12 col-sm-12 col-xs-12" style="background:#fff; width: 100%;">
+       <div class="container-fluid" style="background:#111; width: 100%;" > 
+         <h4>Today's Hot</h4>
+       </div>
+      <div class="container-fluid slider">
+        <div class="slide-track">
+          <div class="slide">
+          <img src="images/large-images/chicken-lunch_sauce_hot.jpg" alt="Chicken" class="img-responsive">
+          </div>
+
+         <div class="slide">
+          <h4>Menu Name</h4> 
+           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p> 
+         </div>
+
+         <div class="slide">
+          <img src="images/large-images/tortellini_hot.jpg" alt="Tortellini" class="img-responsive">
+         </div>
+
+          <div class="slide">
+           <h4>Menu Name</h4>
+           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p> 
+          </div>
+
+        <div class="slide">
+          <img src="images/large-images/meatmain_hot.jpg" alt="Meat"  class="img-responsive">
+        </div>
+
+        <div class="slide">
+         <h4>Menu Name</h4>  
+         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>   
+        </div>
+
+        <div class="slide">
+          <img src="images/large-images/steak_hot.jpg" alt="Steak" s class="img-responsive">
+        </div>
+
+        <div class="slide">
+          <h4>Menu Name</h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p> 
+        </div>
+
+        <div class="slide">
+          <img src="images/large-images/lasagna-special_hot.jpg" alt="Lasagna"  class="img-responsive"> 
+        </div>
+
+        <div class="slide">
+          <h4>Menu Name</h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p> 
+    </div>
+
+        <div class="slide">
+          <img src="images/large-images/lamb-chumb.jpg" alt="Lamb Chumb"  class="img-responsive">
+        </div>
+
+        <div class="slide">
+          <h4>Menu Name</h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p> 
+        </div>
+
+        <div class="slide">
+          <img src="images/large-images/salmon-special.jpg" alt="Salmon Special"  class="img-responsive">
+        </div>
+
+        <div class="slide">
+          <h4>Menu Name</h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p> 
+        </div>
+
+
+</div></div></div>
+</div>
+
+<div style="clear:both; display:block; width:auto;height:100px; "></div>
+<div class="menu-social">
+<h2>FOLLOW US ON SOCIAL MEDIA</h2></div>
+<hr width="auto;" color="#0000F8" size="4">
+<div class="container">
+    <div class="row">
+        <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+            <div class="box">
+                <img src="images/large-images/berry-brownies.jpg" class="img-responsive">
+                <div class="box-content">
+                    <span class="post">Berry Brownies</span>
+                    <ul class="social">
+                        <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                        <li><a href="#"><i class="fab fa-google-plus"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+ 
+        <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+            <div class="box">
+                <img src="images/large-images/cheese-burger.jpg" class="img-responsive">
+                <div class="box-content">
+                    <span class="post">Cheese Burger</span>
+                    <ul class="social">
+                        <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                        <li><a href="#"><i class="fab fa-google-plus"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+            <div class="box">
+                <img src="images/large-images/cake-choco.jpg" class="img-responsive">
+                <div class="box-content">
+                    <span class="post">Chocolate Cake</span>
+                    <ul class="social">
+                        <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                        <li><a href="#"><i class="fab fa-google-plus"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+         <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+            <div class="box">
+                <img src="images/large-images/beef.jpg" class="img-responsive">
+                <div class="box-content">
+                    <span class="post">Lamb Chop</span>
+                    <ul class="social">
+                        <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                        <li><a href="#"><i class="fab fa-google-plus"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+
+
+<div style="clear:both; display:block; width:auto;height:100px;"></div>
+
+<hr width="auto;" color="#0000F8" size="4">
+<!-- FOOTER -->
+ <footer id="myFooter">
+        <div class="container third">
+            <div class="row">
+                <div class="col-sm-4">
+                    <h5>Home</h5>
+                    <ul class="footermenu">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact us</a></li>
+                        <li><a href="menu.html">Menu</a></li>
+                        <li><a href="reservation.html">Reservation</a></li>
+                    </ul>
+                </div>  
+
+                 <div class="col-sm-4">
+                    <h5>Adress</h5>
+                    <ul class="list-unstyled">
+                      <li><p><i class="fas fa-home mr-3"></i> New York, NY 10012, US</p></li>
+                      <li><p><i class="fas fa-envelope mr-3"></i> info@example.com</p></li>
+                      <li><p><i class="fas fa-phone mr-3"></i> + 01 234 567 88</p></li>
+                      <li><p><i class="fas fa-print mr-3"></i> + 01 234 567 89</p></li>
+                    </ul>
+                   </div>
+                <div class="col-sm-4 info">
+                    <h5>Information</h5>
+                    <p> Lorem ipsum dolor amet, consectetur adipiscing elit. Etiam consectetur aliquet aliquet. Interdum et malesuada fames ac ante ipsum primis in faucibus. </p>
+                </div>
+            </div>
+        </div>
+
+
+
+ </div></div>
+</div></div></div></div>
+</div></div> 
+
+<script type="text/javascript">
+$(document).ready(function() {
+  
+  setTimeout(function() {
+    $('#ctn-preloader').addClass('loaded');
+    // Una vez haya terminado el preloader aparezca el scroll
+    $('body').removeClass('no-scroll-y');
+
+    if ($('#ctn-preloader').hasClass('loaded')) {
+      // Es para que una vez que se haya ido el preloader se elimine toda la seccion preloader
+      $('#preloader').delay(1000).queue(function() {
+        $(this).remove();
+      });
+    }
+  }, 3000);
+  
+});
+</script>
+  <script src="https://code.jquery.com/jquery-migrate-3.0.1.js"></script>
+<script type="text/javascript">
+		$(function($) {
+			$('.stellarnav').stellarNav({
+				theme: 'dark',
+				breakpoint: 960,
+				position: 'right',
+			});
+		});
+
+</script>
+
+
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+
+
+        
+	</body>
+
+		</html>

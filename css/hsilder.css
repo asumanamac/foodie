@@ -1,0 +1,41 @@
+@charset "utf-8";
+/* ===========================================================
+ * HSlider.css v1
+ * ===========================================================
+ * Copyright 2013 Hux.
+ *
+ * Create an photo-first, fullpage web slider
+ * All animation is powered in CSS3
+ * Only for modern broswer
+ *
+ * ========================================================== */
+
+
+.wrap{
+	position: relative;
+	width: 100%;
+	overflow: hidden;
+	-webkit-transform-style: preserve-3d;
+	align-items: center;	 
+}
+
+@media  screen and (max-width: 480px){
+	.wrap{height:300px;}
+}
+
+@media  screen and (min-width:481px) and (max-width: 600px){
+	.wrap{height:400px;}
+}
+
+@media  screen and (min-width:601px) and (max-width: 767px){
+	.wrap{height:500px;}
+}
+
+@media  screen and (min-width:768px) and (max-width: 1200px){
+	.wrap{height:600px;}
+}
+
+
+@media  screen and (min-width:1200px){
+	.wrap{height:700px;}
+}

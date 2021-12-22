@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<!-- Camera is a Pixedelic free jQuery slideshow | Manuel Masia (designer and developer) -->
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" >
+<title>FOODIE - Food Blog Template</title>
+<meta name="description" content="Camera a free jQuery slideshow with many effects, transitions, adaptive layout, easy to customize, using canvas and mobile ready">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+
+<!--BOOTSTRAP CDN-->
+<script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+ 
+<!--MAIN CSS FILE-->
+ <link rel='stylesheet' id='main-css'  href='style.css?version=2.0' type='text/css' media='all'>
+
+<!--Font Avesome for social media buttons-->  
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+
+<link href="https://fonts.googleapis.com/css?family=Akronim|Almendra+SC|Lato|Ewert|IM+Fell+Double+Pica+SC|IM+Fell+French+Canon+SC|Merriweather|Overlock+SC|Ribeye+Marrow|Vollkorn+SC|Wendy+One" rel="stylesheet">
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
+
+<!--ICON-->
+<link rel="icon" href="images/core-img/icon3.png">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script type="text/javascript" src="js/stellarnav.min.js"></script>
+
+<link href="https://fonts.googleapis.com/css?family=Cinzel|Crete+Round|Merriweather|Vollkorn|Cherry+Swash" rel="stylesheet">
+ 
+
+<link href="https://fonts.googleapis.com/css?family=Berkshire+Swash|Cookie|Great+Vibes&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+ 
+ <link rel="stylesheet" href="css/venobox.css" type="text/css" media="screen" />
+<link href="https://fonts.googleapis.com/css?family=Merriweather&display=swap" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="css/foopicker.css">
+<script type="text/javascript" src="js/foopicker.js"></script>
+<link rel="stylesheet" type="text/css" href="css/timepicker.min.css">
+
+</head>
+<body>
+<div id="wrapper">
+
+<!--PRELOADER-->
+<section>
+    <div id="preloader">
+      <div id="ctn-preloader" class="ctn-preloader">
+
+        <div class="animation-preloader"> <img src="images/core-img/icon3.png">
+          <div class="spinner"></div>
+          <div class="txt-loading">
+            <span data-text-preloader="F" class="letters-loading">
+              F
+            </span>
+            <span data-text-preloader="O" class="letters-loading">
+              O
+            </span>
+            <span data-text-preloader="O" class="letters-loading">
+              O
+            </span>
+            <span data-text-preloader="D" class="letters-loading">
+              D
+            </span>
+            <span data-text-preloader="I" class="letters-loading">
+              I
+            </span>
+            <span data-text-preloader="E" class="letters-loading">
+              E
+            </span>
+           
+          </div>
+        </div>  
+        <div class="loader-section section-left"></div>
+        <div class="loader-section section-right"></div>
+      </div>
+    </div>
+  </section>
+
+	<!--SOCIAL HEADER-->
+    <div class="top-social-header">
+       <!-- Top Social Info -->
+        <div class="row h-100 align-items-center justify-content-between">
+           <div class="col-12 col-sm-4">
+              <div class="welcome-font">
+                <a href="index.html"></a>
+                  <img src="images/core-img/logo22.png">        
+            </div> 
+            </div>
+         <div class="col-sm-6">
+            <div class="top-social-info text-right">
+              <a href="#" class="icon-radius fab fa-facebook-f" aria-hidden="true"></a>
+              <a href="#" class="icon-radius fab fa-twitter"></a>
+              <a href="#" class="icon-radius fab fa-linkedin"></a>
+              <a href="#" class="icon-radius fab fa-instagram"></a>
+            </div>
+          </div>
+                </div>
+        </div>
+
+
+<!--NAVIGATION BAR-->
+  <div class="stellarnav">
+      <ul>
+      <li><a href="#">Home</a>
+          <ul>
+          <li><a href="index.html">Home Slider v1</a> 
+            <li><a href="index2.html">Home Slider v2</a>
+            <li><a href="index3.html">Home Slider v3</a></li>
+          </ul>
+        </li> 
+
+        <li><a href="">Features</a>
+          <ul>
+          <li><a href="index.html">Home</a> 
+            <li><a href="menu.html">Menu&Specials</a>
+            <li><a href="">Our Gallery</a>
+              <ul>
+                    
+            <li><a href="">Restaurant Gallery</a>
+               <ul>
+              <li><a href="restaurant-gallery2column.html">2-Column Gallery</a></li>
+              <li><a href="restaurant-gallery3column.html">3-Column Gallery</a></li>
+              <li><a href="restaurant-gallery4column.html">4-Column Gallery</a></li>
+              </ul>
+            </li>
+            <li><a href="">Food Gallery</a>
+               <ul>
+              <li><a href="food-gallery2column.html">2-Column Gallery</a></li>
+              <li><a href="food-gallery3column.html">3-Column Gallery</a></li>
+              <li><a href="food-gallery4column.html">4-Column Gallery</a></li>
+              </ul>
+
+            </li>
+      
+            </ul>
+
+             <li><a href="events.html">Events</a></li>
+              <li><a href="about.html">About</a></li>
+               <li><a href="reservation.html">Reservation</a></li>
+                <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </li>
+
+       <li><a href="">Menu & Specials</a>
+          <ul>
+            <li><a href="menu.html">Menu 1</a></li>
+            <li><a href="menu2.html">Menu 2</a></li>
+          <li><a href="menu.html">Mega Menu</a>
+            <ul>
+              <li><a href="#">Main Dishes</a>
+                    </li>
+                       <li><a href="#">Salads</a></li>
+                       <li><a href="#">Desserts</a></li>
+                       <li><a href="#">Drinks</a></li>
+                       <li><a href="#">Specials</a></li>
+                      </ul>
+                        </li></ul></li>
+
+        <li><a href="">Our Gallery</a>
+                 <ul>
+            <li><a href="">Restaurant Gallery</a>
+               <ul>
+              <li><a href="restaurant-gallery2column.html">2-Column Gallery</a></li>
+              <li><a href="restaurant-gallery3column.html">3-Column Gallery</a></li>
+              <li><a href="restaurant-gallery4column.html">4-Column Gallery</a></li>
+              </ul>
+            </li>
+            <li><a href="">Food Gallery</a>
+               <ul>
+              <li><a href="food-gallery2column.html">2-Column Gallery</a></li>
+              <li><a href="food-gallery3column.html">3-Column Gallery</a></li>
+              <li><a href="food-gallery4column.html">4-Column Gallery</a></li>
+              </ul>
+
+            </li>
+          </ul>
+        </li>
+
+        <li><a href="events.html">Events</a></li>
+        <li><a href="reservation.html">Reservation</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+    </div>
+
+     <div class="reservation-cover">
+      <div id="text">
+          <h1>FOODIE RESTAURANT</h1>
+          <h3>RESERVATION</h3>
+           <a href="#reservation-body" class="btn" style="color:#000;">Explore More</a>
+        </div>
+      </div>
+
+   
+
+
+      <div id="reservation-body">
+     <div style="clear:both; display:block; width:auto;height:50px;"></div>
+         <div class="box box1 shadow1">
+
+<div style="clear:both; display:block; width:auto;height:50px;"></div>
+            <div class="box box1 shadow2">  <h1><span>RESERVATION</span></h1>
+                   <div style="clear:both; display:block; width:auto; height:30px;" ></div>
+      <div class="main">
+        <div class="container second">
+          <div class="row">
+  <div class="reservation-img col-lg-6 col-md-12 col-sm-12 col-xs-12" style="border-radius: 15px 15px 15px 15px;">
+  <img src="images/large-images/reserv1200.jpg">     
+     
+    </div>
+
+
+    <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12" style="border-radius: 15px 15px 15px 15px;">
+       
+      <div class="signupSection">
+           <form action="#" method="POST" class="signupForm" name="signupform">
+    <ul class="noBullet">
+      <li>
+        <label for="firstname"></label>
+        <input type="text" class="inputFields" id="firstname" name="firstname" placeholder="First Name" value="" oninput="return userNameValidation(this.value)" required/>
+      </li>
+       <li>
+        <label for="lastname"></label>
+        <input type="text" class="inputFields" id="lastname" name="lastname" placeholder="Lastname" value="" oninput="return userNameValidation(this.value)" required/>
+      </li>
+      <li>
+        <label for="email"></label>
+        <input type="email" class="inputFields" id="email" name="email" placeholder="Email" value="" oninput="return passwordValidation(this.value)" required/>
+      </li>
+      <li>
+        <label for="time"></label>
+        <input type="text" class="inputFields" name="timepicker" data-toggle="timepicker" placeholder="Hour" value="" required/>
+      </li>
+       <li>
+        <label for="date"></label>
+        <input type="text" class="inputFields" id="datepicker" name="date" placeholder="Date" value="" required/>
+      </li>
+      <li id="center-btn">
+        <input type="submit" id="join-btn" name="join" alt="Join" value="Reserve">
+      </li>
+    </ul>
+  </form>
+</div>
+</div>
+  </div></div></div>
+      </div> 
+  <div style="clear:both; display:block; width:auto;height:50px;"></div>
+
+    </div>
+  <div style="clear:both; display:block; width:auto;height:50px;"></div>
+  </div>
+ 
+   <div class="reservation-sectionOne">
+   
+      <h1>Delicious Recipes</h1>
+      <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A accusantium ad asperiores at atque culpa dolores eaque fugiat hic illo ipsam ipsum minima modi necessitatibus nemo officia.</h3>
+       <a href="menu.html" class="btn" style="color:#F1E5C3;">View Menu</a>
+
+   </div>
+
+<div id="reservationText">
+       <div class="container second">
+          <div class="row">
+            <div class="col-md-6 col-sm-6 col-xs-12">
+              <h1>HOW TO MAKE RESERVATION</h1>
+               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A accusantium ad asperiores at atque culpa dolores eaque fugiat hic illo ipsam ipsum minima modi necessitatibus nemo officia, omnis perferendis placeat quaerat quas quis ratione rerum sint sit vitae. Animi architecto consequatur delectus eos id. Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
+
+     </div>
+
+            <div class="col-md-6 col-sm-6 col-xs-12">
+              <h1>RESERVATION SUPPORT</h1>
+               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A accusantium ad asperiores at atque culpa dolores eaque fugiat hic illo ipsam ipsum minima modi necessitatibus nemo officia, omnis perferendis placeat quaerat quas quis ratione rerum sint sit vitae. Animi architecto consequatur delectus eos id. Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
+     </div>
+ </div>
+</div>  
+</div>
+
+
+ <div class="reservation-sectionTwo">
+    <h1>Restaurant Ambiance</h1>
+      <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A accusantium ad asperiores at atque culpa dolores eaque fugiat hic illo ipsam ipsum minima modi necessitatibus nemo officia.</h3>
+       <a href="menu.html" class="btn" style="color:#F1E5C3;">Explore More</a>
+
+ </div>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<footer class="page-footer font-small blue pt-4" style="background:#000;">
+<div class="container-fluid text-center text-md-left">
+
+    <!-- Grid row -->
+    <div class="row">
+
+      <!-- Grid column -->
+      <div class="col-md-6 mt-md-0 mt-3">
+
+        <!-- Content -->
+        <h5 class="text-uppercase">Information</h5>
+           <p> Lorem ipsum dolor amet, consectetur adipiscing elit.<br>Etiam consectetur aliquet aliquet. Interdum et malesuada
+            <br>fames ac ante ipsum primis in faucibus. </p>
+
+      </div>
+      <!-- Grid column -->
+
+      <hr class="clearfix w-100 d-md-none pb-3">
+
+      <!-- Grid column -->
+      <div class="col-md-3 mb-md-0 mb-3">
+
+        <!-- Links -->
+        <h5 class="text-uppercase">Home</h5>
+
+        <ul class="list-unstyled">
+         <li>
+           <li>
+            <a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact us</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="reservation.html">Reservation</a></li>
+        </ul>
+
+      </div>
+      <!-- Grid column -->
+
+      <!-- Grid column -->
+      <div class="col-md-3 mb-md-0 mb-3">
+
+        <!-- Links -->
+        <h5 class="text-uppercase">Adress</h5>
+
+        <ul class="list-unstyled">
+          <li><p><i class="fas fa-home mr-3"></i> New York, NY 10012, US</p></li>
+           <li><p><i class="fas fa-envelope mr-3"></i> info@example.com</p></li>
+            <li><p><i class="fas fa-phone mr-3"></i> + 01 234 567 88</p></li>
+            <li><p><i class="fas fa-print mr-3"></i> + 01 234 567 89</p></li>
+        </ul>
+
+      </div>
+      <!-- Grid column -->
+
+    </div>
+    <!-- Grid row -->
+
+  </div>
+  <!-- Footer Links -->
+<hr width="auto;" color="#0000F8" size="4">
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-3">© 2020 Copyright:
+    <a href="index.html"> foodie.com</a>
+  </div>
+  <!-- Copyright -->
+
+</footer>
+</div>
+<script type="text/javascript">
+$(document).ready(function() {
+  
+  setTimeout(function() {
+    $('#ctn-preloader').addClass('loaded');
+    // Una vez haya terminado el preloader aparezca el scroll
+    $('body').removeClass('no-scroll-y');
+
+    if ($('#ctn-preloader').hasClass('loaded')) {
+      // Es para que una vez que se haya ido el preloader se elimine toda la seccion preloader
+      $('#preloader').delay(1000).queue(function() {
+        $(this).remove();
+
+      });
+    }
+  }, 3000);
+    
+});
+</script>
+
+
+
+<script type="text/javascript">
+		$(function($) {
+			$('.stellarnav').stellarNav({
+				theme: 'dark',
+				breakpoint: 960,
+				position: 'right',
+			});
+		});
+
+</script>
+<script type="text/javascript">
+  
+    $(".stellarNav li").each(function(i) {
+    $(this).delay(100 * i).fadeIn(500);
+});
+
+
+
+
+<script type="text/javascript">
+var interval = null;
+$(function () {
+interval = setInterval(callFunc, 4000);
+});
+
+function callFunc() {
+$('.next').trigger('click');
+}
+
+</script>
+
+<script>
+
+var alertRedInput = "#8C1010";
+var defaultInput = "rgba(10, 180, 180, 1)";
+
+function userNameValidation(usernameInput) {
+    var username = document.getElementById("username");
+    var issueArr = [];
+    if (/[-!@#$%^&*()_+|~=`{}\[\]:";'<>?,.\/]/.test(usernameInput)) {
+        issueArr.push("No special characters!");
+    }
+    if (issueArr.length > 0) {
+        username.setCustomValidity(issueArr);
+        username.style.borderColor = alertRedInput;
+    } else {
+        username.setCustomValidity("");
+        username.style.borderColor = defaultInput;
+    }
+}
+
+function passwordValidation(passwordInput) {
+    var password = document.getElementById("password");
+    var issueArr = [];
+    if (!/^.{7,15}$/.test(passwordInput)) {
+        issueArr.push("Password must be between 7-15 characters.");
+    }
+    if (!/\d/.test(passwordInput)) {
+        issueArr.push("Must contain at least one number.");
+    }
+    if (!/[a-z]/.test(passwordInput)) {
+        issueArr.push("Must contain a lowercase letter.");
+    }
+    if (!/[A-Z]/.test(passwordInput)) {
+        issueArr.push("Must contain an uppercase letter.");
+    }
+    if (issueArr.length > 0) {
+        password.setCustomValidity(issueArr.join("\n"));
+        password.style.borderColor = alertRedInput;
+    } else {
+        password.setCustomValidity("");
+        password.style.borderColor = defaultInput;
+    }
+}
+
+</script>
+
+
+ <script type="text/javascript">
+    var foopicker = new FooPicker({
+      id: 'datepicker',
+      dateFormat: 'dd/MM/yyyy',
+      disable: ['29/07/2017', '30/07/2017', '31/07/2017', '01/08/2017']
+    });
+    var foopicker2 = new FooPicker({
+      id: 'datepicker2'
+    });
+  </script>
+
+    <script src="js/timepicker.min.js"></script>
+        <script>
+          document.addEventListener("DOMContentLoaded", function(event)
+      {
+          timepicker.load({
+              interval: 15,
+              defaultHour: 10
+          });
+      });
+    </script>
+
+
+
+</body>
+</html>

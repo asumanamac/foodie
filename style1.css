@@ -1,0 +1,101 @@
+.cr-container{
+	width: 800px;
+	height: 490px;
+	position: relative;
+	margin: 0 auto;
+	border: 20px solid #fff;
+	box-shadow: 1px 1px 3px rgba(0,0,0,0.1);
+}
+.cr-container .bx-thumbs{
+    position:absolute;
+    z-index: 100;   
+    bottom: 0px;
+    left: 55%;
+    margin-left: -200px; /*half of width for centering*/
+}
+.cr-container .bx-thumbs a{
+    float: left;
+    width: 66px;
+    height: 66px;
+    border: 2px solid #000;
+    overflow: hidden;
+    margin: 2px 7px;
+    position: relative;
+    outline: none;
+    cursor: pointer;
+    background-repeat: no-repeat;
+    background-position: center center;
+    opacity: 0.8;
+    border-radius: 34px;
+    -webkit-border-radius: 34px;
+    -moz-border-radius: 34px;
+	box-shadow: 
+        0px 0px 3px rgba(0,0,0,0.6),
+        0px 0px 0px 40px rgba(0,0,0,0.3) inset;
+    -webkit-transition: all 0.4s ease-in-out;
+	-moz-transition: all 0.4s ease-in-out;
+	-o-transition: all 0.4s ease-in-out;
+	-ms-transition: all 0.4s ease-in-out;
+	transition: all 0.4s ease-in-out;
+}
+.cr-container .bx-thumbs a:hover{
+    opacity: 1.0;
+    box-shadow: 
+        0px 0px 3px rgba(0,0,0,0.6),
+        0px 0px 0px 0px rgba(0,0,0,0.1) inset;
+}
+.cr-container .bx-thumbs a #bx-thumbs-current{
+    opacity: 1.0;
+    border-color: #fff;
+    box-shadow: 0px 0px 3px rgba(0,0,0,0.6);
+}
+
+.cr-bgimg{
+	width: 600px;
+	height: 400px;
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	z-index: 1;
+}
+
+.cr-bgimg{
+	background-repeat: no-repeat;
+	background-position: 0 0;
+}
+.cr-bgimg div{
+	width: 150px;
+	height: 100%;
+	position: relative;
+	float: left;
+	overflow: hidden;
+	background-repeat: no-repeat;
+}
+
+.cr-bgimg div span{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0px;
+	left: -150px;
+	z-index: 2;
+	text-indent: -9000px;
+}
+
+.cr-container .bx-thumbs a.cr-selector-img-1:hover ~ .cr-bgimg,
+.cr-bgimg div span:nth-child(1){
+	background-image: url(images//1.jpg);
+}
+
+
+/* Media Query: Let's show the inputs on mobile sized browsers because they probably don't support the label trick: */
+@media screen and (max-width: 768px) {
+	.cr-container input{
+		display: inline;
+		width: 24%;
+		margin-top: 350px;
+		z-index: 1000;
+		position: relative;
+	}
+	
+}
